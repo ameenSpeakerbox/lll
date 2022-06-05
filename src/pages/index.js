@@ -2,6 +2,7 @@ import React from 'react'
 import Layout from '../Components/Layout/Layout'
 import AboutSection from './Home/AboutSection'
 import HeroSection from './Home/HeroSection'
+import ThirdSection from './Home/ThirdSection'
 
 
 const index = () => {
@@ -10,6 +11,7 @@ const index = () => {
 
       <HeroSection />
       <AboutSection />
+      <ThirdSection/>
     </Layout>
   )
 }
