@@ -1,0 +1,71 @@
+:root {
+    --primary: #07509D;
+    --secondary: #EA2127;
+    --lightBlue: #EAF6FF;
+  }
+  
+  .text-primary{
+    color: var(--primary);
+  }
+  .text-secondary{
+    color: var(--secondary);
+  }
+  .bg-primary{
+    background-color: var(--primary);
+  }
+  .bg-secondary{
+    background-color: var(--secondary);
+  }
+  .bg-lightBlue{
+    background-color: var(--lightBlue);
+  }
+  .border-primary{
+    border-color: var(--primary);
+  }
+  .border-secondary{
+    border-color: var(--secondary);
+  }
+  
+  @media screen and (min-width:1280px) {
+    .container {
+        width: 1240px;
+        margin: auto;
+    }
+  }
+  
+  @media screen and (min-width:998px) and (max-width:1280px) {
+    .container {
+        width: 90%;
+        margin: auto;
+    }
+  }
+  @media screen and (min-width:600px) and (max-width:998px) {
+    .container {
+        width: 90%;
+        margin: auto;
+    }
+  }
+  
+  .hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: var(--primary);
+  }
+  
+  .hover-underline-animation:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--primary);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .hover-underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
