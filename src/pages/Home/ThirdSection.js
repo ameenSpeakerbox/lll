@@ -26,9 +26,9 @@ text:"Encouragement of open communication with clients so as to fully understand
 function ThirdSection(){
     return(
         <main className='container' >
-                <h1 className='text-primary font-bold text-4xl text-center'>What makes EFS standout ?</h1>
+                <h1 className='text-primary font-bold text-4xl text-center mb-8'>What makes EFS standout ?</h1>
                 
-                <div class="grid grid-cols-3 gap-4">
+                <div class="grid grid-cols-3 gap-12 ">
                     {array_of_object.map((item)=>{
                         return(
                             <div className='content-center' ><ImageComponent props={item}/></div>

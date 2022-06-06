@@ -5,13 +5,13 @@ function ImageComponent ({props}) {
     return(
         
           <div>
-              <div className="card" >
-                  <div  className='border-b-black-800'>
-                  <img src={props.img} class="card-img-top" alt="..."/>
+              <div className="card bg-stone-200 pb-10" >
+                  <div  className='border-solid border-b-8 border-primary'>
+                  <img src={props.img} class="card-img-top w-full" alt="..."/>
                   </div>
                 
-                    <div className="card-body">
-                        <p className='text-primary font-bold  card-text'>{props.text}</p>
+                    <div className="card-body ">
+                        <p className='text-primary font-bold text-xl card-text m-4'>{props.text}</p>
                        
                     </div>
                 </div>
