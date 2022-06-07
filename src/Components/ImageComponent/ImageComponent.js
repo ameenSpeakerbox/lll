@@ -1,5 +1,6 @@
 import React from 'react'
 import Rectangle from '../../Assets/images/Rectangle 12.png'
+
 function ImageComponent ({props}) {
     console.log(props,props.id)
     return(
@@ -14,12 +15,13 @@ function ImageComponent ({props}) {
                         <p className='text-primary font-bold text-xl card-text m-4'>{props.text}</p>
                        
                     </div>
+
                 </div>
-              
-          </div>
-        
+            </div>
+        </div>
+
 
     )
-    
+
 }
 export default ImageComponent
