@@ -1,21 +1,21 @@
 import React from 'react'
-import Vector from '../../Assets/images/Group 1.svg'
+import Rectangle from '../../Assets/images/Rectangle 12.png'
 
-function ImageComponent({ props }) {
-    console.log(props, props.id)
-    return (
+function ImageComponent ({props}) {
+    console.log(props,props.id)
+    return(
+        
+          <div>
+              <div className="card bg-stone-200 pb-10" >
+                  <div  className='border-solid border-b-8 border-primary'>
+                  <img src={props.img} class="card-img-top w-full" alt="..."/>
+                  </div>
+                
+                    <div className="card-body ">
+                        <p className='text-primary font-bold text-xl card-text m-4'>{props.text}</p>
+                       
+                    </div>
 
-        <div className='relative'>
-
-            <div className='border-b-8 border-blue-800'>
-                <img src={props.img} className="w-full h-72 object-center object-cover	" alt="..." />
-            </div>
-
-            <div className="p-4 h-40" style={{ background: '#F6F6F6' }}>
-                <p className='text-primary font-bold  card-text'>{props.text}</p>
-
-                <div >
-                    <img src={Vector} className="absolute right-0 bottom-0" alt="" />
                 </div>
             </div>
         </div>
