@@ -1,11 +1,11 @@
 import React from 'react'
-import Rectangle from '../../Assets/images/Rectangle 12.png'
+
 
 function ImageComponent ({props}) {
     console.log(props,props.id)
     return(
         
-          <div>
+          <div >
               <div className="card bg-stone-200 pb-10" >
                   <div  className='border-solid border-b-8 border-primary'>
                   <img src={props.img} class="card-img-top w-full" alt="..."/>
@@ -18,7 +18,6 @@ function ImageComponent ({props}) {
 
                 </div>
             </div>
-        
 
 
     )
