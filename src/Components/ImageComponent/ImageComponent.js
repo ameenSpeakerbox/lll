@@ -19,6 +19,7 @@ function ImageComponent ({props}) {
                 </div>
             </div>
 
+
     )
 
 }
