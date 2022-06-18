@@ -1,0 +1,24 @@
+{
+  "name": "speakerbox-agency",
+  "version": "1.0.0",
+  "private": true,
+  "description": "speakerbox-agency",
+  "author": "Asifk23",
+  "keywords": [
+    "gatsby"
+  ],
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
+  },
+  "dependencies": {
+    "gatsby": "^4.16.0",
+    "gatsby-plugin-sass": "^5.16.0",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0",
+    "sass": "^1.52.3"
+  }
+}
