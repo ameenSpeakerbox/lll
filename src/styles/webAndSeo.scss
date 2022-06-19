@@ -1,0 +1,612 @@
+.webAndSeo .web-feature-icon {
+    width: 45px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .webAndSeo .intro-heading {
+        margin-top: 0px;
+        margin-left: 0px;
+        font-size: 25px;
+        width: 166px;
+        text-align: center;
+        line-height: 0.995;
+        float: right;
+        // padding-bottom: 20px;
+    }
+    .webAndSeo .intro-heading-right {
+        // margin-top: 16px;
+        font-size: 16px;
+        width: 100% !important;
+        line-height: 1.2;
+        font-weight: 400;
+        padding: 0 10px;
+        max-width: 300px;
+    }
+
+    .webAndSeo .right-heading-body{
+        justify-content: center !important;
+    }
+
+    .webAndSeo .intro-heading-span-2 {
+        font-size: 22px !important;
+    }
+    .webAndSeo .intro-heading-span-3 {
+        font-size: 20px !important;
+    }
+    .webAndSeo .vertical-line {
+        align-items: center !important;
+        flex-direction: column !important;
+
+    }
+    .webAndSeo .intro-row {
+        display: flex !important;
+        flex-direction: unset !important;
+    }
+    .webAndSeo .col-10 {
+        flex: 0 0 83.333333%;
+        max-width: 83.333333%;
+    }
+
+    .webAndSeo .web-mockup-img {
+        width: 160px !important;
+        height: 200px !important;
+        margin: auto;
+    }
+    .webAndSeo .web-features-body {
+        margin-left: 20px;
+    }
+    .webAndSeo .web-feature-icon {
+        width: 20px;
+    }
+    .webAndSeo .web-features {
+        font-size: 15px;
+    }
+    .right-heading-body{
+        .vector{
+            max-width: 250px;
+        }
+    }
+
+    // second section
+    .webAndSeo-sect-two .heading {
+        font-weight: 700;
+        width: 300px;
+        font-size: 35px;
+        letter-spacing: -0.05em;
+        line-height: 35px;
+    }
+    .webAndSeo-sect-two .smaller-heading {
+        font-size: 30px;
+    }
+    .webAndSeo-sect-two .description {
+        font-weight: 500;
+        letter-spacing: -0.05em;
+        font-size: 15px;
+        width: 278px;
+        line-height: 21px;
+    }
+    .webAndSeo-sect-two .hire-us {
+        font-weight: 800;
+        font-size: 35px;
+        letter-spacing: -0.05em;
+        text-align: center;
+    }
+    .webAndSeo-sect-two .icons {
+        height: 50px;
+    }
+    .webAndSeo-sect-two .figcaption {
+        font-weight: 500;
+        font-size: 19px;
+        width: 100%;
+        margin-left: 11px;
+        margin-bottom: 0;
+        line-height: 22px;
+        letter-spacing: -0.03em;
+    }
+
+    .webAndSeo-sect-two .figCaption-heading {
+        letter-spacing: -0.01em;
+        font-weight: 500;
+        font-size: 25px;
+    }
+    .webAndSeo-sect-two .figCaption-desc {
+        letter-spacing: -0.03em;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 18px;
+        color: black;
+    }
+    .webAndSeo-sect-two .tools-body {
+        padding: 45px 0;
+        justify-content: center;
+    }
+    .webAndSeo-sect-two .tools-heading {
+        font-size: 26px;
+        font-weight: 300;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    .webAndSeo-sect-two .tools-icons {
+        height: 45px;
+    }
+
+    .webAndSeo-sect-two .tools-col {
+        padding: 10px 10px !important;
+        flex: 0 0 91.666667% !important;
+        max-width: 91.666667% !important;
+    }
+    .webAndSeo-sect-three .gatsby-icons,
+    .react-icons {
+        height: 50px !important;
+        width: 50px !important;
+        margin-right: 25px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+    .webAndSeo .intro-heading {
+        margin-top: 0px;
+        margin-left: 0px;
+        font-size: 40px;
+        width: 300px;
+        text-align: right;
+        line-height: 0.995;
+        float: right;
+    }
+    .webAndSeo .intro-heading-right {
+        // margin-top: 50px;
+        font-size: 17px;
+        /* width: 320px; */
+        line-height: 0.995;
+        text-align: right;
+    }
+    .webAndSeo .intro-heading-span-2 {
+        color: "#EE3958";
+        font-size: 50px !important;
+    }
+    .webAndSeo .vertical-line {
+        border-right: 1px solid #ee3958;
+        height: auto;
+        margin-top: 50px;
+    }
+    .webAndSeo .intro-row {
+        display: flex !important;
+        flex-direction: unset !important;
+    }
+    .webAndSeo .web-mockup-img {
+        margin: auto;
+        width: 315px !important;
+        height: 360px !important;
+    }
+
+    .webAndSeo .col-md-6 {
+        flex: 0 0 50%;
+        max-width: 50% !important;
+    }
+    .right-heading-body{
+        .vector{
+            width: 280px;
+        }
+    }
+
+    // second section
+    .webAndSeo-sect-two .heading {
+        font-weight: 700;
+        width: 300px;
+        font-size: 41px;
+        letter-spacing: -0.05em;
+        line-height: 39px;
+    }
+    .webAndSeo-sect-two .smaller-heading {
+        font-size: 35px;
+    }
+    .webAndSeo-sect-two .description {
+        font-weight: 500;
+        letter-spacing: -0.05em;
+        font-size: 16px;
+        width: 278px;
+        line-height: 23px;
+    }
+    .webAndSeo-sect-two .hire-us {
+        font-weight: 800;
+        font-size: 41px;
+        letter-spacing: -0.05em;
+    }
+    .webAndSeo-sect-two .icons {
+        height: 60px;
+    }
+    .webAndSeo-sect-two .figcaption {
+        font-weight: 500;
+        font-size: 22px;
+        width: 257px;
+        margin-left: 11px;
+        margin-bottom: 0;
+        line-height: 25px;
+        letter-spacing: -0.03em;
+    }
+
+    .webAndSeo-sect-two .figCaption-heading {
+        letter-spacing: -0.01em;
+        font-weight: 500;
+        font-size: 25px;
+    }
+    .webAndSeo-sect-two .figCaption-desc {
+        letter-spacing: -0.03em;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 22px;
+        color: black;
+    }
+    .webAndSeo-sect-two .tools-body {
+        padding: 45px 0;
+    }
+    .webAndSeo-sect-two .tools-heading {
+        font-size: 26px;
+        font-weight: 300;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    .webAndSeo-sect-two .tools-icons {
+        height: 36px;
+    }
+    .webAndSeo-sect-three .gatsby-icons,
+    .react-icons {
+        height: 50px !important;
+        width: 50px !important;
+        margin-right: 25px;
+    }
+    .webAndSeo-sect-two .col-md-6 {
+        flex: 0 0 50%;
+        max-width: 50% !important;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    .webAndSeo .intro-heading {
+        margin-top: 0px;
+        margin-left: 0px;
+        font-size: 50px;
+        width: 320px;
+        text-align: right;
+        line-height: 0.995;
+        float: right;
+    }
+    .webAndSeo .intro-heading-right {
+        // margin-top: 50px;
+        font-size: 19px;
+        width: 320px;
+        line-height: 0.995;
+        text-align: right;
+    }
+    .webAndSeo .vertical-line {
+        border-right: 1px solid #ee3958;
+        height: auto;
+        margin-top: 50px;
+    }
+    .webAndSeo .intro-row {
+        display: flex !important;
+        flex-direction: unset !important;
+    }
+
+    .webAndSeo .tools-col {
+        flex: 0 0 50%;
+        max-width: 50% !important;
+    }
+    .webAndSeo .web-mockup-img {
+        width: 345px !important;
+        height: 401px !important;
+    }
+    .right-heading-body{
+        .vector{
+            width: 350px;
+        }
+    }
+    // second section
+    .webAndSeo-sect-two .heading {
+        font-weight: 700;
+        width: 370px;
+        font-size: 45px;
+        letter-spacing: -0.05em;
+        line-height: 43px;
+    }
+    .webAndSeo-sect-two .smaller-heading {
+        font-size: 38px;
+    }
+    .webAndSeo-sect-two .description {
+        font-weight: 500;
+        letter-spacing: -0.05em;
+        font-size: 17px;
+        width: 309px;
+        line-height: 25px;
+    }
+    .webAndSeo-sect-two .hire-us {
+        font-weight: 800;
+        font-size: 45px;
+        letter-spacing: -0.05em;
+    }
+    .webAndSeo-sect-two .icons {
+        height: 65px;
+    }
+    .webAndSeo-sect-two .figcaption {
+        font-weight: 500;
+        font-size: 25px;
+        width: 257px;
+        margin-left: 11px;
+        margin-bottom: 0;
+        line-height: 25px;
+        letter-spacing: -0.03em;
+    }
+    .webAndSeo-sect-two .figCaption-heading {
+        letter-spacing: -0.01em;
+        font-weight: 500;
+        font-size: 25px;
+    }
+    .webAndSeo-sect-two .figCaption-desc {
+        letter-spacing: -0.03em;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 22px;
+        color: black;
+    }
+    .webAndSeo-sect-two .tools-body {
+        padding: 45px 0;
+    }
+    .webAndSeo-sect-two .tools-heading {
+        font-size: 26px;
+        font-weight: 300;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    .webAndSeo-sect-two .tools-icons {
+        height: 55px;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .webAndSeo .intro-heading {
+        margin-top: 0px;
+        margin-left: 0px;
+        font-size: 50px;
+        width: 320px;
+        text-align: right;
+        line-height: 0.995;
+        float: right;
+    }
+    .webAndSeo .intro-heading-right {
+        // margin-top: 50px;
+        text-align: right;
+        font-size: 20px;
+        width: 320px;
+        line-height: 0.995;
+    }
+    .webAndSeo .vertical-line {
+        border-right: 1px solid #ee3958;
+        height: auto;
+        margin-top: 50px;
+    }
+    .right-heading-body{
+        .vector{
+            width: 350px;
+        }
+    }
+    // second section
+    .webAndSeo-sect-two .heading {
+        font-weight: 700;
+        width: 370px;
+        font-size: 48px;
+        letter-spacing: -0.05em;
+        line-height: 48px;
+    }
+    .webAndSeo-sect-two .smaller-heading {
+        font-size: 41px;
+    }
+    .webAndSeo-sect-two .description {
+        font-weight: 500;
+        letter-spacing: -0.05em;
+        font-size: 18px;
+        width: 323px;
+        line-height: 25px;
+    }
+    .webAndSeo-sect-two .hire-us {
+        font-weight: 800;
+        font-size: 48px;
+        letter-spacing: -0.05em;
+    }
+    .webAndSeo-sect-two .icons {
+        height: 68px;
+    }
+    .webAndSeo-sect-two .figcaption {
+        font-weight: 500;
+        font-size: 27px;
+        width: 257px;
+        margin-left: 11px;
+        margin-bottom: 0;
+        line-height: 25px;
+        letter-spacing: -0.03em;
+    }
+    .webAndSeo-sect-two .column-1,
+    .column-2 {
+        display: grid;
+        justify-content: center;
+    }
+
+    .webAndSeo-sect-two .figCaption-heading {
+        letter-spacing: -0.01em;
+        font-weight: 500;
+        font-size: 28px;
+    }
+    .webAndSeo-sect-two .figCaption-desc {
+        letter-spacing: -0.03em;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 22px;
+        color: black;
+    }
+    .webAndSeo-sect-two .tools-body {
+        padding: 45px 0;
+    }
+    .webAndSeo-sect-two .tools-heading {
+        font-size: 26px;
+        font-weight: 300;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    .webAndSeo-sect-two .tools-icons {
+        height: 65px;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .webAndSeo .intro-heading {
+        margin-top: 0px;
+        margin-left: 0px;
+        font-size: 50px;
+        width: 320px;
+        text-align: right;
+        line-height: 0.995;
+    }
+    .right-heading-body{
+        .vector{
+            width: 350px;
+        }
+    }
+    .webAndSeo .intro-heading-right {
+        // margin-top: 50px;
+        text-align: right;
+        font-size: 21px;
+        width: 320px;
+        line-height: 0.995;
+    }
+    .webAndSeo .vertical-line {
+        border-right: 1px solid #ee3958;
+        height: auto;
+        margin-top: 50px;
+    }
+
+    // second section
+    .webAndSeo-sect-two .heading {
+        font-weight: 700;
+        width: 396px;
+        font-size: 50px;
+        letter-spacing: -0.05em;
+        line-height: 49px;
+    }
+    .webAndSeo-sect-two .smaller-heading {
+        font-size: 45px;
+    }
+    .webAndSeo-sect-two .description {
+        font-weight: 500;
+        letter-spacing: -0.05em;
+        font-size: 19px;
+        width: 340px;
+        line-height: 25px;
+    }
+    .webAndSeo-sect-two .hire-us {
+        font-weight: 800;
+        font-size: 50px;
+        letter-spacing: -0.05em;
+    }
+    .webAndSeo-sect-two .icons {
+        height: 70px;
+    }
+    .webAndSeo-sect-two .figcaption {
+        font-weight: 500;
+        font-size: 28px;
+        width: 257px;
+        margin-left: 11px;
+        margin-bottom: 0;
+        line-height: 25px;
+        letter-spacing: -0.03em;
+    }
+
+    .webAndSeo-sect-two .tools-body {
+        padding: 50px 0;
+    }
+    .webAndSeo-sect-two .tools-heading {
+        font-size: 26px;
+        font-weight: 300;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    .webAndSeo-sect-two .column-1,
+    .column-2 {
+        display: grid;
+        justify-content: center;
+    }
+
+    .webAndSeo-sect-two .figCaption-heading {
+        letter-spacing: -0.01em;
+        font-weight: 500;
+        font-size: 28px;
+    }
+    .webAndSeo-sect-two .figCaption-desc {
+        letter-spacing: -0.03em;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 22px;
+        color: black;
+    }
+    .webAndSeo-sect-two .tools-icons {
+        height: 70px;
+    }
+
+    // section three
+    .webAndSeo-sect-three .gatsby-icons,
+    .react-icons {
+        height: 70px;
+        width: 70px;
+        margin-right: 25px;
+    }
+
+    .webAndSeo-sect-three .heading {
+        font-weight: 700;
+        color: white;
+        margin: 10px 0;
+    }
+    .webAndSeo-sect-three .desc,
+    .learnMore-link {
+        font-size: 20px;
+        line-height: 20px;
+    }
+}
+
+.color-pink {
+    color: #ee3958;
+}
+
+.webAndSeo-sect-two .tools-col {
+    padding: 15px 0;
+}
+
+.unerline {
+    text-decoration: underline;
+}
+.unerline:hover {
+    color: white;
+    text-decoration: underline !important;
+}
+.webAndSeo-sect-three .heading {
+    font-weight: 700;
+    color: white;
+    margin: 10px 0;
+}
+.webAndSeo-sect-three .gatsby-icons,
+.react-icons {
+    height: 70px;
+    width: 70px;
+    margin-right: 25px;
+}
+
+.webAndSeo .intro-heading-span-2 {
+    color: "#EE3958";
+    font-size: 65px;
+}
+.webAndSeo .intro-heading-span-3 {
+    font-size: 40px;
+}

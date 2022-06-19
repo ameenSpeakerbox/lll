@@ -1,0 +1,800 @@
+
+/* Extra small devices (phones, 576px and down) */
+@media only screen and (max-width: 576px) {
+    .fullPage{
+        
+        .container{
+                max-width: 380px !important;
+            // .col-xl-6 {
+            //     flex: 0 0 50% !important;
+            //     max-width: 496px !important;
+            // }
+            .headingSection{
+                align-items: center;
+                .mainHeading{
+                    
+                    font-size: 24px;
+                    line-height: 100%;       
+                    
+                    letter-spacing: 0.15em;
+                    
+                    margin-top: 100px;
+                }
+            }
+    
+            .sections{
+                .section1{
+                    .row1{ 
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        margin-top:14px;
+                        .firstSec{
+                            
+                        }
+                        
+                        .secondSec{
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center; 
+                            align-items: center;                      
+                            .subHead1{
+                                width: auto;
+                                font-size: 22.5px;
+                                line-height: 100%;
+                                letter-spacing: -0.01em;   
+                                text-align: center;                    
+                                                   
+                               }
+                           .paragraph1{
+                            width: auto;
+                            // font-size: 14px;
+                            line-height: 120%;
+                            letter-spacing: -0.01em;
+                            text-align: left;
+                           }
+                        }
+                    }
+                }
+                .section2{
+                    .subHead2{
+                        width: auto;
+                        
+                        font-size: 22.5px;
+                        line-height: 100%;
+                        letter-spacing: -0.01em;
+                        text-align: center;
+                        margin-top: 10px;
+                    }
+                    .paragraph2{
+                        // width: 1140px;
+                        text-align: left;
+                        // font-size: 14px;
+                        line-height: 120%;
+                        letter-spacing: -0.01em;
+                        
+                    }
+                }
+    
+                .section3{
+                        .row3{
+                            display: flex;
+                            flex-direction: column-reverse;
+                            align-items: center;
+                            justify-content: center;
+                            margin-top: -21px;
+                            margin-bottom: 30px;
+                            .thirdSec{
+                                .subHead3{
+                                    width: auto;
+                                    text-align: center;
+                                    font-size: 22.5px;
+                                    line-height: 100%;
+                                    letter-spacing: -0.01em;
+                                    
+    
+                                }
+                                .paragraph3{
+                                    // text-align: center;
+                                    // font-size: 14px;
+                                    line-height: 120%;
+                                    letter-spacing: -0.01em;
+                                    
+                                }
+                                .subHead4{
+                                    // width: 454px;                                    
+                                    font-size: 22.5px;
+                                    line-height: 100%;
+                                    letter-spacing: -0.01em;
+                                    text-align: center;
+                                    margin-top: 35px;
+    
+                                }
+                                .paragraph4{
+                                    
+                                    // font-size: 14px;
+                                    line-height: 120%;
+                                    letter-spacing: -0.01em;
+                                    
+                                }
+                            }
+                            .fourthSec{
+                                display: flex;
+                                flex-direction: column;
+                                align-items: flex-end;
+                                
+                            }
+                        }
+                    }         
+            }
+        }
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 576px and up) */
+@media only screen and (min-width: 576px) {
+    .fullPage{
+        
+        .container{
+            max-width: 570px !important;
+            // .col-xl-6 {
+            //     flex: 0 0 50% !important;
+            //     max-width: 496px !important;
+            // }
+            .headingSection{
+                align-items: center;
+                .mainHeading{
+                    
+                    font-size: 24px;
+                    line-height: 100%;       
+                    
+                    letter-spacing: 0.15em;
+                    
+                    margin-top: 100px;
+                }
+            }
+    
+            .sections{
+                .section1{
+                    .row1{ 
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        margin-top: 40px;
+                        .firstSec{
+                            
+                        }
+                        
+                        .secondSec{
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center; 
+                            align-items: flex-end;                      
+                            .subHead1{
+                                width: 290px;
+                                font-size: 22.5px;
+                                line-height: 100%;
+                                letter-spacing: -0.01em;                       
+                                                        
+                               }
+                           .paragraph1{
+                            width: 289px;
+                            // font-size: 14px;
+                            line-height: 120%;
+                            letter-spacing: -0.01em;
+                            
+                           }
+                        }
+                    }
+                }
+                .section2{
+                    .subHead2{
+                        width: 665px;
+                        
+                        font-size: 22.5px;
+                        line-height: 100%;
+                        letter-spacing: -0.01em;
+                        
+                        margin-top: 14px;
+                    }
+                    .paragraph2{
+                        // width: 1140px;
+                        
+                        // font-size: 14px;
+                        line-height: 120%;
+                        letter-spacing: -0.01em;
+                        
+                    }
+                }
+    
+                .section3{
+                        .row3{
+                            display: flex;
+                            flex-direction: row;
+                            align-items: center;
+                            justify-content: space-between;
+                            margin-top: 42px;
+                            margin-bottom: 42px;
+                            .thirdSec{
+                                .subHead3{
+                                    width: 454px;
+                                    
+                                    font-size: 22.5px;
+                                    line-height: 100%;
+                                    letter-spacing: -0.01em;
+                                    
+    
+                                }
+                                .paragraph3{
+                                    
+                                    // font-size: 14px;
+                                    line-height: 120%;
+                                    letter-spacing: -0.01em;
+                                    
+                                }
+                                .subHead4{
+                                    width: 454px;                                    
+                                    font-size: 22.5px;
+                                    line-height: 100%;
+                                    letter-spacing: -0.01em;
+                                    
+                                    margin-top: 35px;
+    
+                                }
+                                .paragraph4{
+                                    
+                                    // font-size: 14px;
+                                    line-height: 120%;
+                                    letter-spacing: -0.01em;
+                                    
+                                }
+                            }
+                            .fourthSec{
+                                display: flex;
+                                flex-direction: column;
+                                align-items: flex-end;
+                                
+                            }
+                        }
+                    }         
+            }
+        }
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+    .fullPage{
+        
+        .container{
+            max-width: 730px !important;
+            // .col-xl-6 {
+            //     flex: 0 0 50% !important;
+            //     max-width: 496px !important;
+            // }
+            .headingSection{
+                align-items: center;
+                .mainHeading{
+                    
+                    font-size: 30px;
+                    line-height: 100%;       
+                    
+                    letter-spacing: 0.15em;
+                    
+                    margin-top: 100px;
+                }
+            }
+    
+            .sections{
+                .section1{
+                    .row1{ 
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        margin-top: 40px;
+                        .firstSec{
+                            
+                        }
+                        
+                        .secondSec{
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center; 
+                            align-items: flex-end;                      
+                            .subHead1{
+                                width: 392px;
+                                font-size: 29px;
+                                line-height: 100%;
+                                letter-spacing: -0.01em;                       
+                                                        
+                               }
+                           .paragraph1{
+                                width: 379px;
+                                // font-size: 19px;
+                                line-height: 120%;
+                                letter-spacing: -0.01em;
+                        
+                            
+                           }
+                        }
+                    }
+                }
+                .section2{
+                    .subHead2{
+                        width: 665px;
+                        
+                        font-size: 29px;
+                        line-height: 100%;
+                        letter-spacing: -0.01em;
+                        
+                        margin-top: 14px;
+                    }
+                    .paragraph2{
+                        // width: 1140px;
+                        
+                        // font-size: 19px;
+                        line-height: 120%;
+                        letter-spacing: -0.01em;
+                        
+                    }
+                }
+    
+                .section3{
+                        .row3{
+                            display: flex;
+                            flex-direction: row;
+                            align-items: center;
+                            justify-content: space-between;
+                            margin-top: 42px;
+                            margin-bottom: 42px;
+                            .thirdSec{
+                                .subHead3{
+                                    width: 454px;
+                                    
+                                    font-size: 29px;
+                                    line-height: 100%;
+                                    letter-spacing: -0.01em;
+                                    
+    
+                                }
+                                .paragraph3{
+                                    
+                                    // font-size: 19px;
+                                    line-height: 120%;
+                                    letter-spacing: -0.01em;
+                                    
+                                }
+                                .subHead4{
+                                    width: 454px;                                    
+                                    font-size: 29px;
+                                    line-height: 100%;
+                                    letter-spacing: -0.01em;
+                                    
+                                    margin-top: 35px;
+    
+                                }
+                                .paragraph4{
+                                    
+                                    // font-size: 19px;
+                                    line-height: 120%;
+                                    letter-spacing: -0.01em;
+                                    
+                                }
+                            }
+                            .fourthSec{
+                                display: flex;
+                                flex-direction: column;
+                                align-items: flex-end;
+                                
+                            }
+                        }
+                    }         
+            }
+        }
+    }
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    
+    .fullPage{
+        
+        .container{
+            max-width: 992px !important;
+            .col-xl-6 {
+                flex: 0 0 50% !important;
+                max-width: 496px !important;
+            }
+            .headingSection{
+                align-items: center;
+                .mainHeading{
+                    
+                    font-size: 30px;
+                    line-height: 100%;       
+                    
+                    letter-spacing: 0.15em;
+                    
+                    margin-top: 100px;
+                }
+            }
+    
+            .sections{
+                .section1{
+                    .row1{ 
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        margin-top: 40px;
+                        .firstSec{
+                            
+                        }
+                        
+                        .secondSec{
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center; 
+                            align-items: flex-end;                      
+                            .subHead1{
+                                width: 456px;          
+                                
+                                font-size: 36px;
+                                line-height: 100%;                     
+                                letter-spacing: -0.01em;                       
+                                                        
+                               }
+                           .paragraph1{
+                            width: 459px;
+                            // font-size: 23px;
+                            line-height: 120%;
+                            letter-spacing: -0.01em;
+                        
+                            
+                           }
+                        }
+                    }
+                }
+                .section2{
+                    .subHead2{
+                        width: 665px;
+                        
+                        font-size: 36px;
+                        line-height: 100%;
+                        letter-spacing: -0.01em;
+                        
+                        margin-top: 16px;
+                    }
+                    .paragraph2{
+                        // width: 1140px;
+                        
+                        // font-size: 23px;
+                        line-height: 120%;
+                        letter-spacing: -0.01em;
+                        
+                    }
+                }
+    
+                .section3{
+                        .row3{
+                            display: flex;
+                            flex-direction: row;
+                            align-items: center;
+                            justify-content: space-between;
+                            margin-top: 51px;
+                            margin-bottom: 51px;
+                            .thirdSec{
+                                .subHead3{
+                                    width: 454px;
+                                    
+                                    font-size: 34px;
+                                    line-height: 100%;
+                                    letter-spacing: -0.01em;
+                                    
+    
+                                }
+                                .paragraph3{
+                                    
+                                    // font-size: 23px;
+                                    line-height: 120%;
+                                    letter-spacing: -0.01em;
+                                    
+                                }
+                                .subHead4{
+                                    width: 454px;                                    
+                                    font-size: 34px;
+                                    line-height: 100%;
+                                    letter-spacing: -0.01em;
+                                    
+                                    margin-top: 35px;
+    
+                                }
+                                .paragraph4{
+                                    
+                                    // font-size: 23px;
+                                    line-height: 120%;
+                                    letter-spacing: -0.01em;
+                                    
+                                }
+                            }
+                            .fourthSec{
+                                display: flex;
+                                flex-direction: column;
+                                align-items: flex-end;
+                                
+                            }
+                        }
+                    }         
+            }
+        }
+    }
+
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    
+    .fullPage{
+        
+        .container{
+            max-width: 1140px !important;
+            .col-xl-6 {
+                flex: 0 0 50% !important;
+                max-width: 569px !important;
+            }
+            .headingSection{
+                align-items: center;
+                .mainHeading{
+                    
+                    font-size: 30px;
+                    line-height: 100%;       
+                    
+                    letter-spacing: 0.15em;
+                    
+                    margin-top: 100px;
+                }
+            }
+    
+            .sections{
+                .section1{
+                    .row1{ 
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        margin-top: 60px;
+                        .firstSec{
+                            
+                        }
+                        
+                        .secondSec{
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center; 
+                            align-items: flex-end;                      
+                            .subHead1{
+                                width: 564px;          
+                                
+                                font-size: 40px;
+                                line-height: 100%;                     
+                                letter-spacing: -0.01em;                       
+                                                        
+                               }
+                           .paragraph1{
+                            width: 564px;                    
+                            
+                            // font-size: 25px;
+                            line-height: 120%;
+                            letter-spacing: -0.01em; 
+                            
+                           }
+                        }
+                    }
+                }
+                .section2{
+                    .subHead2{
+                        width: 665px;
+                        
+                        font-size: 40px;
+                        line-height: 100%;
+                        letter-spacing: -0.01em;
+                        
+                        margin-top: 40px;
+                    }
+                    .paragraph2{
+                        // width: 1140px;
+                        
+                        // font-size: 25px;
+                        line-height: 120%;
+                        letter-spacing: -0.01em;
+                        
+                    }
+                }
+    
+                .section3{
+                        .row3{
+                            display: flex;
+                            flex-direction: row;
+                            align-items: center;
+                            justify-content: space-between;
+                            margin-top: 85px;
+                            margin-bottom: 85px;
+                            .thirdSec{
+                                .subHead3{
+                                    width: 454px;
+                                    
+                                    font-size: 34px;
+                                    line-height: 100%;
+                                    letter-spacing: -0.01em;
+                                    
+    
+                                }
+                                .paragraph3{
+                                    
+                                    // font-size: 25px;
+                                    line-height: 120%;
+                                    letter-spacing: -0.01em;
+                                    
+                                }
+                                .subHead4{
+                                    width: 454px;                                    
+                                    font-size: 34px;
+                                    line-height: 100%;
+                                    letter-spacing: -0.01em;
+                                    
+                                    margin-top: 70px;
+    
+                                }
+                                .paragraph4{
+                                    
+                                    // font-size: 25px;
+                                    line-height: 120%;
+                                    letter-spacing: -0.01em;
+                                    
+                                }
+                            }
+                            .fourthSec{
+                                display: flex;
+                                flex-direction: column;
+                                align-items: flex-end;
+                                
+                            }
+                        }
+                    }         
+            }
+        }
+    }
+
+}
+
+
+body{
+    background-color:#0a0a0a;;
+}
+
+.fullPage{
+    overflow-x: hidden;
+    overflow-y: hidden;
+    .container{
+        
+        .col-xl-6 {
+            
+        }
+        .headingSection{
+            
+            .mainHeading{
+                font-family: Tajawal;
+                font-style: normal;
+                font-weight: 300;
+                      
+                text-align: center;
+                
+                color: #FFFFFF;
+                
+            }
+        }
+
+        .sections{
+            .section1{
+                .row1{ 
+                    
+                    .firstSec{
+
+                        .img1{
+                            width: 100%;
+                        }
+                        
+                    }
+                    
+                    .secondSec{
+                                              
+                        .subHead1{
+                                     
+                            font-family: Tajawal;
+                            font-style: normal;
+                            font-weight: bold;
+                            
+                                                  
+                            color: #FFFFFF;                        
+                           }
+                       .paragraph1{
+                                           
+                        font-family: Tajawal;
+                        font-style: normal;
+                        font-weight: normal;
+                        
+                        color: #FFFFFF
+                       }
+                    }
+                }
+            }
+            .section2{
+                .subHead2{
+                    
+                    font-family: Tajawal;
+                    font-style: normal;
+                    font-weight: bold;
+                    
+                    color: #FFFFFF;
+                    
+                }
+                .paragraph2{
+                    // width: 1140px;
+                    font-family: Tajawal;
+                    font-style: normal;
+                    font-weight: normal;
+                    
+                    color: #FFFFFF;
+                }
+            }
+
+            .section3{
+                    .row3{
+                        
+                        .thirdSec{
+                            .subHead3{
+                                
+                                font-family: Tajawal;
+                                font-style: normal;
+                                font-weight: bold;
+                                
+                                color: #FFFFFF;
+
+                            }
+                            .paragraph3{
+                                font-family: Tajawal;
+                                font-style: normal;
+                                font-weight: normal;
+                                
+                                color: #FFFFFF;
+                            }
+                            .subHead4{
+                                
+                                font-family: Tajawal;
+                                font-style: normal;
+                                font-weight: bold;
+                                
+                                color: #FFFFFF;
+                                
+
+                            }
+                            .paragraph4{
+                                font-family: Tajawal;
+                                font-style: normal;
+                                font-weight: normal;
+                                
+                                color: #FFFFFF;
+                            }
+                        }
+                        .fourthSec{
+                            
+                            .img2{
+                                width: 100%;
+                            }
+                            
+                        }
+                    }
+                }         
+        }
+    }
+}

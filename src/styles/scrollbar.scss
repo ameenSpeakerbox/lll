@@ -1,0 +1,25 @@
+// ::-webkit-scrollbar {
+//     width: 0;
+//     background: transparent;
+//   }
+  
+//   .scrollbar {
+//     position: fixed;
+//     top: 0;
+//     right: 0;
+//     width: 15px;
+//     height: 0;
+//     opacity: 0;
+//     /* to top => orientation of linear gradient */
+//     /* Bottom color / Top color */
+//     background: linear-gradient(to top, #002FFF, #1180FF);
+//   }
+  
+//   .clickScrollbar {
+//     position: fixed;
+//     top: 0;
+//     right: 0;
+//     width: 15px;
+//     height: 100%;
+//     background: rgba(170,170,170,0.356);
+//   }
