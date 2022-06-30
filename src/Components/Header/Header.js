@@ -1,3 +1,4 @@
+import { Link } from 'gatsby'
 import React, { useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
 import Logo from '../../Assets/images/Logo.png'
@@ -22,8 +23,8 @@ const Header = () => {
     }, [])
 
     const Menu = [
-        { title: 'home', url: '' },
-        { title: 'company', url: '' },
+        { title: 'home', url: '/' },
+        { title: 'company', url: '/company' },
         { title: 'our service', url: '' },
         { title: 'careers', url: '' },
     ]
@@ -44,7 +45,7 @@ const Header = () => {
 
             <div className='flex md:items-center'>
                 <nav>
-                    
+
                     <ul className='flex capitalize text-primary font-bold justify-end pb-3 mr-3'>
                         <button className={i18n.language == 'en' ? 'border-b-2 border-primary font-bold' : 'hover-underline-animation font-bold cursor-pointer'} onClick={() => changeLanguage('en')}>English </button>
                         <div className='px-2'>|</div>
@@ -54,7 +55,9 @@ const Header = () => {
                     <ul className='flex'>
                         {Menu.map(item => (
                             <li className='mx-3 capitalize text-primary font-semibold cursor-pointer hover-underline-animation'>
-                                {t(item.title)}
+                                <Link to={item.url}>
+                                    {t(item.title)}
+                                </Link>
                             </li>
                         ))}
                     </ul>
