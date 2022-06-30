@@ -4,7 +4,7 @@ import Layout from "../components/layout"
 import { Link, graphql, useStaticQuery } from 'gatsby'
 import Img from 'gatsby-image'
 import strategyIcon from "../images/service.png"
-import brandDevpIcon from "../images/service(1).png"
+import brandDevpIcon   from "../images/service(1).png"
 import webIcon from "../images/service(2).png"
 import socialIcon from "../images/service(3).png"
 import paidMediaIcon from "../images/service(4).png"
