@@ -140,7 +140,7 @@ const Index = (probs) => {
 
             <Col xl={8} lg={8} md={8} sm={10} xs={12} className="d-flex" style={{ justifyContent: 'center' }}>
               <div className="intro-text-body">
-                <h6 className="clr-grey" style={{ letterSpacing: ' 0.11em' }}>
+                <h6 className="clr-grey"   style={{ letterSpacing: ' 0.11em' }}>
                   <>CREATE, PUBLISH, AMPLIFY</>
                 </h6>
                 <h4 className="clr-white content-body" style={{ letterSpacing: ' -0.045em' }}>
