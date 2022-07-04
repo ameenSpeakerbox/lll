@@ -15,6 +15,7 @@ function NewsSection() {
           News And Information
         </h1>
       </div>
+      
       <div className="border-solid border-b-2 border-secondary"></div>
 
       <div>
