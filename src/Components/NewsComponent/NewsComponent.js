@@ -1,5 +1,6 @@
 import React from "react";
-
+import NewsAndInformation from "../../pages/InnerPages/NewsAndInformation";
+import { Link } from 'gatsby'
 let array_of_obj = [
   {
     id: 1,
@@ -41,7 +42,13 @@ function NewsComponent() {
               <h2 className="text-primary font-normal text-2xl text-left">
                 {item.head}
               </h2>
+
               <p className=" font-normal	 text-xs lg:text-sm mt-1 ">{item.para}</p>
+              <button >
+              {/* <Link to='/info'>
+                                    <NewsAndInformation/>
+                                </Link> */}
+                read more</button>
             </div>
           );
         })}
