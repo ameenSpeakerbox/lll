@@ -34,6 +34,7 @@ const Header = () => {
         i18n.changeLanguage(lng)
     }
 
+    
     // console.log(i18n.language)
     return (
         <div className='flex justify-between py-10 container'>
