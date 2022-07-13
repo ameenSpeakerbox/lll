@@ -2,7 +2,7 @@ import React from 'react'
 
 function SeconSection(){
 return(
-    <section className='bg-primary py-20 flex justify-center'>
+    <section className='bg-primary py-20 flex justify-center border-solid border-y-8 border-sky-600'>
             <div class="grid grid-cols-3 gap-16">
 
                     <div>
