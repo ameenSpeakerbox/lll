@@ -7,6 +7,7 @@ import Image from '../../Assets/images/Rectangle 11.png'
 const FirstSection = () => {
     return (
         <main className='container'>
+            
             <section className='grid grid-cols-3 gap-5 min-h-screen py-10'>
                 <div className='col-span-1'>
                     <div>
