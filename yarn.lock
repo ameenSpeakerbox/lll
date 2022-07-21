@@ -1821,10 +1821,10 @@
   dependencies:
     "@lezer/common" "^0.15.0"
 
-"@lmdb/lmdb-win32-x64@2.5.2":
-  "integrity" "sha512-zrBczSbXKxEyK2ijtbRdICDygRqWSRPpZMN5dD1T8VMEW5RIhIbwFWw2phDRXuBQdVDpSjalCIUMWMV2h3JaZA=="
-  "resolved" "https://registry.npmjs.org/@lmdb/lmdb-win32-x64/-/lmdb-win32-x64-2.5.2.tgz"
-  "version" "2.5.2"
+"@lmdb/lmdb-win32-x64@2.5.3":
+  "integrity" "sha512-cK+Elf3RjEzrm3SerAhrFWL5oQAsZSJ/LmjL1joIpTfEP1etJJ9CTRvdaV6XLYAxaEkfdhk/9hOvHLbR9yIhCA=="
+  "resolved" "https://registry.npmjs.org/@lmdb/lmdb-win32-x64/-/lmdb-win32-x64-2.5.3.tgz"
+  "version" "2.5.3"
 
 "@microsoft/fetch-event-source@2.0.1":
   "integrity" "sha512-W6CLUJ2eBMw3Rec70qrsEW0jOm/3twwJv21mrmj2yORiaVmVYGS4sSS5yUwvQc1ZlDLYGPnClVWmUUMagKNsfA=="
@@ -3197,13 +3197,13 @@
   dependencies:
     "@babel/helper-define-polyfill-provider" "^0.3.1"
 
-"babel-plugin-remove-graphql-queries@^4.15.0", "babel-plugin-remove-graphql-queries@^4.18.0":
-  "integrity" "sha512-6oOm/cTZdk+7yPh4R4ISLKNur3rK5w2zAUCXTOGKYcRYbvKCS22ODafQBrNcu/UdfpXwSz3XZOG5ru72Z5usUw=="
-  "resolved" "https://registry.npmjs.org/babel-plugin-remove-graphql-queries/-/babel-plugin-remove-graphql-queries-4.18.0.tgz"
-  "version" "4.18.0"
+"babel-plugin-remove-graphql-queries@^4.15.0", "babel-plugin-remove-graphql-queries@^4.19.0":
+  "integrity" "sha512-VbxC7aZxdqQA0YiAcTD/djIW+6PP/JVODlRmCiqDyTbtI0zhE/Z6je1maCmC6J2LLBsKxhWT3UYTjRfLofK7sQ=="
+  "resolved" "https://registry.npmjs.org/babel-plugin-remove-graphql-queries/-/babel-plugin-remove-graphql-queries-4.19.0.tgz"
+  "version" "4.19.0"
   dependencies:
     "@babel/runtime" "^7.15.4"
-    "gatsby-core-utils" "^3.18.0"
+    "gatsby-core-utils" "^3.19.0"
 
 "babel-plugin-syntax-trailing-function-commas@^7.0.0-beta.0":
   "integrity" "sha512-Xj9XuRuz3nTSbaTXWv3itLOcxyF4oPD8douBBmj7U9BBC6nEBYfyOJYQMf/8PJAFotC62UY5dFfIGEPr7WswzQ=="
@@ -5746,10 +5746,10 @@
     "yoga-layout-prebuilt" "^1.10.0"
     "yurnalist" "^2.1.0"
 
-"gatsby-core-utils@^3.15.0", "gatsby-core-utils@^3.18.0":
-  "integrity" "sha512-mCoNgH4MilosLhEroklgVffwie9lyxgmvNwe/oIyzXr6NcZ2uxSp8G1KrgxdG2srt2hCNlZLlzS25ltLTeHTjA=="
-  "resolved" "https://registry.npmjs.org/gatsby-core-utils/-/gatsby-core-utils-3.18.0.tgz"
-  "version" "3.18.0"
+"gatsby-core-utils@^3.15.0", "gatsby-core-utils@^3.18.0", "gatsby-core-utils@^3.19.0":
+  "integrity" "sha512-cjXs9DsXkPZt+UdiLHxtq+rGMGVrcnM0KwkawlruvPchI7lqGNv9CScqlvYPxx1dBhu3zSZS26EBALMlFhyOJA=="
+  "resolved" "https://registry.npmjs.org/gatsby-core-utils/-/gatsby-core-utils-3.19.0.tgz"
+  "version" "3.19.0"
   dependencies:
     "@babel/runtime" "^7.15.4"
     "ci-info" "2.0.0"
@@ -5759,7 +5759,7 @@
     "fs-extra" "^10.1.0"
     "got" "^11.8.5"
     "import-from" "^4.0.0"
-    "lmdb" "2.5.2"
+    "lmdb" "2.5.3"
     "lock" "^1.1.0"
     "node-object-hash" "^2.3.10"
     "proper-lockfile" "^4.1.2"
@@ -5829,23 +5829,23 @@
     "@parcel/transformer-raw" "2.5.0"
     "@parcel/transformer-react-refresh-wrap" "2.5.0"
 
-"gatsby-plugin-image@^2.0.0-next":
-  "integrity" "sha512-/WvMDUiZvofmxHzHeEPLNL605FU1AK5pLXKKS8aekRigbNbi+Gip2ZROFPJtj4oxyKDmtD+HaVCNf1q8SdhPEg=="
-  "resolved" "https://registry.npmjs.org/gatsby-plugin-image/-/gatsby-plugin-image-2.18.0.tgz"
-  "version" "2.18.0"
+"gatsby-plugin-image@^2.0.0-next", "gatsby-plugin-image@^2.19.0":
+  "integrity" "sha512-Eu2LY1nfkTdr5hJip5TcZNUqzWQps2Zq4KnPJmgmxpGOYIbrgu8B2kEKQM5hKoe5flu4Xu5gj+CObEMlBj5K1w=="
+  "resolved" "https://registry.npmjs.org/gatsby-plugin-image/-/gatsby-plugin-image-2.19.0.tgz"
+  "version" "2.19.0"
   dependencies:
     "@babel/code-frame" "^7.14.0"
     "@babel/parser" "^7.15.5"
     "@babel/runtime" "^7.15.4"
     "@babel/traverse" "^7.15.4"
     "babel-jsx-utils" "^1.1.0"
-    "babel-plugin-remove-graphql-queries" "^4.18.0"
+    "babel-plugin-remove-graphql-queries" "^4.19.0"
     "camelcase" "^5.3.1"
     "chokidar" "^3.5.3"
     "common-tags" "^1.8.2"
     "fs-extra" "^10.1.0"
-    "gatsby-core-utils" "^3.18.0"
-    "gatsby-plugin-utils" "^3.12.0"
+    "gatsby-core-utils" "^3.19.0"
+    "gatsby-plugin-utils" "^3.13.0"
     "objectFitPolyfill" "^2.3.5"
     "prop-types" "^15.8.1"
 
@@ -5911,16 +5911,16 @@
     "@babel/runtime" "^7.15.4"
     "babel-plugin-remove-graphql-queries" "^4.15.0"
 
-"gatsby-plugin-utils@^3.12.0", "gatsby-plugin-utils@^3.9.0":
-  "integrity" "sha512-vdz3qwaCOkvgzAxMkZlgpmpWf555jISwek5lyWYhGyJJvXYV8KQ2cZ4CoOfFKAYVeZVSucrHcdWyY3fLLpQvAA=="
-  "resolved" "https://registry.npmjs.org/gatsby-plugin-utils/-/gatsby-plugin-utils-3.12.0.tgz"
-  "version" "3.12.0"
+"gatsby-plugin-utils@^3.12.0", "gatsby-plugin-utils@^3.13.0", "gatsby-plugin-utils@^3.9.0":
+  "integrity" "sha512-iFFWswld/Nu8IrSCikZXC4/cud9txv3ikjkQiGLccJStS9VH2rSY4XEMNRqsKN9Spe3pFBOr/97yYUaPhZaQWg=="
+  "resolved" "https://registry.npmjs.org/gatsby-plugin-utils/-/gatsby-plugin-utils-3.13.0.tgz"
+  "version" "3.13.0"
   dependencies:
     "@babel/runtime" "^7.15.4"
     "@gatsbyjs/potrace" "^2.2.0"
     "fs-extra" "^10.1.0"
-    "gatsby-core-utils" "^3.18.0"
-    "gatsby-sharp" "^0.12.0"
+    "gatsby-core-utils" "^3.19.0"
+    "gatsby-sharp" "^0.13.0"
     "graphql-compose" "^9.0.7"
     "import-from" "^4.0.0"
     "joi" "^17.4.2"
@@ -5941,10 +5941,10 @@
   "resolved" "https://registry.npmjs.org/gatsby-script/-/gatsby-script-1.0.0.tgz"
   "version" "1.0.0"
 
-"gatsby-sharp@^0.12.0":
-  "integrity" "sha512-dZa/AgxmPzD0vvROEZSuT3IdzAFTxnq1FfLTf9n3mywonvsKYc84zj6nf8TEzBrVrBFAaLvZek4NpVAKWGr4/w=="
-  "resolved" "https://registry.npmjs.org/gatsby-sharp/-/gatsby-sharp-0.12.0.tgz"
-  "version" "0.12.0"
+"gatsby-sharp@^0.13.0":
+  "integrity" "sha512-dGuIuWP3rC7hXl/CgkHEY4WQEW+B9Rsg8uo6u+OumuLnLBxD4vTusEIGctVKzlyIxpENEQylQ7w1JKHX9fOy9g=="
+  "resolved" "https://registry.npmjs.org/gatsby-sharp/-/gatsby-sharp-0.13.0.tgz"
+  "version" "0.13.0"
   dependencies:
     "@types/sharp" "^0.30.0"
     "sharp" "^0.30.3"
@@ -7443,10 +7443,10 @@
     "lmdb-linux-x64" "2.3.10"
     "lmdb-win32-x64" "2.3.10"
 
-"lmdb@2.5.2":
-  "integrity" "sha512-V5V5Xa2Hp9i2XsbDALkBTeHXnBXh/lEmk9p22zdr7jtuOIY9TGhjK6vAvTpOOx9IKU4hJkRWZxn/HsvR1ELLtA=="
-  "resolved" "https://registry.npmjs.org/lmdb/-/lmdb-2.5.2.tgz"
-  "version" "2.5.2"
+"lmdb@2.5.3":
+  "integrity" "sha512-iBA0cb13CobBSoGJLfZgnrykLlfJipDAnvtf+YwIqqzBEsTeQYsXrHaSBkaHd5wCWeabwrNvhjZoFMUrlo+eLw=="
+  "resolved" "https://registry.npmjs.org/lmdb/-/lmdb-2.5.3.tgz"
+  "version" "2.5.3"
   dependencies:
     "msgpackr" "^1.5.4"
     "node-addon-api" "^4.3.0"
@@ -7454,12 +7454,12 @@
     "ordered-binary" "^1.2.4"
     "weak-lru-cache" "^1.2.2"
   optionalDependencies:
-    "@lmdb/lmdb-darwin-arm64" "2.5.2"
-    "@lmdb/lmdb-darwin-x64" "2.5.2"
-    "@lmdb/lmdb-linux-arm" "2.5.2"
-    "@lmdb/lmdb-linux-arm64" "2.5.2"
-    "@lmdb/lmdb-linux-x64" "2.5.2"
-    "@lmdb/lmdb-win32-x64" "2.5.2"
+    "@lmdb/lmdb-darwin-arm64" "2.5.3"
+    "@lmdb/lmdb-darwin-x64" "2.5.3"
+    "@lmdb/lmdb-linux-arm" "2.5.3"
+    "@lmdb/lmdb-linux-arm64" "2.5.3"
+    "@lmdb/lmdb-linux-x64" "2.5.3"
+    "@lmdb/lmdb-win32-x64" "2.5.3"
 
 "load-bmfont@^1.3.1", "load-bmfont@^1.4.0":
   "integrity" "sha512-8UyQoYmdRDy81Brz6aLAUhfZLwr5zV0L3taTQ4hju7m6biuwiWiJXjPhBJxbUQJA8PrkvJ/7Enqmwk2sM14soA=="
