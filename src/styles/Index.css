@@ -55,6 +55,12 @@
     margin: auto;
   }
 }
+@media screen and (max-width:600px) {
+  .container {
+    width: 90%;
+    margin: auto;
+  }
+}
 
 .hover-underline-animation {
   display: inline-block;

@@ -13,13 +13,13 @@ const HeroSection = () => {
     return (
         <main className='container'>
             {/* top section */}
-            <section className='grid grid-cols-2 gap-5 h-full'>
+            <section className='grid lg:grid-cols-2 gap-5 h-full'>
                 <div className='flex items-center'>
                     <div>
-                        <h1 className='text-primary font-bold text-4xl w-80'>
+                        <h1 className='text-primary font-bold lg:text-5xl md:text-4xl text-3xl xl:w-9/12 md:w-8/12 sm:w-96 lg:w-full w-72'>
                             Reliable logistics solutions for all scales of businesses
                         </h1>
-                        <p className='w-96 font-medium text-sm mt-3'>
+                        <p className='sm:w-96 font-medium text-sm mt-3'>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras morbi ut ac orci, porta. Praesent purus faucibus integer feugiat et, euismod sit. Vestibulum lectus amet, facilisi egestas nulla posuere.
                         </p>
                     </div>
@@ -29,16 +29,16 @@ const HeroSection = () => {
                     <div className='flex justify-end '>
 
                         <div>
-                            <img src={RightImg} className={'h-72 z-10 mt-10'} alt="" />
+                            <img src={RightImg} className={'h-auto w-full sm:h-72 z-10 mt-10'} alt="" />
                         </div>
 
-                        <img src={RightVector} className={'h-60 absolute right-0 '} style={{ zIndex: -1 }} alt="" />
+                        <img src={RightVector} className={'h-60 absolute right-0 hidden md:block'} style={{ zIndex: -1 }} alt="" />
                     </div>
 
 
                     <div className='relative'>
                         {/* dash border */}
-                        <div className='border-dashed border-2  h-72 w-72 absolute -top-60 left-32 border-blue-100' style={{ zIndex: -1, }} />
+                        <div className='border-dashed border-2  h-72 w-72 absolute -top-60 sm:left-32 left-12 border-blue-100' style={{ zIndex: -1, }} />
 
                         <div className='h-60 w-48 z-50 p-3 absolute bg-lightBlue rounded-xl left-20 -top-32 flex flex-col' style={{ boxShadow: '3.5px -3.5px 26.25px rgba(7, 80, 157, 0.25)' }} >
                             <div className='flex items-center justify-between'>
@@ -91,33 +91,33 @@ const HeroSection = () => {
 
 
             {/* bottom section */}
-            <section className='grid grid-cols-3 gap-5 pt-40'>
+            <section className='grid xl:grid-cols-3 md:grid-cols-6 lg:grid-cols-7 gap-5 pt-40'>
 
-                <div className='h-24 w-full relative backdrop-blur-xl rounded-xl' style={{ background: 'rgba(194, 212, 231, 0.5)' }}>
+                <div className='h-24 w-full relative backdrop-blur-xl rounded-xl lg:grid md:col-span-3 lg:col-span-3 xl:col-span-1' style={{ background: 'rgba(194, 212, 231, 0.5)' }}>
                     <div className='absolute bg-secondary -mt-6 rounded-t-lg ml-5'>
                         <p className='text-white font-bold px-2 capitalize'>Quick start</p>
                     </div>
 
-                    <div className=' flex justify-evenly items-center h-full'>
-                        <button className='flex font-semibold bg-white flex-col items-center py-2 px-4 text-center rounded-lg text-primary text-sm ' style={{ boxShadow: '0px 2.46066px 30.7582px rgba(7, 80, 157, 0.5)' }}>
+                    <div className=' flex justify-evenly items-center h-full '>
+                        <button className='flex font-semibold bg-white flex-col items-center py-2 px-4 text-center rounded-lg text-primary text-xs ' style={{ boxShadow: '0px 2.46066px 30.7582px rgba(7, 80, 157, 0.5)' }}>
                             <img src={QouteIcon} className={'h-5'} alt="" />
                             Get a Quote
                         </button>
-                        <button className='flex font-semibold bg-white flex-col items-center py-2 px-4 text-center rounded-lg text-primary text-sm ' style={{ boxShadow: '0px 2.46066px 30.7582px rgba(7, 80, 157, 0.5)' }}>
+                        <button className='flex font-semibold bg-white flex-col items-center py-2 px-4 text-center rounded-lg text-primary text-xs ' style={{ boxShadow: '0px 2.46066px 30.7582px rgba(7, 80, 157, 0.5)' }}>
                             <img src={SearchIcon} className={'h-5'} alt="" />
                             {'Track & Trace'}
                         </button>
-                        <button className='flex font-semibold bg-white flex-col items-center py-2 px-4 text-center rounded-lg text-primary text-sm ' style={{ boxShadow: '0px 2.46066px 30.7582px rgba(7, 80, 157, 0.5)' }}>
+                        <button className='flex font-semibold bg-white flex-col items-center py-2 px-4 text-center rounded-lg text-primary text-xs ' style={{ boxShadow: '0px 2.46066px 30.7582px rgba(7, 80, 157, 0.5)' }}>
                             <img src={LoctionIcon} className={'h-5'} alt="" />
                             {'Our Locations'}
                         </button>
                     </div>
                 </div>
-                <div className='flex justify-center items-center'>
+                <div className='md:flex justify-center items-center lg:grid md:col-span-3 lg:col-span-2 xl:col-span-1 hidden'>
                     <img src={BottomVector} className="w-36" alt="" />
                 </div>
 
-                <div className='absolute right-0 -mt-24'>
+                <div className='absolute right-0 -mt-24 md:block hidden'>
                     <img src={BottomRightVector} alt="" className='w-48' />
                 </div>
 

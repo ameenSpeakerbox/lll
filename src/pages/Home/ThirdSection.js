@@ -28,7 +28,7 @@ function ThirdSection(){
         <main className='container' >
                 <h1 className='text-primary font-normal text-3xl text-center mb-8'>What makes EFS standout ?</h1>
                 
-                <div class="grid grid-cols-3 gap-12 ">
+                <div class="grid md:grid-cols-3 gap-12 ">
                     {array_of_object.map((item)=>{
                         return(
                             <div className='content-center' >
@@ -37,7 +37,6 @@ function ThirdSection(){
                             
                     })}
                    
-                 
             </div>
 
 
