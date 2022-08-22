@@ -3,6 +3,7 @@ import Vector1 from '../../Assets/images/Ellipse 9.png'
 import FImg from '../../Assets/images/F-img.png'
 import Vector2 from '../../Assets/images/Group-2.png'
 import YearText from '../../Assets/images/year-text-2.png'
+import ArrowImg from '../../Assets/images/arrow-Vector.svg'
 
 const AboutSection = () => {
     return (
@@ -48,7 +49,12 @@ const AboutSection = () => {
                     </div>
                     <h2 className='text-white font-normal text-2xl mt-3'>Celebrating 25 Years of Excellence</h2>
                     <p className='text-white font-normal text-sm mt-3'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras morbi ut ac orci, porta. Praesent purus faucibus integer feugiat et, euismod sit. </p>
-                    <p className='text-white font-medium mt-3 border-b-2 border-white'>Read more about our journey</p>
+
+                    <div className='flex items-center mt-3'>
+                        <p className='text-white font-medium  border-b-2 border-white'>Read more about our journey
+                        </p>
+                        <img src={ArrowImg} alt="" className='ml-2 h-3' />
+                    </div>
                 </div>
 
 

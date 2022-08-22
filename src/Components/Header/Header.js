@@ -34,6 +34,7 @@ const Header = () => {
         i18n.changeLanguage(lng)
     }
 
+    
     // console.log(i18n.language)
     return (
         <div className='flex justify-between py-10 container'>
@@ -43,7 +44,7 @@ const Header = () => {
                 <img src={yearText} className={'h-14 sm:h-16 lg:h-20'} alt="" />
             </div>
 
-            <div className='flex md:items-center'>
+            <div className='hidden lg:flex md:items-center'>
                 <nav>
 
                     <ul className='flex capitalize text-primary font-bold justify-end pb-3 mr-3'>

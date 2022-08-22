@@ -1,6 +1,6 @@
 import React from "react";
-import NewsAndInformation from "../../pages/InnerPages/NewsAndInformation";
-import { Link } from 'gatsby'
+import { graphql, Link } from 'gatsby'
+
 let array_of_obj = [
   {
     id: 1,
@@ -28,30 +28,28 @@ let array_of_obj = [
   },
 ];
 
-function NewsComponent() {
-  // alert('hfhdh')
+const NewsComponent = (props) => {
+  console.log(props)
   return (
     <div>
       <div className="grid grid-cols-4 gap-12 mt-5 mb-8">
-        {array_of_obj.map((item, idx, ) => {
-          
+        {/* {props.data.allContentfulNewsAndInformation.edges?.map((item, idx,) => {
+
           return (
-            <div className={idx + 1 == array_of_obj.length ? "pr-12":"border-solid border-r-2 border-black pr-12"}>
-              
-              <p className=" font-normal	 text-xs lg:text-xs ">{item.date}</p>
+            <div className={idx + 1 == data.allContentfulNewsAndInformation.edges.length ? "pr-12" : "border-solid border-r-2 border-black pr-12"}>
+
+              <p className=" font-normal	 text-xs lg:text-xs ">{data.createdDate}</p>
               <h2 className="text-primary font-normal text-2xl text-left">
-                {item.head}
+                {item.title}
               </h2>
 
-              <p className=" font-normal	 text-xs lg:text-sm mt-1 ">{item.para}</p>
+              <p className=" font-normal	 text-xs lg:text-sm mt-1 ">{data.description.description.slice(0, 200) + '...'}</p>
               <button >
-              {/* <Link to='/info'>
-                                    <NewsAndInformation/>
-                                </Link> */}
-                read more</button>
+
+                {item.cta}</button>
             </div>
           );
-        })}
+        })} */}
 
         {/* <div className=" pr-12"style={{backgroundColor:""}}>
             <p className=' font-semibold	 text-xs lg:text-sm '>25 March 2023</p>
@@ -64,3 +62,28 @@ function NewsComponent() {
   );
 }
 export default NewsComponent;
+export const PageQuery = graphql`
+{
+  allContentfulNewsAndInformation {
+    edges {
+      node {
+        cta
+        id
+        slug
+        title
+        image {
+          file {
+            url
+          }
+          description
+        }
+        description {
+          description
+        }
+        createdDate(formatString: "Do MMMM yyyy")
+      }
+    }
+  }
+}
+
+`
