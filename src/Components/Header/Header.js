@@ -6,20 +6,22 @@ import yearText from '../../Assets/images/yearText.png'
 
 
 import '../../i18n'
+import LangSwitcher from './LangSwitcher'
+import MobileMenu from './MobileMenu'
 
 const Header = () => {
     const { i18n, t } = useTranslation()
 
     useEffect(() => {
-        i18n.changeLanguage("en");
+        // i18n.changeLanguage("en");
         // alert(i18n.language)
         if (!(i18n.language == "en" || i18n.language == "ar")) {
             i18n.changeLanguage("en");
             localStorage.setItem('i18nextLng', 'en')
         }
-        return () => {
-            i18n.changeLanguage('en')
-        }
+        // return () => {
+        //     i18n.changeLanguage('en')
+        // }
     }, [])
 
     const Menu = [
@@ -32,19 +34,20 @@ const Header = () => {
 
     const changeLanguage = (lng) => {
         i18n.changeLanguage(lng)
+        // localStorage.setItem('i18nextLng', lng)
     }
 
-    
+
     // console.log(i18n.language)
     return (
         <div className='flex justify-between py-10 container'>
             <div className='flex'>
-                <img src={Logo} className={'h-12 sm:h-14 lg:h-16'} alt="" />
+                <img src={Logo} className={'h-9 sm:h-14 lg:h-16'} alt="" />
                 <div className='w-px h-full bg-slate-300	mx-5 ' />
-                <img src={yearText} className={'h-14 sm:h-16 lg:h-20'} alt="" />
+                <img src={yearText} className={'h-10 sm:h-16 lg:h-20'} alt="" />
             </div>
 
-            <div className='flex md:items-center'>
+            <div className='hidden lg:flex md:items-center'>
                 <nav>
 
                     <ul className='flex capitalize text-primary font-bold justify-end pb-3 mr-3'>
@@ -65,7 +68,10 @@ const Header = () => {
 
                 </nav>
             </div>
-
+            <div className='flex lg:hidden'>
+                <LangSwitcher handleClick={changeLanguage} />
+                <MobileMenu menus={Menu}  />
+            </div>
         </div>
     )
 }

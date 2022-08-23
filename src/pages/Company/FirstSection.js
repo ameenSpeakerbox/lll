@@ -8,9 +8,9 @@ const FirstSection = () => {
     return (
         <main className='container'>
             
-            <section className='grid grid-cols-3 gap-5 min-h-screen py-10'>
+            <section className='grid lg:grid-cols-3  grid-cols-2 gap-5 lg:min-h-screen md:h-full py-10'>
                 <div className='col-span-1'>
-                    <div>
+                    <div className='relative'>
                         <img src={QouteIcon} alt="" className='h-4' />
                         <h1 className='text-primary text-3xl font-bold'>Humble Beginnings</h1>
                         <p className='italic text-secondary text-lg'>Where it all started.</p>
@@ -18,11 +18,11 @@ const FirstSection = () => {
                             Express Forwarding Services (EFS), the forwarding division of UM.Fawaz Trading Est. was incorporated in early 1994 on humble beginnings with only 5 employees. Within a few years, EFS achieved a remarkable growth in the Kingdom and expanded to various regions in the Kingdom as a world-class provider of innovative logistics and supply-chain services and solutions. Our dedicated and experienced professionals always provide you with tailor-made logistics solutions, customized to your particular needs.
                         </p>
 
-                        <img src={VectorIcon} className={'absolute left-0 bottom-0 h-60'} alt="" />
+                        <img src={VectorIcon} className={'absolute left-0 bottom-0 lg:h-60 md:h-48 '} alt="" />
                     </div>
                 </div>
 
-                <div className="col-span-2">
+                <div className="lg:col-span-2">
                     <div className='flex justify-end relative'>
                         <img src={Image} className="w-4/5" alt="" />
                         <img src={VectorIcon2} className="absolute right-0 bottom-0" alt="" />
