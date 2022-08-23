@@ -25,7 +25,7 @@ const Header = () => {
     const Menu = [
         { title: 'home', url: '/' },
         { title: 'company', url: '/company' },
-        { title: 'our service', url: '/ourservices' },
+        { title: 'our service', url: '/OurServices' },
         { title: 'careers', url: '' },
     ]
 
