@@ -60,3 +60,4 @@ function OurServices(props) {
 }
 
 export default OurServices;
+export const RedVectorImg = RedVector

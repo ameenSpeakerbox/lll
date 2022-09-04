@@ -15,10 +15,10 @@ const Header = () => {
     useEffect(() => {
         // i18n.changeLanguage("en");
         // alert(i18n.language)
-        if (!(i18n.language == "en" || i18n.language == "ar")) {
-            i18n.changeLanguage("en");
-            localStorage.setItem('i18nextLng', 'en')
-        }
+        // if (!(i18n.language == "en" || i18n.language == "ar")) {
+        //     i18n.changeLanguage("en");
+        //     localStorage.setItem('i18nextLng', 'en')
+        // }
         // return () => {
         //     i18n.changeLanguage('en')
         // }
@@ -33,6 +33,7 @@ const Header = () => {
 
 
     const changeLanguage = (lng) => {
+        // alert('chng')
         i18n.changeLanguage(lng)
         // localStorage.setItem('i18nextLng', lng)
     }
