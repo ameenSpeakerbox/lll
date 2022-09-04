@@ -20,7 +20,8 @@ function OurServices(props) {
         { image: TruckImg, icon: TruckIcon, title: 'Land Freight', desc: 'Nam condimentum elit iaculis sem maecenas vitae eu nunc. Mattis odio lectus at morbi. Mauris blandit elit mauris malesuada sed in nibh tincidunt suscipit.' },
     ]
     return (
-        <section className=' bg-primary py-20  '>
+<div>
+<section className=' bg-white py-20  '>
             <div className='container h-auto xl:px-10 relative'>
                 <div className='grid grid-cols-1 '>
                     <h2 className='text-white text-2xl font-medium '>Our Services</h2>
@@ -38,6 +39,9 @@ function OurServices(props) {
 
             </div>
 
+            
+        </section>
+        <section className=' bg-primary py-20  '>
             <div className='pt-28 container'>
                 <div className='grid grid-cols-1'>
                     <img src={WhiteDotsVector} className="w-40" alt="" />
@@ -50,6 +54,8 @@ function OurServices(props) {
                 </div>
             </div>
         </section>
+</div>
+        
     );
 }
 
