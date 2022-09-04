@@ -17,8 +17,8 @@ const ManagementSection = () => {
                     <img src={GroupPhoto} className={'border-4 border-white rounded-2xl z-10'} alt="" />
                 </div>
                 <div>
-                    <img src={RedVector} className="w-48 absolute -bottom-20 z-0 -left-10" alt="" />
-                    <img src={WhiteVector} className="w-48 absolute z-0 2xl:-right-10 lg:-right-0" alt="" />
+                    <img src={RedVector} className="w-48 absolute top-72 z-0 -left-10" alt="" />
+                    <img src={WhiteVector} className="w-48 absolute z-0 2xl:-right-10 lg:-right-0 top-72" alt="" />
                 </div>
                 <div className="grid grid-cols-1 relative mt-10">
                     <div className='flex justify-end'>

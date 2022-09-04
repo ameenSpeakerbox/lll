@@ -3,9 +3,10 @@ import yearTextLogo from '../../Assets/images/Group 759.svg'
 import Image from '../../Assets/images/Rectangle 31.png'
 import PolygonImage from '../../Assets/images/Polygon 1.svg'
 import YoutubeIcon from '../../Assets/images/youtube-icon.svg'
+import MilestoneImg from '../../Assets/images/efs-milestone 2.png'
 
 const OurJourneySection = () => {
-    
+
     return (
         <section className=' py-20  '>
             <div className="container h-auto xl:px-10 ">
@@ -46,14 +47,14 @@ const OurJourneySection = () => {
 
                 {/* our milestone section start */}
                 <div className='mt-16'>
-                    <h1 className='font-semibold tracking-widest	 text-center text-primary'>OUR MILESTONES</h1>
+                    {/* <h1 className='font-semibold tracking-widest	 text-center text-primary'>OUR MILESTONES</h1> */}
 
-                    <div style={{
+                    {/* <div style={{
                         background: 'linear-gradient(94.71deg, #F2F8FF -0.56%, rgba(242, 248, 255, 0) 100%)',
                         boxShadow: 'inset 0px 0px 21.875px rgba(11, 81, 158, 0.08)'
-                    }} className='grid grid-cols-3 gap-5 h-20 rounded-xl'>
-
-                    </div>
+                    }} className='grid grid-cols-3 gap-5 h-20 rounded-xl'> */}
+                    {/* </div> */}
+                    <img src={MilestoneImg} alt="" />
                 </div>
                 {/* our milestone section end */}
             </div>
