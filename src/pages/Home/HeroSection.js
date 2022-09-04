@@ -32,7 +32,7 @@ const HeroSection = () => {
                             <img src={RightImg} className={'h-auto w-full sm:h-72 z-10 mt-10'} alt="" />
                         </div>
 
-                        <img src={RightVector} className={'h-60 absolute right-0 hidden md:block'} style={{ zIndex: -1 }} alt="" />
+                        <img src={RightVector} className={'h-60 absolute right-0 hidden md:block opacity-50	'} style={{ zIndex: -1 }} alt="" />
                     </div>
 
 
@@ -129,3 +129,4 @@ const HeroSection = () => {
 }
 
 export default HeroSection
+export const BlueVectorImg = RightVector

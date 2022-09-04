@@ -36,7 +36,7 @@
 
 @media screen and (min-width:1280px) {
   .container {
-    width: 1240px;
+    width: 1141px;
     margin: auto;
 
   }
@@ -90,4 +90,12 @@
 .subscribe___btn {
   background: linear-gradient(90.79deg, #A00000 2.86%, #F40000 104.21%);
 
+}
+
+.custom-input{
+  background: #F0F0F0;
+/* border-radius: 39.6848px; */
+}
+.custom-input::placeholder{
+  color: #818181;
 }
