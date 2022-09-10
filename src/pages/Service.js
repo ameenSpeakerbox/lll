@@ -76,12 +76,9 @@ const Service = ({ data }) => {
             <div className="flex justify-center">
               <EnquiryComponent />
             </div>
-              <InputField label={'Company Name'} type={'text'} />
-              <InputField label={'Company Name'} type={'select'} />
-
 
           </div>
-              <InputField label={'message'} type={'texarea'} />
+
         </section>
       </main>
       <section className='bg-primary'>
