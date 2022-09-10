@@ -40,7 +40,7 @@ const HeroSection = () => {
                         {/* dash border */}
                         <div className='border-dashed border-2  h-72 w-72 absolute -top-60 sm:left-32 left-12 border-blue-100' style={{ zIndex: -1, }} />
 
-                        <div className='h-60 w-48 z-50 p-3 absolute bg-lightBlue rounded-xl left-20 -top-32 flex flex-col' style={{ boxShadow: '3.5px -3.5px 26.25px rgba(7, 80, 157, 0.25)' }} >
+                        <div className='h-60 w-48 z-50 p-3 absolute bg-lightBlue rounded-xl md:left-20 left-0 -top-32 flex flex-col' style={{ boxShadow: '3.5px -3.5px 26.25px rgba(7, 80, 157, 0.25)' }} >
                             <div className='flex items-center justify-between'>
                                 <p className='text-sm font-bold text-primary'>Order_qwezc10</p>
                                 <ul className='flex'>

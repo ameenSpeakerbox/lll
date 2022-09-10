@@ -54,3 +54,4 @@ const ServiceSection = () => {
 }
 
 export default ServiceSection
+export const BlueVector = WhiteVector
