@@ -1,9 +1,13 @@
 import React from 'react'
+import Layout from '../Components/Layout/Layout'
 import OurServices from './OurServices/OurServices'
 
 const ourservices = () => {
 return (
-    <OurServices/>
+    <Layout>
+<OurServices/>
+    </Layout>
+    
 )
 }
 export default ourservices
