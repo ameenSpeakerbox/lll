@@ -29,6 +29,7 @@ const Header = () => {
         { title: 'company', url: '/company' },
         { title: 'our service', url: '/OurServices' },
         { title: 'careers', url: '/Career' },
+        { title: 'Contact', url: '/contact' },
     ]
 
 

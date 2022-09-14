@@ -11,7 +11,7 @@ const MissionAndVision = () => {
     ]
     return (
         <>
-            <div className='h-5 w-full' style={{ background: '#6193C5' }} />
+            <div className='h-5 w-full md:block hidden' style={{ background: '#6193C5' }} />
             <section className='container '>
 
                 {data.map(item => (

@@ -12,7 +12,7 @@ function ImageComponent({ props }) {
                 </div>
 
                 <div className="card-body h-24">
-                    <p className='text-primary font-semibold text-lg card-text m-4'>{props.text}</p>
+                    <p className='text-primary font-semibold  lg:text-lg card-text m-4'>{props.text}</p>
 
                 </div>
                 <span ><img className='h-10 absolute right-0 bottom-0' src={group} /></span>

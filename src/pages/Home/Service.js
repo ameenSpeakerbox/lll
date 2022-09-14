@@ -20,16 +20,16 @@ const ServiceSection = () => {
         { image: TruckImg, icon: TruckIcon, title: 'Land Freight', desc: 'Nam condimentum elit iaculis sem maecenas vitae eu nunc. Mattis odio lectus at morbi. Mauris blandit elit mauris malesuada sed in nibh tincidunt suscipit.' },
     ]
     return (
-        <section className=' bg-primary py-20  '>
+        <section className=' bg-primary py-20 overflow-hidden '>
             <div className='container h-auto xl:px-10 relative'>
                 <div className='grid grid-cols-1 '>
-                    <h2 className='text-white text-2xl font-medium '>Our Services</h2>
+                    <h2 className='text-white lg:text-2xl font-medium '>Our Services</h2>
                 </div>
                 <div>
-                    <img src={RedVector} className="w-48 absolute -bottom-10 -left-10" alt="" />
-                    <img src={WhiteVector} className="w-48 absolute z-0 2xl:-right-10 lg:-right-0" alt="" />
+                    <img src={RedVector} className="md:w-40 w-32 lg:w-48 absolute -bottom-10 -left-10" alt="" />
+                    <img src={WhiteVector} className="md:w-40 w-32 lg:w-48 absolute z-0 2xl:-right-10 -right-20 -top-24" alt="" />
                 </div>
-                <div className="grid md:grid-cols-3 relative mt-10 xl:gap-10 lg:gap-7">
+                <div className="grid lg:grid-cols-3 md:grid-cols-2 relative mt-10 xl:gap-10 lg:gap-7 gap-5">
                     {services.map(item => (
                         <ServiceCard Image={item.image} Icon={item.icon} Title={item.title} Content={item.desc} />
                     ))}
@@ -40,12 +40,12 @@ const ServiceSection = () => {
 
             <div className='pt-28 container'>
                 <div className='grid grid-cols-1'>
-                    <img src={WhiteDotsVector} className="w-40" alt="" />
+                    <img src={WhiteDotsVector} className="w-20 lg:w-40" alt="" />
 
                     <MailSubscribeSection />
 
                     <div className='flex justify-end'>
-                        <img src={RedDotsVector} className="w-40" alt="" />
+                        <img src={RedDotsVector} className="w-20 lg:w-40" alt="" />
                     </div>
                 </div>
             </div>

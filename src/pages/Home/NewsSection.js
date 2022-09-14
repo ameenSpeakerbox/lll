@@ -7,11 +7,11 @@ import NewsComponent from "../../Components/NewsComponent/NewsComponent";
 function NewsSection() {
   return (
     <div className="container pt-20">
-      <div className="flex pl-12  mb-6 items-center">
+      <div className="flex lg:pl-12  mb-6 items-center">
         <span>
-          <img src={dotwithcircle}></img>
+          <img src={dotwithcircle} className='w-8 lg:w-auto' />
         </span>
-        <h1 className="text-primary font-normal text-3xl text-left  pl-3">
+        <h1 className="text-primary font-normal lg:text-3xl text-left  pl-2">
           News And Information
         </h1>
       </div>

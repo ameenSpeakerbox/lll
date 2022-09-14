@@ -10,7 +10,7 @@ const OurJourneySection = () => {
     return (
         <section className=' py-20  '>
             <div className="container h-auto xl:px-10 ">
-                <div className="grid grid-cols-2">
+                <div className="grid md:grid-cols-2">
                     <div className='flex items-center'>
                         <img src={yearTextLogo} className={'w-40'} alt="" />
                         <div className='ml-4 w-2/4'>
@@ -23,7 +23,7 @@ const OurJourneySection = () => {
                     </div>
 
                     <div>
-                        <div className='relative flex justify-end'>
+                        <div className='relative flex justify-end mt-5 md:mt-0'>
                             <img src={Image} className={'w-full'} alt="" />
                             <div className='absolute w-full h-full flex justify-center items-center'>
                                 <div className="relative flex justify-center items-center cursor-pointer">

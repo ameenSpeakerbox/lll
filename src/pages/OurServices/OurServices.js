@@ -32,94 +32,98 @@ function OurServices(props) {
         { image: TruckImg, icon: TruckIcon, title: 'Land Freight', desc: 'Nam condimentum elit iaculis sem maecenas vitae eu nunc. Mattis odio lectus at morbi. Mauris blandit elit mauris malesuada sed in nibh tincidunt suscipit.' },
     ]
     const tiles = [
-        {image: Tile1, title: 'Customs Clearance', desc: 'Licensed in house customs clearance solutions covering all major ports in Saudi Arabia. ' },
-        
-        {image: Tile2,  title:'TIR', desc: 'EFS offers a cost effective cross border transportation solution being an IRU and Saudi customs approved TIR operator.'},
-        
-        {image: Tile3, title: 'Export/Import Consolidation', desc: 'Offering LCL service from all major ports in Saudi Arabia and all major ports worldwide. ' },
-        {image: Tile4, title: 'Automotive Relocation', desc: 'We have all the experience needed in transporting motor vehicles on a global scale.' },
-        {image: Tile5, title: 'Expo & Events', desc: 'Licensed in house customs clearance solutions covering all major ports in Saudi Arabia. ' }
-        
+        { image: Tile1, title: 'Customs Clearance', desc: 'Licensed in house customs clearance solutions covering all major ports in Saudi Arabia. ' },
+
+        { image: Tile2, title: 'TIR', desc: 'EFS offers a cost effective cross border transportation solution being an IRU and Saudi customs approved TIR operator.' },
+
+        { image: Tile3, title: 'Export/Import Consolidation', desc: 'Offering LCL service from all major ports in Saudi Arabia and all major ports worldwide. ' },
+        { image: Tile4, title: 'Automotive Relocation', desc: 'We have all the experience needed in transporting motor vehicles on a global scale.' },
+        { image: Tile5, title: 'Expo & Events', desc: 'Licensed in house customs clearance solutions covering all major ports in Saudi Arabia. ' }
+
     ]
     const tiles1 = [
-        {image: Tile6, title: 'Warehousing', desc: 'State of the art warehousing facility with fully equipped fire fighting system and 24 hour security service.'},
-        
-        {image: Tile7, title: 'Project Cargo', desc: 'We assure the safe delivery of entire project cargoes on a turnkey basis, from multiple vendors and suppliers.' },
-        
-        {image: Tile8, title: 'Packing & Crating', desc: 'Experienced in-house team of packers and carpentry personnel to execute any kind of packing and crating work.' },
-        {image: Tile9, title: 'Relocation Services', desc: 'Proud member of IAM Movers Association, we handle Door to Door, Air, Sea and Land relocations.' },
-        {image: Tile10, title: 'Pilgrims Baggage Handling', desc: 'We have a dedicated team to collect excess baggage from pilgrims from hotels and deliver them to home.' }
-        
+        { image: Tile6, title: 'Warehousing', desc: 'State of the art warehousing facility with fully equipped fire fighting system and 24 hour security service.' },
+
+        { image: Tile7, title: 'Project Cargo', desc: 'We assure the safe delivery of entire project cargoes on a turnkey basis, from multiple vendors and suppliers.' },
+
+        { image: Tile8, title: 'Packing & Crating', desc: 'Experienced in-house team of packers and carpentry personnel to execute any kind of packing and crating work.' },
+        { image: Tile9, title: 'Relocation Services', desc: 'Proud member of IAM Movers Association, we handle Door to Door, Air, Sea and Land relocations.' },
+        { image: Tile10, title: 'Pilgrims Baggage Handling', desc: 'We have a dedicated team to collect excess baggage from pilgrims from hotels and deliver them to home.' }
+
     ]
     return (
-<div>
-<section className=' bg-white py-20  '>
-            <div className='container h-auto xl:px-10 relative'>
-                <div className='grid grid-cols-1 '>
-                    <h2 className='text-primary text-4xl font-bold '>Our Services</h2>
-                    <div>
-                    <p>
-                    We provide the best one stop solution for all our customer needs so 
-                    that our customers never need to depend on multiple service providers for their requirements. 
-                    </p>
+        <div>
+            <section className=' bg-white py-20  '>
+                <div className='container h-auto xl:px-10 relative'>
+                    <div className='grid grid-cols-1 '>
+                        <h2 className='text-primary text-4xl font-bold '>Our Services</h2>
+                        <div>
+                            <p>
+                                We provide the best one stop solution for all our customer needs so
+                                that our customers never need to depend on multiple service providers for their requirements.
+                            </p>
+                        </div>
+
                     </div>
-                    
-                </div>
-                <div>
-                    <img src={RedVector} className="w-48 absolute -bottom-10 -left-10" alt="" />
-                    <img src={BlueVector} className="w-48 absolute z-0 2xl:-right-10 lg:-right-0" alt="" />
-                </div>
-                <div className="grid md:grid-cols-3 relative mt-10 xl:gap-10 lg:gap-7">
-                    {services.map(item => (
-                        <ServiceCard Image={item.image} Icon={item.icon} Title={item.title} Content={item.desc} />
-                    ))}
+                    <div>
+                        <img src={RedVector} className="w-48 absolute -bottom-10 -left-10" alt="" />
+                        <img src={BlueVector} className="w-48 absolute z-0 2xl:-right-10 lg:-right-0" alt="" />
+                    </div>
+                    <div className="grid md:grid-cols-3 sm:grid-cols-2 relative mt-10 xl:gap-10 gap-7">
+                        {services.map(item => (
+                            <ServiceCard Image={item.image} Icon={item.icon} Title={item.title} Content={item.desc} />
+                        ))}
+                    </div>
+
+
                 </div>
 
 
-            </div>
-
-            
-        </section>
-        <section className='py-20'>
-            <div className='container '>
-                <div class="flex flex-row bg-pink place-content-center">
-                    
-                        <div class="flex flex-col bg-pink gap-5 p-8">
+            </section>
+            <section className='py-20'>
+                <div className='container '>
+                    <div class="flex flex-row bg-pink place-content-center">
+                        <div className="grid md:grid-cols-2 bg-pink gap-5 p-4">
+                            {[...tiles, ...tiles1].map(item => (
+                                <TileComponent props={item} />
+                            ))}
+                        </div>
+                        {/* <div class="flex flex-col bg-pink gap-5 p-4">
                         {tiles.map(item => (
                             <TileComponent props={item}/>
                         ))}
                         </div>
                    
                     
-                        <div class="flex flex-col bg-pink gap-5 p-8">
+                        <div class="flex flex-col bg-pink gap-5 p-4">
                         {tiles1.map(item => (
                             <TileComponent props={item}/>
                         ))}
                             
-                        </div>
-                    
-                    
+                        </div> */}
+
+
+                    </div>
+
+
                 </div>
-                
-            
-            </div>
-            
-        </section>
-        <section className=' bg-primary py-20  '>
-            <div className='pt-28 container'>
-                <div className='grid grid-cols-1'>
-                    <img src={WhiteDotsVector} className="w-40" alt="" />
 
-                    <MailSubscribeSection />
+            </section>
+            <section className=' bg-primary py-20  '>
+                <div className='pt-28 container'>
+                    <div className='grid grid-cols-1'>
+                        <img src={WhiteDotsVector} className="w-40" alt="" />
 
-                    <div className='flex justify-end'>
-                        <img src={RedDotsVector} className="w-40" alt="" />
+                        <MailSubscribeSection />
+
+                        <div className='flex justify-end'>
+                            <img src={RedDotsVector} className="w-40" alt="" />
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
-</div>
-        
+            </section>
+        </div>
+
     );
 }
 
