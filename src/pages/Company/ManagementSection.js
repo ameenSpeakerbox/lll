@@ -18,12 +18,12 @@ const ManagementSection = () => {
                 </div>
                 <div>
                     <img src={RedVector} className="w-48 absolute top-72 z-0 -left-10" alt="" />
-                    <img src={WhiteVector} className="w-48 absolute z-0 2xl:-right-10 lg:-right-0 top-72" alt="" />
+                    <img src={WhiteVector} className="w-48 absolute z-0 2xl:-right-10 hidden lg:block -right-0 top-72" alt="" />
                 </div>
                 <div className="grid grid-cols-1 relative mt-10">
                     <div className='flex justify-end'>
-                        <div className='bg-white w-3/4 flex justify-between p-6 rounded-xl z-10'>
-                            <div className='w-36'>
+                        <div className='bg-white md:w-3/4 flex justify-between p-6 rounded-xl z-10'>
+                            <div className='w-36  '>
                                 <img src={QouteIcon} alt="" />
                             </div>
                             <div>

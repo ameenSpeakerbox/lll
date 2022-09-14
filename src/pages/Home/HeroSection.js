@@ -100,15 +100,15 @@ const HeroSection = () => {
 
                     <div className=' flex justify-evenly items-center h-full '>
                         <button className='flex font-semibold bg-white flex-col items-center py-2 px-4 text-center rounded-lg text-primary text-xs ' style={{ boxShadow: '0px 2.46066px 30.7582px rgba(7, 80, 157, 0.5)' }}>
-                            <img src={QouteIcon} className={'h-5'} alt="" />
+                            <img src={QouteIcon} className={'h-3 lg:h-5'} alt="" />
                             Get a Quote
                         </button>
                         <button className='flex font-semibold bg-white flex-col items-center py-2 px-4 text-center rounded-lg text-primary text-xs ' style={{ boxShadow: '0px 2.46066px 30.7582px rgba(7, 80, 157, 0.5)' }}>
-                            <img src={SearchIcon} className={'h-5'} alt="" />
+                            <img src={SearchIcon} className={'h-3 lg:h-5'} alt="" />
                             {'Track & Trace'}
                         </button>
                         <button className='flex font-semibold bg-white flex-col items-center py-2 px-4 text-center rounded-lg text-primary text-xs ' style={{ boxShadow: '0px 2.46066px 30.7582px rgba(7, 80, 157, 0.5)' }}>
-                            <img src={LoctionIcon} className={'h-5'} alt="" />
+                            <img src={LoctionIcon} className={'h-3 lg:h-5'} alt="" />
                             {'Our Locations'}
                         </button>
                     </div>
@@ -130,3 +130,4 @@ const HeroSection = () => {
 
 export default HeroSection
 export const BlueVectorImg = RightVector
+export const CirclesVectorImg = BottomRightVector
