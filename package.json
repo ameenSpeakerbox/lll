@@ -20,6 +20,7 @@
     "@heroicons/react": "^1.0.6",
     "contentful": "^9.1.34",
     "gatsby": "^4.15.1",
+    "gatsby-cli": "^4.23.0",
     "gatsby-plugin-image": "^2.19.0",
     "gatsby-source-contentful": "^7.16.0",
     "html-react-parser": "^3.0.4",

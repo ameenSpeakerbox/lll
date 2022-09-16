@@ -25,7 +25,7 @@ import Tile9 from '../../Assets/images/Rectangle 36.png'
 import Tile10 from '../../Assets/images/Rectangle 37.png'
 
 
-function OurServices(props) {
+function OurServices() {
     const services = [
         { image: PlaneImg, icon: PlaneIcon, title: 'Air Freight', desc: 'Nam condimentum elit iaculis sem maecenas vitae eu nunc. Mattis odio lectus at morbi. Mauris blandit elit mauris malesuada sed in nibh tincidunt suscipit.' },
         { image: ShipImg, icon: ShipIcon, title: 'Sea Freight', desc: 'Nam condimentum elit iaculis sem maecenas vitae eu nunc. Mattis odio lectus at morbi. Mauris blandit elit mauris malesuada sed in nibh tincidunt suscipit.' },
@@ -38,10 +38,7 @@ function OurServices(props) {
 
         { image: Tile3, title: 'Export/Import Consolidation', desc: 'Offering LCL service from all major ports in Saudi Arabia and all major ports worldwide. ' },
         { image: Tile4, title: 'Automotive Relocation', desc: 'We have all the experience needed in transporting motor vehicles on a global scale.' },
-        { image: Tile5, title: 'Expo & Events', desc: 'Licensed in house customs clearance solutions covering all major ports in Saudi Arabia. ' }
-
-    ]
-    const tiles1 = [
+        { image: Tile5, title: 'Expo & Events', desc: 'Licensed in house customs clearance solutions covering all major ports in Saudi Arabia. ' },
         { image: Tile6, title: 'Warehousing', desc: 'State of the art warehousing facility with fully equipped fire fighting system and 24 hour security service.' },
 
         { image: Tile7, title: 'Project Cargo', desc: 'We assure the safe delivery of entire project cargoes on a turnkey basis, from multiple vendors and suppliers.' },
@@ -84,8 +81,8 @@ function OurServices(props) {
                 <div className='container '>
                     <div class="flex flex-row bg-pink place-content-center">
                         <div className="grid md:grid-cols-2 bg-pink gap-5 p-4">
-                            {[...tiles, ...tiles1].map(item => (
-                                <TileComponent props={item} />
+                            {tiles.map(item => (
+                                <TileComponent data={item} />
                             ))}
                         </div>
                         {/* <div class="flex flex-col bg-pink gap-5 p-4">

@@ -10,7 +10,7 @@ const AddressCard = ({ location,
             <p className='mb-5 w-56 mt-3'>{addres}</p>
             <div className="grid">
 
-                <a className='font-bold' href={`tel:+${mobile.replaceAll(' ','')}`}>Mobile: {mobile}</a>
+                <a className='font-bold' href={`tel:+${mobile?.replaceAll(' ','')}`}>Mobile: {mobile}</a>
                 <a className='font-bold' href="mailto:info@efslogistics.net">Email: {email}</a>
             </div>
         </div>
