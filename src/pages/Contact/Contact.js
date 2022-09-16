@@ -50,7 +50,7 @@ const Contact = () => {
                     {addressData.map(item => (
                         <div className=''>
 
-                            <AddressCard location={item.location} addres={item.addres} mobile={item.mobile} email={item.email} />
+                            <AddressCard data={item} />
                         </div>
                     ))}
                     <div className="col-span-1 mt-10 ">
