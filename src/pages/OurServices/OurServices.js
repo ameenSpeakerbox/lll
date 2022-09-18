@@ -27,42 +27,29 @@ import { graphql, useStaticQuery } from 'gatsby';
 
 
 function OurServices() {
-//     const data = useStaticQuery(graphql`
-//     query{
-// allContentfulServices {
-//     edges {
-//       node {
-//         buttonText
-//         youtubeLink
-//         title
-//              {
-//           description
-//         }
-//         landscapeImage {
-//           file {
-//             url
-//           }
-//         }
-//         landscapeImageDescription {
-//           raw
-//         }
-//         portraitImage {
-//           file {
-//             url
-//           }
-//         }
-//         portraitImageDescription {
-//           raw
-//         }
-//         youtubeThumbnailImage {
-//           file {
-//             url
-//           }
-//         }
-//       }
-//     }
-//   }
-// }`)
+    const data = useStaticQuery(graphql`
+    query{
+    allContentfulServices {
+    edges {
+      node {
+        slug
+        buttonText
+        title
+        primaryImage {
+            file {
+              url
+            }
+          }
+        
+        description{
+            description
+        }
+        
+        
+      }
+    }
+  }
+}`)
     const services = [
         { image: PlaneImg, icon: PlaneIcon, title: 'Air Freight', desc: 'Nam condimentum elit iaculis sem maecenas vitae eu nunc. Mattis odio lectus at morbi. Mauris blandit elit mauris malesuada sed in nibh tincidunt suscipit.' },
         { image: ShipImg, icon: ShipIcon, title: 'Sea Freight', desc: 'Nam condimentum elit iaculis sem maecenas vitae eu nunc. Mattis odio lectus at morbi. Mauris blandit elit mauris malesuada sed in nibh tincidunt suscipit.' },
@@ -85,6 +72,8 @@ function OurServices() {
         { image: Tile10, title: 'Pilgrims Baggage Handling', desc: 'We have a dedicated team to collect excess baggage from pilgrims from hotels and deliver them to home.' }
 
     ]
+
+    // console.log(data.allContentfulServices.edges)
     return (
         <div>
             <section className=' bg-white py-20  '>
@@ -118,9 +107,9 @@ function OurServices() {
                 <div className='container '>
                     <div class="flex flex-row bg-pink place-content-center">
                         <div className="grid md:grid-cols-2 bg-pink gap-5 p-4">
-                            {/* {data.map(item => (
+                            {data.allContentfulServices.edges.map(item => (
                                 <TileComponent data={item.node} />
-                            ))} */}
+                            ))}
                         </div>
                         {/* <div class="flex flex-col bg-pink gap-5 p-4">
                         {tiles.map(item => (

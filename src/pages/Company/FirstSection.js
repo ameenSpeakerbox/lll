@@ -3,8 +3,39 @@ import QouteIcon from '../../Assets/images/Quote.svg'
 import VectorIcon from '../../Assets/images/Vector-1.svg'
 import VectorIcon2 from '../../Assets/images/Group 767.svg'
 import Image from '../../Assets/images/Rectangle 11.png'
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const FirstSection = () => {
+    const settings = {
+        dots: false,
+        fade: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+      speed: 2000,
+      autoplaySpeed: 2000,
+    };
+
+
+    const images = importAll(require.context('../../Assets/Company slider', false, /\.(png|jpe?g|svg)$/));
+
+    function importAll(r) {
+        let images = {};
+        let arr = []
+        // r.keys().forEach((item, index) => { images[item.replace('./', '')] = r(item); });
+        r.keys().forEach((item, index) => {
+            arr.push(r(item))
+        });
+        return arr
+    }
+
+    console.log({ images })
+
+
     return (
         <div className='relative lg:pb-20 '>
             <main className='container'>
@@ -23,10 +54,19 @@ const FirstSection = () => {
                     </div>
 
                     <div className="col-span-2">
-                        <div className='flex justify-end relative'>
-                            <img src={Image} className="md:w-10/12	lg:w-8/12" alt="" />
-                            <img src={VectorIcon2} className="absolute right-0 bottom-0 " alt="" />
+                        <div className='md:w-10/12	lg:w-8/12 ml-auto block'>
+                            <Slider {...settings}>
+                                {images.map(item => (
+                                    <div className='flex justify-end relative '>
+                                        <img src={item.default} className="w-full" alt="" />
+                                        <img src={VectorIcon2} className="absolute right-0 bottom-0 " alt="" />
+                                    </div>
+                                ))}
+                            </Slider>
                         </div>
+
+
+
                     </div>
                 </section>
             </main>

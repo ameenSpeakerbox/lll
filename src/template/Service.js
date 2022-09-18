@@ -2,8 +2,8 @@ import { graphql, Link } from 'gatsby'
 import React, { useEffect } from 'react'
 import Layout from '../Components/Layout/Layout'
 import MailSubscribeSection from '../Components/MailSubscribeSection/MailSubscribeSection'
-import { BlueVectorImg } from './Home/HeroSection'
-import { RedVectorImg } from './OurServices/OurServices'
+import { BlueVectorImg } from '../pages/Home/HeroSection'
+import { RedVectorImg } from '../pages/OurServices/OurServices'
 // import ReactHtmlParser from 'html-react-parser';
 import { renderRichText } from 'gatsby-source-contentful/rich-text'
 import { INLINES, BLOCKS, MARKS } from '@contentful/rich-text-types'
@@ -14,7 +14,7 @@ import InputField from '../Components/InputField/InputField'
 
 const Service = ({ data }) => {
   console.log(data)
-  const Object = data.allContentfulServices.edges[0].node
+  // const Object = data.contentfulServices.allContentfulServices.edges[0].node
   const options = {
     renderMark: {
       [MARKS.BOLD]: (text) => <b className="font-bold">{text}</b>,
@@ -39,8 +39,8 @@ const Service = ({ data }) => {
       <main className='container '>
         <section className='grid grid-cols-1 gap-5 lg:min-h-screen md:h-full py-10 px-5'>
           <div>
-            <h1 className='text-5xl font-bold text-primary'>{Object.title}</h1>
-            <p className='w-10/12 mt-2'>{(Object.description.description)}</p>
+            <h1 className='text-5xl font-bold text-primary'>{data.contentfulServices.title}</h1>
+            <p className='w-10/12 mt-2'>{(data.contentfulServices.description.description)}</p>
           </div>
 
           <div className='relative'>
@@ -49,15 +49,15 @@ const Service = ({ data }) => {
 
             <div className='grid grid-cols-2'>
               <div>
-                <img src={Object.portraitImage.file.url} className={''} alt="" />
+                <img src={data.contentfulServices.portraitImage.file.url} className={''} alt="" />
                 <div>
-                  <div>{renderRichText(Object.portraitImageDescription, options)}</div>
+                  <div>{renderRichText(data.contentfulServices.portraitImageDescription, options)}</div>
                 </div>
               </div>
               <div>
-                <img src={Object.landscapeImage.file.url} className={' '} alt="" />
+                <img src={data.contentfulServices.landscapeImage.file.url} className={' '} alt="" />
                 <div>
-                  <div>{renderRichText(Object.landscapeImageDescription, options)}</div>
+                  <div>{renderRichText(data.contentfulServices.landscapeImageDescription, options)}</div>
                 </div>
               </div>
             </div>
@@ -65,14 +65,14 @@ const Service = ({ data }) => {
 
           <div className='py-10'>
             <div className='flex flex-col w-full justify-center  items-center relative '>
-              <img src={Object.youtubeThumbnailImage.file.url} alt="" />
+              <img src={data.contentfulServices.youtubeThumbnailImage.file.url} alt="" />
               <img src={PlayBtnIcon} alt="" className='absolute m-auto inset-0 cursor-default	 h-20 w-20		' />
             </div>
             <div className='flex items-center justify-center'>
               <img className='h-7' src={YoutubeIcon} alt="" />
-              <Link to={Object.youtubeLink} target={'_blank'} className='text-primary underline underline-offset-4 ml-2 font-bold w-60'>{Object.buttonText}</Link>
+              <Link to={data.contentfulServices.youtubeLink} target={'_blank'} className='text-primary underline underline-offset-4 ml-2 font-bold w-60'>{data.contentfulServices.buttonText}</Link>
             </div>
-            
+
             <div className="flex justify-center">
               <EnquiryComponent />
             </div>
@@ -93,10 +93,11 @@ const Service = ({ data }) => {
 
 export default Service
 export const PageQuery = graphql`
+
+  query($slug: String!){
+    contentfulServices( slug: {eq: $slug})
 {
-allContentfulServices {
-    edges {
-      node {
+  slug
         buttonText
         youtubeLink
         title
@@ -125,6 +126,5 @@ allContentfulServices {
           }
         }
       }
-    }
-  }
+   
 }`

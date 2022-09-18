@@ -4,9 +4,9 @@ import React from 'react';
 function TileComponent({ data }) {
     console.log(data)
     return (
-        <Link to='/Service' class="flex flex-row 	rounded-2xl p-2" style={{ boxShadow: '0px 2.92353px 36.5441px rgb(10 80 159 / 25%)' }}>
+        <Link to={`/Service/${data.slug}`} class="flex flex-row 	rounded-2xl p-2" style={{ boxShadow: '0px 2.92353px 36.5441px rgb(10 80 159 / 25%)' }}>
             <div class="basis-1/2"><span >
-                <img className='w-11/12 ' src={data?.portraitImage.file.url} />
+                <img className='w-11/12 ' src={data?.primaryImage.file.url} />
                 </span></div>
             <div class="basis-1/2">
                 <div class="flex flex-col ">
