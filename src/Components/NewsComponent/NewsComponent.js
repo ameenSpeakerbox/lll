@@ -1,55 +1,58 @@
 import React from "react";
-import { graphql, Link } from 'gatsby'
+import { graphql, Link, useStaticQuery } from 'gatsby'
 
-let array_of_obj = [
-  {
-    id: 1,
-    date: "25 March 2023",
-    head: "EFS Annual Meet 2023 to be held on 25th July 2023",
-    para: "Nam condimentum elit iaculis sem maecenas vitae eu nunc. Mattis odio lectus at morbi. Mauris blandit elit mauris malesuada sed in nibh tincidunt suscipit.",
-  },
-  {
-    id: 2,
-    date: "25 March 2023",
-    head: "EFS New Rates for 2023",
-    para: "Nam condimentum elit iaculis sem maecenas vitae eu nunc. Mattis odio lectus at morbi. Mauris blandit elit mauris malesuada sed in nibh tincidunt suscipit.",
-  },
-  {
-    id: 3,
-    date: "25 March 2023",
-    head: "Introducing Pet Relocation Services",
-    para: "Nam condimentum elit iaculis sem maecenas vitae eu nunc. Mattis odio lectus at morbi. Mauris blandit elit mauris malesuada sed in nibh tincidunt suscipit.",
-  },
-  {
-    id: 4,
-    date: "25 March 2023",
-    head: "New shipping rules for EU",
-    para: "Nam condimentum elit iaculis sem maecenas vitae eu nunc. Mattis odio lectus at morbi. Mauris blandit elit mauris malesuada sed in nibh tincidunt suscipit.",
-  },
-];
 
-const NewsComponent = (props) => {
-  console.log(props)
+const NewsComponent = () => {
+  const data = useStaticQuery(graphql`
+query
+  {
+    allContentfulNewsAndInformation(sort: {order: ASC, fields: createdDate}) {
+      edges {
+        node {
+          cta
+          id
+          slug
+          title
+          image {
+            file {
+              url
+            }
+            description
+          }
+          description {
+            description
+          }
+          createdDate(formatString: "Do MMMM yyyy")
+        }
+      }
+    }
+  }
+  
+  `)
+
   return (
     <div>
-      <div className="grid grid-cols-4 gap-12 mt-5 mb-8">
-        {/* {props.data.allContentfulNewsAndInformation.edges?.map((item, idx,) => {
-
+      <div className="grid lg:grid-cols-4 sm:grid-cols-2 gap-12 mt-5 mb-8">
+        {data?.allContentfulNewsAndInformation.edges?.map((item, idx,) => {
+          console.log(item)
           return (
-            <div className={idx + 1 == data.allContentfulNewsAndInformation.edges.length ? "pr-12" : "border-solid border-r-2 border-black pr-12"}>
+            <div className={idx + 1 == data?.allContentfulNewsAndInformation.edges.length ? "pr-12 sm:border-b-2 border-solid  border-black lg:border-b-0 " : "border-solid  border-black pr-12 lg:border-r-2 border-b-2  lg:border-b-0"}>
 
-              <p className=" font-normal	 text-xs lg:text-xs ">{data.createdDate}</p>
+              <p className=" font-normal	 text-xs lg:text-xs ">{item.node.createdDate}</p>
               <h2 className="text-primary font-normal text-2xl text-left">
-                {item.title}
+                {item.node.title}
               </h2>
 
-              <p className=" font-normal	 text-xs lg:text-sm mt-1 ">{data.description.description.slice(0, 200) + '...'}</p>
-              <button >
+              <p className=" font-normal	 text-xs lg:text-sm mt-1 ">{item.node.description.description.slice(0, 200) + '...'}</p>
 
-                {item.cta}</button>
+              <div className="flex justify-start py-5">
+                <button className="text-primary text-sm underline underline-offset-4	text-left">{item.node.cta}</button>
+              </div>
+
             </div>
           );
-        })} */}
+
+        })}
 
         {/* <div className=" pr-12"style={{backgroundColor:""}}>
             <p className=' font-semibold	 text-xs lg:text-sm '>25 March 2023</p>
@@ -62,28 +65,3 @@ const NewsComponent = (props) => {
   );
 }
 export default NewsComponent;
-export const PageQuery = graphql`
-{
-  allContentfulNewsAndInformation {
-    edges {
-      node {
-        cta
-        id
-        slug
-        title
-        image {
-          file {
-            url
-          }
-          description
-        }
-        description {
-          description
-        }
-        createdDate(formatString: "Do MMMM yyyy")
-      }
-    }
-  }
-}
-
-`

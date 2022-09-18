@@ -23,9 +23,46 @@ import Tile7 from '../../Assets/images/Rectangle 34.png'
 import Tile8 from '../../Assets/images/Rectangle 35.png'
 import Tile9 from '../../Assets/images/Rectangle 36.png'
 import Tile10 from '../../Assets/images/Rectangle 37.png'
+import { graphql, useStaticQuery } from 'gatsby';
 
 
 function OurServices() {
+//     const data = useStaticQuery(graphql`
+//     query{
+// allContentfulServices {
+//     edges {
+//       node {
+//         buttonText
+//         youtubeLink
+//         title
+//              {
+//           description
+//         }
+//         landscapeImage {
+//           file {
+//             url
+//           }
+//         }
+//         landscapeImageDescription {
+//           raw
+//         }
+//         portraitImage {
+//           file {
+//             url
+//           }
+//         }
+//         portraitImageDescription {
+//           raw
+//         }
+//         youtubeThumbnailImage {
+//           file {
+//             url
+//           }
+//         }
+//       }
+//     }
+//   }
+// }`)
     const services = [
         { image: PlaneImg, icon: PlaneIcon, title: 'Air Freight', desc: 'Nam condimentum elit iaculis sem maecenas vitae eu nunc. Mattis odio lectus at morbi. Mauris blandit elit mauris malesuada sed in nibh tincidunt suscipit.' },
         { image: ShipImg, icon: ShipIcon, title: 'Sea Freight', desc: 'Nam condimentum elit iaculis sem maecenas vitae eu nunc. Mattis odio lectus at morbi. Mauris blandit elit mauris malesuada sed in nibh tincidunt suscipit.' },
@@ -81,9 +118,9 @@ function OurServices() {
                 <div className='container '>
                     <div class="flex flex-row bg-pink place-content-center">
                         <div className="grid md:grid-cols-2 bg-pink gap-5 p-4">
-                            {tiles.map(item => (
-                                <TileComponent data={item} />
-                            ))}
+                            {/* {data.map(item => (
+                                <TileComponent data={item.node} />
+                            ))} */}
                         </div>
                         {/* <div class="flex flex-col bg-pink gap-5 p-4">
                         {tiles.map(item => (

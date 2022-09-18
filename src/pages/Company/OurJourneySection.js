@@ -10,10 +10,10 @@ const OurJourneySection = () => {
     return (
         <section className=' py-20  '>
             <div className="container h-auto xl:px-10 ">
-                <div className="grid md:grid-cols-2">
-                    <div className='flex items-center'>
+                <div className="grid lg:grid-cols-2">
+                    <div className='flex items-start lg:pr-10'>
                         <img src={yearTextLogo} className={'w-40'} alt="" />
-                        <div className='ml-4 w-2/4'>
+                        <div className='ml-4 w-3/4'>
                             <h1 className='text-5xl text-primary font-bold'>Our Journey</h1>
                             <h1 className='text-7xl text-primary font-bold'>So Far</h1>
                             <p>

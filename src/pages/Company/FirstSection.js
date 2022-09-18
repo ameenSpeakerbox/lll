@@ -6,9 +6,9 @@ import Image from '../../Assets/images/Rectangle 11.png'
 
 const FirstSection = () => {
     return (
-        <div className='relative'>
+        <div className='relative lg:pb-20 '>
             <main className='container'>
-                <section className='flex flex-col-reverse md:grid md:grid-cols-3 gap-5  pt-10 pb-20'>
+                <section className='flex flex-col-reverse md:grid md:grid-cols-3 gap-5   pt-10 pb-20'>
                     <div className='col-span-1'>
                         <div>
                             <img src={QouteIcon} alt="" className='h-4' />
@@ -24,7 +24,7 @@ const FirstSection = () => {
 
                     <div className="col-span-2">
                         <div className='flex justify-end relative'>
-                            <img src={Image} className="md:w-10/12	" alt="" />
+                            <img src={Image} className="md:w-10/12	lg:w-8/12" alt="" />
                             <img src={VectorIcon2} className="absolute right-0 bottom-0 " alt="" />
                         </div>
                     </div>

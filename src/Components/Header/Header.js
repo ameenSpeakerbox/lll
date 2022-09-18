@@ -3,8 +3,6 @@ import React, { useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
 import Logo from '../../Assets/images/Logo.png'
 import yearText from '../../Assets/images/yearText.png'
-
-
 import '../../i18n'
 import LangSwitcher from './LangSwitcher'
 import MobileMenu from './MobileMenu'
@@ -27,9 +25,9 @@ const Header = () => {
     const Menu = [
         { title: 'home', url: '/' },
         { title: 'company', url: '/company' },
-        { title: 'our service', url: '/OurServices' },
+        { title: 'our services', url: '/OurServices' },
         { title: 'careers', url: '/Career' },
-        { title: 'Contact', url: '/contact' },
+        // { title: 'Contact', url: '/contact' },
     ]
 
 
@@ -70,10 +68,12 @@ const Header = () => {
 
                 </nav>
             </div>
-            <div className='flex lg:hidden'>
-                <LangSwitcher handleClick={changeLanguage} />
-                <MobileMenu menus={Menu}  />
-            </div>
+            {window.innerWidth <= 1025 &&
+                <div className='flex lg:hidden'>
+                    <LangSwitcher />
+                    <MobileMenu menus={Menu} />
+                </div>
+            }
         </div>
     )
 }

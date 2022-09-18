@@ -99,3 +99,9 @@
 .custom-input::placeholder{
   color: #818181;
 }
+@media screen and (max-width:600px) {
+  
+  .text-xxs{
+    font-size: xx-small;
+  }
+}

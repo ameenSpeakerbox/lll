@@ -1,5 +1,6 @@
 import React from 'react'
 import Layout from '../Components/Layout/Layout'
+import WhastappIcon from '../Components/Whatsapp/WhastappIcon'
 import AboutSection from './Home/AboutSection'
 import HeroSection from './Home/HeroSection'
 import NewsSection from './Home/NewsSection'
@@ -13,10 +14,11 @@ const index = () => {
 
       <HeroSection />
       <AboutSection />
-      <ThirdSection/>
-      <NewsSection/>
+      <ThirdSection />
+      <NewsSection />
       <ServiceSection />
 
+      <WhastappIcon />
     </Layout>
   )
 }

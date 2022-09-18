@@ -4,11 +4,16 @@ import FImg from '../../Assets/images/F-img.png'
 import Vector2 from '../../Assets/images/Group-2.png'
 import YearText from '../../Assets/images/year-text-2.png'
 import ArrowImg from '../../Assets/images/arrow-Vector.svg'
+import { CirclesVectorImg } from './HeroSection'
 
 const AboutSection = () => {
     return (
         <section className='lg:px-16 relative m-auto' style={{ maxWidth: '1519px' }}>
-            <div className='w-full  lg:h-96  bg-primary overflow-hidden lg:rounded-3xl my-20 grid grid-cols-2 '>
+            <div className='absolute right-0 top-0 md:-mt-32 lg:-mt-48 -mt-24 block'>
+                <img src={CirclesVectorImg} alt="" className='w-24 md:w-32 lg:w-48' />
+            </div>
+
+            <div className='w-full  lg:h-96 h-96  bg-primary overflow-hidden lg:rounded-3xl my-20 grid grid-cols-2 '>
                 <div className='w-full relative '>
                     {/* bg vectors */}
                     <div className='rotate-180	 w-full lg:h-96 flex justify-end'>
@@ -33,25 +38,25 @@ const AboutSection = () => {
                 </div>
             </div>
 
-            <div className='lg:px-16 w-full absolute overflow-hidden inset-0  lg:h-96 flex '>
-                <div className='xl:w-4/12 lg:w-5/12 flex  h-full flex items-center justify-end pr-10'>
+            <div className='lg:px-16 sm:px-12 px-5 w-full absolute overflow-hidden inset-0  lg:h-96 flex '>
+                <div className='xl:w-4/12 lg:w-5/12 w-5/12 flex  h-full flex items-center justify-end sm:pr-10 pr-5'>
 
                     <div className='relative'>
-                        <img src={FImg} className={'lg:w-72 md:w-60 lg:h-72 md:w-60'} alt="" />
-                        <img src={Vector2} className={'w-32 h-32 absolute bottom-0 right-0'} alt="" />
+                        <img src={FImg} className={'lg:w-72 sm:w-72 md:w-96 sm:w-72'} alt="" />
+                        <img src={Vector2} className={'lg:w-32  md:w-28  sm:w-20 w-16 lg:h-32  md:h-28 w-16 sm:h-20 absolute bottom-0 right-0'} alt="" />
                     </div>
 
                 </div>
 
-                <div className=' flex lg:w-1/2 h-full flex-col items-start justify-center'>
+                <div className=' flex lg:w-1/2 h-full w-7/12 flex-col items-start justify-center'>
                     <div>
-                        <img src={YearText} className={'lg:w-20'} alt="" />
+                        <img src={YearText} className={'lg:w-20 md:w-16 sm:w-12 w-10'} alt="" />
                     </div>
-                    <h2 className='text-white font-normal text-2xl mt-3'>Celebrating 25 Years of Excellence</h2>
-                    <p className='text-white font-normal text-sm mt-3'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras morbi ut ac orci, porta. Praesent purus faucibus integer feugiat et, euismod sit. </p>
+                    <h2 className='text-white font-normal md:text-xl sm:text-lg text-base  lg:text-2xl mt-3'>Celebrating 25 Years of Excellence</h2>
+                    <p className='text-white font-normal text-xs lg:text-sm  mt-3'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras morbi ut ac orci, porta. Praesent purus faucibus integer feugiat et, euismod sit. </p>
 
                     <div className='flex items-center mt-3'>
-                        <p className='text-white font-medium  border-b-2 border-white'>Read more about our journey
+                        <p className='text-white font-medium  border-b-2 border-white md:text-sm text-xs lg:text-base text-xxs'>Read more about our journey
                         </p>
                         <img src={ArrowImg} alt="" className='ml-2 h-3' />
                     </div>

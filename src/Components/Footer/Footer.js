@@ -7,17 +7,17 @@ import yearText from '../../Assets/images/yearText.png'
 const Footer = () => {
   const sitemap = [
     { title: 'HOME', url: '/' },
-    { title: 'ABOUT EFS', url: '/' },
-    { title: 'SERVICES', url: '/' },
-    { title: 'CAREERS', url: '/' },
+    { title: 'ABOUT EFS', url: '/company' },
+    { title: 'SERVICES', url: '/OurServices' },
+    { title: 'CAREERS', url: '/Career' },
     { title: 'EMPLOYEE PORTAL', url: '/' },
   ]
 
   const quickStart = [
-    { title: 'GET A QUOTE', url: '/' },
+    { title: 'GET A QUOTE', url: '/get-a-qoute' },
     { title: 'TRACK SHIPMENT', url: '/' },
     { title: 'RAISE A COMPLAINT', url: '/' },
-    { title: 'CONTACT US', url: '/' },
+    { title: 'CONTACT US', url: '/contact' },
     { title: 'REQUEST A CALL', url: '/' },
   ]
   const services = [

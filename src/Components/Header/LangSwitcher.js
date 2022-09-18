@@ -2,24 +2,33 @@ import { Fragment, useEffect, useState } from 'react'
 import { Listbox, Transition } from '@headlessui/react'
 import { CheckIcon, ChevronDownIcon, SelectorIcon } from '@heroicons/react/solid'
 import React from 'react'
+import i18n from '../../i18n'
 
 const people = [
     { name: 'EN' },
     { name: 'AR' },
 ]
 
-export default function LangSwitcher({ handleClick }) {
-    const [selected, setSelected] = useState(people[0])
+export default function LangSwitcher() {
+    const [selected, setSelected] = useState(people.find(itm => itm.name.toLocaleLowerCase() == i18n.language))
     // console.log({ setSelected })
     // console.log({selected})
 
     useEffect(() => {
-        handleClick(selected.name.toLocaleLowerCase())
+
+        changeLanguage()
+
 
     }, [selected])
 
+
+    const changeLanguage = () => {
+
+        i18n.changeLanguage(selected.name.toLocaleLowerCase())
+    }
+
     return (
-        <div className="  w-20">
+        <div className="lg:hidden  w-20">
             <Listbox value={selected} onChange={setSelected} >
                 <div className="relative mt-1">
                     <Listbox.Button className="relative w-full cursor-default rounded-lg bg-white py-2 pl-3 pr-7 text-left  focus:outline-none focus-visible:border-indigo-500 focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75 focus-visible:ring-offset-2 focus-visible:ring-offset-orange-300 sm:text-sm">
