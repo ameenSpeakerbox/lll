@@ -46,7 +46,7 @@ query
               <p className=" font-normal	 text-xs lg:text-sm mt-1 ">{item.node.description.description.slice(0, 200) + '...'}</p>
 
               <div className="flex justify-start py-5">
-                <button className="text-primary text-sm underline underline-offset-4	text-left">{item.node.cta}</button>
+                <Link to="/newsAndInformation" className="text-primary text-sm underline underline-offset-4	text-left">{item.node.cta}</Link>
               </div>
 
             </div>

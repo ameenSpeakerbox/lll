@@ -21,7 +21,7 @@ const Header = () => {
         //     i18n.changeLanguage('en')
         // }
     }, [])
-
+    
     const Menu = [
         { title: 'home', url: '/' },
         { title: 'company', url: '/company' },
@@ -29,13 +29,17 @@ const Header = () => {
         { title: 'careers', url: '/Career' },
         // { title: 'Contact', url: '/contact' },
     ]
-
-
+    
+    
     const changeLanguage = (lng) => {
         // alert('chng')
         i18n.changeLanguage(lng)
         // localStorage.setItem('i18nextLng', lng)
     }
+    
+    
+    const windowGlobal = typeof window !== 'undefined' && window
+
 
 
     // console.log(i18n.language)
@@ -68,7 +72,7 @@ const Header = () => {
 
                 </nav>
             </div>
-            {window.innerWidth <= 1025 &&
+            {windowGlobal.innerWidth <= 1025 &&
                 <div className='flex lg:hidden'>
                     <LangSwitcher />
                     <MobileMenu menus={Menu} />

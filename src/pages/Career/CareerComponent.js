@@ -8,16 +8,16 @@ const CareerComponent = ({ data, id }) => {
                 <img src={userIcon} alt="" />
             </div>
             <div className='w-full'>
-                <h4 className='font-semibold text-sm md:text-base'>{data.jobRole}</h4>
+                <h4 className='font-semibold text-sm md:text-base'>{data?.jobRole}</h4>
                 <div className="flex justify-between">
                     <div className='flex text-sm md:text-base'>
-                        <p>No. of Vacancies: {data.vacancy}</p>
-                        <p className='ml-4 italic font-medium'>Location: {data.location}</p>
+                        <p>No. of Vacancies: {data?.vacancy}</p>
+                        <p className='ml-4 italic font-medium'>Location: {data?.location}</p>
                     </div>
 
                 </div>
                 <h5 className='font-bold italic mt-2 text-sm'>JOB DESCRIPTION</h5>
-                {data.jd.map(item => <p className='w-72 text-sm md:text-base'>{item}</p>)}
+                {data?.jd.map(item => <p className='w-72 text-sm md:text-base'>{item}</p>)}
             </div>
             <div>
                 <button className='bg-primary text-white px-8 italic font-semibold  py-1 rounded-full md:text-base text-sm' style={{ boxShadow: '0px 0px 13.4px 4.46667px rgba(0, 0, 0, 0.2)' }}>Apply</button>
