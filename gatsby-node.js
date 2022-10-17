@@ -13,6 +13,7 @@ exports.onPostBuild = () => {
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
   const Service = path.resolve("./src/template/Service.js");
+  const News = path.resolve("./src/template/news.js");
   const response = await graphql(`
     query {
       allContentfulServices{
@@ -25,17 +26,40 @@ exports.createPages = async ({ graphql, actions }) => {
         
     }
   `)
+  const Newsresponse = await graphql(`
+  query{
+  allContentfulNewsAndInformation {
+    edges {
+      node { 
+        slug
+      }
+    }
+  }
+}
+  `)
 
-  
-const posts = response.data.allContentfulServices.edges
-    posts.forEach(edge => {
+
+  const news = Newsresponse.data.allContentfulNewsAndInformation.edges
+  news.forEach(edge => {
+    // const prev = index === 0 ? false : posts[index - 1].node
+    //   const next = index === posts.length - 1 ? false : posts[index + 1].node
+    createPage({
+      path: `/News/${edge.node.slug}`,
+      component: News,
+      context: {
+        slug: edge.node.slug,
+      },
+    });
+  })
+  const posts = response.data.allContentfulServices.edges
+  posts.forEach(edge => {
     // const prev = index === 0 ? false : posts[index - 1].node
     //   const next = index === posts.length - 1 ? false : posts[index + 1].node
     createPage({
       path: `/Service/${edge.node.slug}`,
       component: Service,
       context: {
-        slug: edge.node.slug,  
+        slug: edge.node.slug,
       },
     });
   })

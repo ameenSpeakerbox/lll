@@ -54,11 +54,11 @@ const Header = () => {
             <div className='hidden lg:flex md:items-center'>
                 <nav>
 
-                    <ul className='flex capitalize text-primary font-bold justify-end pb-3 mr-3'>
+                    {/* <ul className='flex capitalize text-primary font-bold justify-end pb-3 mr-3'>
                         <button className={i18n.language == 'en' ? 'border-b-2 border-primary font-bold' : 'hover-underline-animation font-bold cursor-pointer'} onClick={() => changeLanguage('en')}>English </button>
                         <div className='px-2'>|</div>
                         <button className={i18n.language == 'ar' ? 'border-b-2 border-primary font-bold' : 'hover-underline-animation font-bold cursor-pointer'} onClick={() => changeLanguage('ar')}>عربى</button>
-                    </ul>
+                    </ul> */}
 
                     <ul className='flex'>
                         {Menu.map(item => (
@@ -74,7 +74,7 @@ const Header = () => {
             </div>
             {windowGlobal.innerWidth <= 1025 &&
                 <div className='flex lg:hidden'>
-                    <LangSwitcher />
+                    {/* <LangSwitcher /> */}
                     <MobileMenu menus={Menu} />
                 </div>
             }

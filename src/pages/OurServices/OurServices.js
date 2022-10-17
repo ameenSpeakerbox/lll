@@ -23,7 +23,7 @@ import Tile7 from '../../Assets/images/Rectangle 34.png'
 import Tile8 from '../../Assets/images/Rectangle 35.png'
 import Tile9 from '../../Assets/images/Rectangle 36.png'
 import Tile10 from '../../Assets/images/Rectangle 37.png'
-import { graphql, useStaticQuery } from 'gatsby';
+import { graphql, Link, useStaticQuery } from 'gatsby';
 
 
 function OurServices() {
@@ -51,9 +51,9 @@ function OurServices() {
   }
 }`)
     const services = [
-        { image: PlaneImg, icon: PlaneIcon, title: 'Air Freight', desc: 'Nam condimentum elit iaculis sem maecenas vitae eu nunc. Mattis odio lectus at morbi. Mauris blandit elit mauris malesuada sed in nibh tincidunt suscipit.' },
-        { image: ShipImg, icon: ShipIcon, title: 'Sea Freight', desc: 'Nam condimentum elit iaculis sem maecenas vitae eu nunc. Mattis odio lectus at morbi. Mauris blandit elit mauris malesuada sed in nibh tincidunt suscipit.' },
-        { image: TruckImg, icon: TruckIcon, title: 'Land Freight', desc: 'Nam condimentum elit iaculis sem maecenas vitae eu nunc. Mattis odio lectus at morbi. Mauris blandit elit mauris malesuada sed in nibh tincidunt suscipit.' },
+        { image: PlaneImg, url: '/AirFreight', icon: PlaneIcon, title: 'Air Freight', desc: 'Nam condimentum elit iaculis sem maecenas vitae eu nunc. Mattis odio lectus at morbi. Mauris blandit elit mauris malesuada sed in nibh tincidunt suscipit.' },
+        { image: ShipImg, url: '/SeaFreight', icon: ShipIcon, title: 'Sea Freight', desc: 'Nam condimentum elit iaculis sem maecenas vitae eu nunc. Mattis odio lectus at morbi. Mauris blandit elit mauris malesuada sed in nibh tincidunt suscipit.' },
+        { image: TruckImg, url: '/LandTransportation', icon: TruckIcon, title: 'Land Freight', desc: 'Nam condimentum elit iaculis sem maecenas vitae eu nunc. Mattis odio lectus at morbi. Mauris blandit elit mauris malesuada sed in nibh tincidunt suscipit.' },
     ]
     const tiles = [
         { image: Tile1, title: 'Customs Clearance', desc: 'Licensed in house customs clearance solutions covering all major ports in Saudi Arabia. ' },
@@ -93,8 +93,10 @@ function OurServices() {
                         <img src={BlueVector} className="w-48 absolute z-0 2xl:-right-10 lg:-right-0" alt="" />
                     </div>
                     <div className="grid md:grid-cols-3 sm:grid-cols-2 relative mt-10 xl:gap-10 gap-7">
-                        {services.map(item => (
-                            <ServiceCard Image={item.image} Icon={item.icon} Title={item.title} Content={item.desc} />
+                        {services?.map(item => (
+                            <Link to={item.url}>
+                                <ServiceCard Image={item.image} Icon={item.icon} Title={item.title} Content={item.desc} />
+                            </Link>
                         ))}
                     </div>
 
@@ -107,7 +109,7 @@ function OurServices() {
                 <div className='container '>
                     <div class="flex flex-row bg-pink place-content-center">
                         <div className="grid md:grid-cols-2 bg-pink gap-5 p-4">
-                            {data.allContentfulServices.edges.map(item => (
+                            {data.allContentfulServices.edges?.map(item => (
                                 <TileComponent data={item.node} />
                             ))}
                         </div>

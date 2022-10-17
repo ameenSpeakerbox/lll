@@ -5,6 +5,7 @@ import Vector2 from '../../Assets/images/Group-2.png'
 import YearText from '../../Assets/images/year-text-2.png'
 import ArrowImg from '../../Assets/images/arrow-Vector.svg'
 import { CirclesVectorImg } from './HeroSection'
+import { Link } from 'gatsby'
 
 const AboutSection = () => {
     return (
@@ -56,8 +57,8 @@ const AboutSection = () => {
                     <p className='text-white font-normal text-xs lg:text-sm  mt-3'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras morbi ut ac orci, porta. Praesent purus faucibus integer feugiat et, euismod sit. </p>
 
                     <div className='flex items-center mt-3'>
-                        <p className='text-white font-medium  border-b-2 border-white md:text-sm text-xs lg:text-base text-xxs'>Read more about our journey
-                        </p>
+                        <Link to='/company' className='text-white font-medium  border-b-2 border-white md:text-sm text-xs lg:text-base text-xxs'>Read more about our journey
+                        </Link>
                         <img src={ArrowImg} alt="" className='ml-2 h-3' />
                     </div>
                 </div>

@@ -11,6 +11,7 @@ import WhiteDotsVector from '../../Assets/images/white-dots.svg'
 import RedDotsVector from '../../Assets/images/red-dots.svg'
 import ServiceCard from '../../Components/Cards/ServiceCard'
 import MailSubscribeSection from '../../Components/MailSubscribeSection/MailSubscribeSection'
+import { Link } from 'gatsby'
 
 
 const ServiceSection = () => {
@@ -30,9 +31,15 @@ const ServiceSection = () => {
                     <img src={WhiteVector} className="md:w-40 w-32 lg:w-48 absolute z-0 2xl:-right-10 -right-20 -top-24" alt="" />
                 </div>
                 <div className="grid lg:grid-cols-3 md:grid-cols-2 relative mt-10 xl:gap-10 lg:gap-7 gap-5">
-                    {services.map(item => (
-                        <ServiceCard Image={item.image} Icon={item.icon} Title={item.title} Content={item.desc} />
-                    ))}
+                    {services?.map(item => {
+                        console.log('url ------------', item.url)
+                        return (
+                            <Link to={item.url}>
+                                <ServiceCard Image={item.image} Icon={item.icon} Title={item.title} Content={item.desc} />
+                            </Link>
+                        )
+                    }
+                    )}
                 </div>
 
 

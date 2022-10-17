@@ -30,7 +30,7 @@ function ThirdSection() {
             <h1 className='text-primary font-normal text-xl lg:text-3xl text-center mb-8'>What makes EFS standout ?</h1>
 
             <div class="grid md:grid-cols-3 sm:grid-cols-2 gap-4 lg:gap-12 ">
-                {array.map((item) => (
+                {array?.map((item) => (
                     <div className='content-center' >
                         <ImageComponent data={item} /></div>
                 )

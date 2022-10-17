@@ -39,9 +39,9 @@ query
             <div className={idx + 1 == data?.allContentfulNewsAndInformation.edges.length ? "pr-12 sm:border-b-2 border-solid  border-black lg:border-b-0 " : "border-solid  border-black pr-12 lg:border-r-2 border-b-2  lg:border-b-0"}>
 
               <p className=" font-normal	 text-xs lg:text-xs ">{item.node.createdDate}</p>
-              <h2 className="text-primary font-normal text-2xl text-left">
+              <Link to="/newsAndInformation" className="text-primary font-normal text-2xl text-left">
                 {item.node.title}
-              </h2>
+              </Link>
 
               <p className=" font-normal	 text-xs lg:text-sm mt-1 ">{item.node.description.description.slice(0, 200) + '...'}</p>
 
