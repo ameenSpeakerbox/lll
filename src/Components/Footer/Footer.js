@@ -21,11 +21,11 @@ const Footer = () => {
     { title: 'REQUEST A CALL', url: '/' },
   ]
   const services = [
-    { title: 'AIR FREIGHT', url: '/' },
-    { title: 'SEA FREIGHT', url: '/' },
-    { title: 'GLOBAL LCL', url: '/' },
-    { title: 'CROSS BORDER TRANSPORTATION', url: '/' },
-    { title: 'RELOCATION', url: '/' },
+    { title: 'AIR FREIGHT', url: '/AirFreight' },
+    { title: 'SEA FREIGHT', url: '/SeaFreight' },
+    // { title: 'GLOBAL LCL', url: '/' },
+    { title: 'LAND TRANSPORTATION', url: '/LandTransportation' },
+    { title: 'RELOCATION', url: '/Service/relocation-services' },
   ]
   const others = [
     { title: 'PACKING AND CRATING', url: '/' },
@@ -47,11 +47,11 @@ const Footer = () => {
 
       <div className='grid lg:grid-cols-3 gap-5 mt-10'>
         <div className='col-span-2 flex flex-col items-center justify-center text-primary text-sm font-medium'>
-          <div className='flex justify-between w-96'>
+          <div className='flex flex-col md:flex-row gap-2 md:justify-between w-96'>
             <p className='mx-2 '>PRIVACY POLICY</p>
             <p className='mx-2'>BRAND GUIDELINES</p>
           </div>
-          <div className='flex justify-evenly mt-5 w-full'>
+          <div className='flex flex-col md:flex-row gap-2 md:justify-evenly mt-5 w-full'>
             <p className='mx-2'>DISCLAIMER</p>
             <p className='mx-2'>TERMS OF USE</p>
             <p className='mx-2'>STANDARD TRADING AGREEMENT</p>
