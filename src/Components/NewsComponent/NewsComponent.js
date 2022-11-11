@@ -39,14 +39,14 @@ query
             <div className={idx + 1 == data?.allContentfulNewsAndInformation.edges.length ? "pr-12 sm:border-b-2 border-solid  border-black lg:border-b-0 " : "border-solid  border-black pr-12 lg:border-r-2 border-b-2  lg:border-b-0"}>
 
               <p className=" font-normal	 text-xs lg:text-xs ">{item.node.createdDate}</p>
-              <Link to="/newsAndInformation" className="text-primary font-normal text-2xl text-left">
+              <Link to={`/News/${item.node.slug}`} className="text-primary font-normal text-2xl text-left">
                 {item.node.title}
               </Link>
 
               <p className=" font-normal	 text-xs lg:text-sm mt-1 ">{item.node.description.description.slice(0, 200) + '...'}</p>
 
               <div className="flex justify-start py-5">
-                <Link to="/newsAndInformation" className="text-primary text-sm underline underline-offset-4	text-left">{item.node.cta}</Link>
+                <Link to={`/News/${item.node.slug}`} className="text-primary text-sm underline underline-offset-4	text-left">{item.node.cta}</Link>
               </div>
 
             </div>

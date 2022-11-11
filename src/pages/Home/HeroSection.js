@@ -42,26 +42,26 @@ const HeroSection = () => {
     return (
         <main className='container '>
             {/* top section */}
-            <section className='grid lg:grid-cols-2 gap-5 h-full '>
+            <section className='grid lg:grid-cols-2 grid-cols-1 gap-5 h-full '>
                 <div className='flex items-center'>
-                    <div>
-                        <h1 className='text-primary font-bold xl:text-5xl lg:text-4xl md:text-4xl text-3xl xl:w-4/5	 md:w-8/12 sm:w-96  lg:w-96 w-72'>
+                    <div className='md:mt-20'>
+                        <h1 className='text-primary font-bold xl:text-5xl lg:text-4xl md:text-4xl text-3xl xl:w-11/12	 md:w-8/12 sm:w-96  lg:w-96 w-72'>
                             Reliable logistics solutions for all scales of businesses
                         </h1>
-                        <p className='sm:w-96 font-medium text-sm mt-3'>
+                        <p className='w-72 lg:w-10/12  font-medium text-sm lg:text-lg mt-3'>
                             Bringing flexible and innovative solutions for logistical services. We have a strong infrastructure to enable us to provide services in the field of logistics solutions to the satisfaction.
                         </p>
                     </div>
                 </div>
 
                 <div>
-                    <div className='flex justify-end'>
+                    <div className='flex justify-end h-96 lg:h-auto'>
 
-                        <div className='w-4/5'>
+                        <div className='lg:w-4/5 md:w-3/5 w-full'>
                             <Slider {...settings}>
-                                <img src={SliderImg} className={'h-auto md:w-full sm:h-72 z-10 mt-10 w-10/12 ml-auto '} alt="" />
-                                <img src={SliderImg2} className={'h-auto md:w-full sm:h-72 z-10 mt-10 w-10/12 ml-auto '} alt="" />
-                                <img src={SliderImg3} className={'h-auto md:w-full sm:h-72 z-10 mt-10 w-10/12 ml-auto '} alt="" />
+                                <img src={SliderImg} className={'h-72 w-72 md:w-20 lg:w-full sm:h-72 z-10 mt-10 ml-auto object-cover rounded-xl'} alt="" />
+                                <img src={SliderImg2} className={'h-72 w-72 md:w-20 lg:w-full sm:h-72 z-10 mt-10 ml-auto object-cover rounded-xl'} alt="" />
+                                <img src={SliderImg3} className={'h-72 w-72 md:w-20 lg:w-full sm:h-72 z-10 mt-10 ml-auto object-cover rounded-xl'} alt="" />
                             </Slider>
                         </div>
 
@@ -147,10 +147,10 @@ const HeroSection = () => {
                             <img src={SearchIcon} className={'h-3 lg:h-5'} alt="" />
                             {'Track & Trace'}
                         </button>
-                        <button className='flex font-semibold bg-white flex-col items-center py-2 px-4 text-center rounded-lg text-primary text-xs ' style={{ boxShadow: '0px 2.46066px 30.7582px rgba(7, 80, 157, 0.5)' }}>
+                        <Link to='/contact' className='flex font-semibold bg-white flex-col items-center py-2 px-4 text-center rounded-lg text-primary text-xs ' style={{ boxShadow: '0px 2.46066px 30.7582px rgba(7, 80, 157, 0.5)' }}>
                             <img src={LoctionIcon} className={'h-3 lg:h-5'} alt="" />
                             {'Our Locations'}
-                        </button>
+                        </Link>
                     </div>
                 </div>
                 <div className='md:flex justify-center items-center lg:grid md:col-span-3 lg:col-span-2 xl:col-span-1 hidden'>

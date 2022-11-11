@@ -45,16 +45,16 @@ const Footer = () => {
         <FooterLinksSection heading={''} list={others} />
       </div>
 
-      <div className='grid lg:grid-cols-3 gap-5 mt-10'>
+      <div className='grid grid-cols-1 lg:grid-cols-3 gap-5 mt-10'>
         <div className='col-span-2 flex flex-col items-center justify-center text-primary text-sm font-medium'>
-          <div className='flex flex-col md:flex-row gap-2 md:justify-between w-96'>
-            <p className='mx-2 '>PRIVACY POLICY</p>
-            <p className='mx-2'>BRAND GUIDELINES</p>
+          <div className='flex flex-col md:flex-row gap-2 md:justify-between md:w-96 w-full'>
+            <p className='md:mx-2 '>PRIVACY POLICY</p>
+            <p className='md:mx-2'>BRAND GUIDELINES</p>
           </div>
           <div className='flex flex-col md:flex-row gap-2 md:justify-evenly mt-5 w-full'>
-            <p className='mx-2'>DISCLAIMER</p>
-            <p className='mx-2'>TERMS OF USE</p>
-            <p className='mx-2'>STANDARD TRADING AGREEMENT</p>
+            <p className='md:mx-2'>DISCLAIMER</p>
+            <p className='md:mx-2'>TERMS OF USE</p>
+            <p className='md:mx-2'>STANDARD TRADING AGREEMENT</p>
           </div>
 
         </div>

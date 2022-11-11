@@ -72,12 +72,12 @@ const Header = () => {
 
                 </nav>
             </div>
-            {windowGlobal.innerWidth <= 1025 &&
+            {/* {windowGlobal.innerWidth <= 1025 && */}
                 <div className='flex lg:hidden'>
                     {/* <LangSwitcher /> */}
                     <MobileMenu menus={Menu} />
                 </div>
-            }
+            {/* } */}
         </div>
     )
 }

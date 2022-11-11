@@ -12,16 +12,19 @@ const OurJourneySection = () => {
             <div className="container h-auto xl:px-10 ">
                 <div className="grid lg:grid-cols-2">
                     <div className='flex items-start lg:pr-10'>
-                        <img src={yearTextLogo} className={'w-40'} alt="" />
+                        <img src={yearTextLogo} className={'md:w-40 w-28'} alt="" />
                         <div className='ml-4 w-3/4'>
-                            <h1 className='text-5xl text-primary font-bold'>Our Journey</h1>
-                            <h1 className='text-7xl text-primary font-bold'>So Far</h1>
-                            <p>
+                            <h1 className='text-3xl md:text-5xl text-primary font-bold'>Our Journey</h1>
+                            <h1 className='text-5xl md:text-7xl text-primary font-bold'>So Far</h1>
+
+                            <p className=' sm:block hidden '>
                                 Crossing 25 years of operations, EFS has achieved a remarkable growth in the Kingdom and established as world-class provider of innovative logistics and supply-chain services and solutions.
                             </p>
                         </div>
                     </div>
-
+                    <p className='block sm:hidden my-5'>
+                        Crossing 25 years of operations, EFS has achieved a remarkable growth in the Kingdom and established as world-class provider of innovative logistics and supply-chain services and solutions.
+                    </p>
                     <div>
                         <div className='relative flex justify-end mt-5 md:mt-0'>
                             <img src={Image} className={'w-full'} alt="" />

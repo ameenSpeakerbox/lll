@@ -22,7 +22,7 @@ const ManagementSection = () => {
                 </div>
                 <div className="grid grid-cols-1 relative mt-10">
                     <div className='flex justify-end'>
-                        <div className='bg-white md:w-3/4 flex justify-between p-6 rounded-xl z-10'>
+                        <div className='bg-white md:w-3/4 w-full flex justify-between p-6 rounded-xl z-10'>
                             <div className='w-36  '>
                                 <img src={QouteIcon} alt="" />
                             </div>

@@ -1,12 +1,14 @@
 import React from 'react'
 import Icon from '../../Assets/images/whatsapp-icon.svg'
+import { FloatingWhatsApp } from 'react-floating-whatsapp'
 
 const WhastappIcon = () => {
     return (
-        <a href='' className='fixed bottom-1 right-1 p-7 scale-50 rounded-full' style={{ background: 'linear-gradient(180deg, #00D222 0%, #04AD1F 100%)' }}>
-            <img src={Icon} alt="" />
-            {/* hwllo wolrd */}
-        </a>
+        <div className='fixed bottom-1 right-1 p-7  rounded-full' >
+            <FloatingWhatsApp   />
+
+            
+        </div>
     )
 }
 

@@ -54,7 +54,7 @@ const ServiceTemplate = (
                         </div>
                         <div className='flex items-center justify-center mt-5'>
                             <img className='h-7' src={YoutubeIcon} alt="" />
-                            <Link to={youtubeLink} target={'_blank'} className='text-primary underline underline-offset-4 ml-2 font-bold w-60'>{buttonText}</Link>
+                            <Link to={youtubeLink} target={'_blank'} className='text-primary underline underline-offset-4 ml-2 font-bold w-60 '>{buttonText}</Link>
                         </div>
 
                         <div className="flex justify-center">

@@ -39,39 +39,47 @@ const Service = ({ data }) => {
       <main className='container '>
         <section className='grid grid-cols-1 gap-5 lg:min-h-screen md:h-full py-10 px-5'>
           <div>
-            <h1 className='text-5xl font-bold text-primary'>{data.contentfulServices.title}</h1>
-            <p className='w-10/12 mt-2'>{(data.contentfulServices.description.description)}</p>
+            <h1 className='text-3xl md:text-4xl lg:text-5xl font-bold text-primary'>{data.contentfulServices?.title}</h1>
+            <p className='w-10/12 mt-2'>{(data.contentfulServices?.description.description)}</p>
           </div>
 
           <div className='relative'>
             <img src={RedVectorImg} className={'w-48 absolute z-0 2xl:-left-10 lg:-left-0 lg:bottom-0 lg:top-0 m-auto '} style={{ zIndex: -1 }} alt="" />
             <img src={BlueVectorImg} className={'w-48 absolute z-0 2xl:-right-10 lg:-right-0'} alt="" style={{ zIndex: -1 }} />
 
-            <div className='grid grid-cols-2'>
+            <div className='grid md:grid-cols-2'>
               <div>
-                <img src={data.contentfulServices.portraitImage.file.url} className={''} alt="" />
+                <img src={data.contentfulServices?.portraitImage.file.url} className={''} alt="" />
                 <div>
-                  <div>{renderRichText(data.contentfulServices.portraitImageDescription, options)}</div>
+                  {data.contentfulServices?.portraitImageDescription &&
+                    <div>{renderRichText(data.contentfulServices?.portraitImageDescription, options)}</div>
+                  }
                 </div>
               </div>
               <div>
-                <img src={data.contentfulServices.landscapeImage.file.url} className={' '} alt="" />
+                <img src={data.contentfulServices?.landscapeImage.file.url} className={' '} alt="" />
                 <div>
-                  <div>{renderRichText(data.contentfulServices.landscapeImageDescription, options)}</div>
+                  {data.contentfulServices?.landscapeImageDescription &&
+                    <div>{renderRichText(data.contentfulServices?.landscapeImageDescription, options)}</div>
+                  }
                 </div>
               </div>
             </div>
           </div>
 
           <div className='py-10'>
-            <div className='flex flex-col w-full justify-center  items-center relative '>
-              <img src={data.contentfulServices.youtubeThumbnailImage.file.url} alt="" />
-              <img src={PlayBtnIcon} alt="" className='absolute m-auto inset-0 cursor-default	 h-20 w-20		' />
-            </div>
-            <div className='flex items-center justify-center'>
-              <img className='h-7' src={YoutubeIcon} alt="" />
-              <Link to={data.contentfulServices.youtubeLink} target={'_blank'} className='text-primary underline underline-offset-4 ml-2 font-bold w-60'>{data.contentfulServices.buttonText}</Link>
-            </div>
+            {(data.contentfulServices.youtubeThumbnailImage.file.url.length && data.contentfulServices.youtubeLink.length) &&
+              <div className='flex flex-col w-full justify-center  items-center relative '>
+                <img src={data.contentfulServices?.youtubeThumbnailImage.file.url} alt="" />
+                <img src={PlayBtnIcon} alt="" className='absolute m-auto inset-0 cursor-default	 h-20 w-20		' />
+              </div>
+            }
+            {data.contentfulServices.youtubeLink &&
+              <div className='flex items-center justify-center mt-5'>
+                <img className='h-7' src={YoutubeIcon} alt="" />
+                <Link to={data.contentfulServices?.youtubeLink} target={'_blank'} className='text-primary underline underline-offset-4 ml-2 font-bold w-max-60'>{data.contentfulServices?.buttonText ? data.contentfulServices?.buttonText : 'watch Video'}</Link>
+              </div>
+            }
 
             <div className="flex justify-center">
               <EnquiryComponent />

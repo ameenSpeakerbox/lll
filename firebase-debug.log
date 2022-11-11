@@ -1,0 +1,33 @@
+[debug] [2022-11-11T16:28:22.006Z] ----------------------------------------------------------------------
+[debug] [2022-11-11T16:28:22.008Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\hp\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2022-11-11T16:28:22.008Z] CLI Version:   10.9.2
+[debug] [2022-11-11T16:28:22.008Z] Platform:      win32
+[debug] [2022-11-11T16:28:22.008Z] Node Version:  v16.15.0
+[debug] [2022-11-11T16:28:22.019Z] Time:          Fri Nov 11 2022 21:58:22 GMT+0530 (India Standard Time)
+[debug] [2022-11-11T16:28:22.019Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-11-11T16:28:22.076Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-11-11T16:28:22.076Z] > authorizing via signed-in user (muhammedashifjobinhrd@gmail.com)
+[debug] [2022-11-11T16:28:22.076Z] [iam] checking project efs-logistic for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-11-11T16:28:22.077Z] > refreshing access token with scopes: []
+[debug] [2022-11-11T16:28:22.078Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-11-11T16:28:22.469Z] <<< HTTP RESPONSE 200 {"date":"Fri, 11 Nov 2022 16:28:23 GMT","pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-11-11T16:28:22.480Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/efs-logistic:testIamPermissions [none]
+[debug] [2022-11-11T16:28:22.481Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/efs-logistic:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-11-11T16:28:24.456Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/efs-logistic:testIamPermissions 200
+[debug] [2022-11-11T16:28:24.456Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/efs-logistic:testIamPermissions {}
+[debug] [2022-11-11T16:28:24.456Z] [iam] error while checking permissions, command may fail: FirebaseError: Authorization failed. This account is missing the following required permissions on project efs-logistic:
+
+  firebase.projects.get
+  firebasehosting.sites.update
+[debug] [2022-11-11T16:28:24.457Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/efs-logistic [none]
+[debug] [2022-11-11T16:28:25.860Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/efs-logistic 403
+[debug] [2022-11-11T16:28:25.860Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/efs-logistic {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2022-11-11T16:28:25.861Z] HTTP Error: 403, The caller does not have permission
+[debug] [2022-11-11T16:28:27.084Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at module.exports (C:\Users\hp\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:47:12)
+    at RetryOperation._fn (C:\Users\hp\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:286:39)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[error] 
+[error] Error: Failed to get Firebase project efs-logistic. Please make sure the project exists and your account has permission to access it.

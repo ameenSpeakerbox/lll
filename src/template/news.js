@@ -28,6 +28,9 @@ export const PageQuery = graphql`
             url
           }
         }
+        secondDescription {
+          secondDescription
+        }
         createdDate(formatString: "Do MMMM yyyy")
   }
    

@@ -16,9 +16,9 @@ import { Link } from 'gatsby'
 
 const ServiceSection = () => {
     const services = [
-        { image: PlaneImg, icon: PlaneIcon, title: 'Air Freight', desc: 'Nam condimentum elit iaculis sem maecenas vitae eu nunc. Mattis odio lectus at morbi. Mauris blandit elit mauris malesuada sed in nibh tincidunt suscipit.' },
-        { image: ShipImg, icon: ShipIcon, title: 'Sea Freight', desc: 'Nam condimentum elit iaculis sem maecenas vitae eu nunc. Mattis odio lectus at morbi. Mauris blandit elit mauris malesuada sed in nibh tincidunt suscipit.' },
-        { image: TruckImg, icon: TruckIcon, title: 'Land Freight', desc: 'Nam condimentum elit iaculis sem maecenas vitae eu nunc. Mattis odio lectus at morbi. Mauris blandit elit mauris malesuada sed in nibh tincidunt suscipit.' },
+        { image: PlaneImg, icon: PlaneIcon, title: 'Air Freight', desc: 'We handle all types of shipments including sensitive by time, hazardous nature, abnormal size and perishables with utmost care and speed to & from world wide destinations.' },
+        { image: ShipImg, icon: ShipIcon, title: 'Sea Freight', desc: 'We handle all types of sea freight shipmentsfrom FCL & LCL to break-bulk and RORO.We are one of the leading firms having direct consolidation to/from various destinations/origins around the globe.' },
+        { image: TruckImg, icon: TruckIcon, title: 'Land Freight', desc: 'EFS is a licensed transport company with our own fleet of trailer heads in Saudi Arabia offering trucking services domestic & cross-country transportation of various shipments. We handle normal & heavy lift transport to and from national & international destination.' },
     ]
     return (
         <section className=' bg-primary py-20 overflow-hidden '>

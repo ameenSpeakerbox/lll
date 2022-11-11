@@ -54,7 +54,7 @@ const AboutSection = () => {
                         <img src={YearText} className={'lg:w-20 md:w-16 sm:w-12 w-10'} alt="" />
                     </div>
                     <h2 className='text-white font-normal md:text-xl sm:text-lg text-base  lg:text-2xl mt-3'>Celebrating 25 Years of Excellence</h2>
-                    <p className='text-white font-normal text-xs lg:text-sm  mt-3'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras morbi ut ac orci, porta. Praesent purus faucibus integer feugiat et, euismod sit. </p>
+                    <p className='text-white font-normal text-xs lg:text-sm  mt-3'>To all our customers, business partners and dedicated employees -  We humbly express our great thanks and gratitude towards you all for your continued support and commitment to EFS LOGISTICS</p>
 
                     <div className='flex items-center mt-3'>
                         <Link to='/company' className='text-white font-medium  border-b-2 border-white md:text-sm text-xs lg:text-base text-xxs'>Read more about our journey
