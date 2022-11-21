@@ -7,7 +7,7 @@ import NewsSection from './Home/NewsSection'
 import ServiceSection from './Home/Service'
 import ThirdSection from './Home/ThirdSection'
 import '../styles/global.css'
-import './index.css'
+import '../styles/index.css'
 
 const index = () => {
   return (
