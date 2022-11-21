@@ -1,9 +1,8 @@
 import React from 'react'
+import { useEffect } from 'react'
 import Footer from '../Footer/Footer'
 import Header from '../Header/Header'
-import '../../styles/global.css'
-import '../../styles/index.css'
-import { useEffect } from 'react'
+
 
 const Layout = ({ children }) => {
     useEffect(() => {

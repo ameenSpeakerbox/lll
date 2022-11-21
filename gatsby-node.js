@@ -44,10 +44,10 @@ exports.createPages = async ({ graphql, actions }) => {
     // const prev = index === 0 ? false : posts[index - 1].node
     //   const next = index === posts.length - 1 ? false : posts[index + 1].node
     createPage({
-      path: `/News/${edge.node.slug}`,
+      path: `/News/${edge.node?.slug}`,
       component: News,
       context: {
-        slug: edge.node.slug,
+        slug: edge.node?.slug,
       },
     });
   })
