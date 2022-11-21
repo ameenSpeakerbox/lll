@@ -33,7 +33,7 @@ query
   return (
     <div>
       <div className="grid lg:grid-cols-4 sm:grid-cols-2 gap-12 mt-5 mb-8">
-        {data?.allContentfulNewsAndInformation.edges?.map((item, idx,) => {
+        {data?.allContentfulNewsAndInformation.edges?.filter((itm, ind) => ind < 4).map((item, idx,) => {
           console.log(item)
           return (
             <div className={idx + 1 == data?.allContentfulNewsAndInformation.edges.length ? "pr-12 sm:border-b-2 border-solid  border-black lg:border-b-0 " : "border-solid  border-black pr-12 lg:border-r-2 border-b-2  lg:border-b-0"}>
