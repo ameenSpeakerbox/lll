@@ -1,5 +1,5 @@
 import React from 'react'
-import '../../styles/Index.css'
+// import '../../Index.css'
 
 const MailSubscribeSection = () => {
     
