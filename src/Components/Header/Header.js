@@ -21,7 +21,7 @@ const Header = () => {
         //     i18n.changeLanguage('en')
         // }
     }, [])
-    
+
     const Menu = [
         { title: 'home', url: '/' },
         { title: 'company', url: '/company' },
@@ -29,15 +29,15 @@ const Header = () => {
         { title: 'careers', url: '/Career' },
         // { title: 'Contact', url: '/contact' },
     ]
-    
-    
+
+
     const changeLanguage = (lng) => {
         // alert('chng')
         i18n.changeLanguage(lng)
         // localStorage.setItem('i18nextLng', lng)
     }
-    
-    
+
+
     const windowGlobal = typeof window !== 'undefined' && window
 
 
@@ -60,23 +60,23 @@ const Header = () => {
                         <button className={i18n.language == 'ar' ? 'border-b-2 border-primary font-bold' : 'hover-underline-animation font-bold cursor-pointer'} onClick={() => changeLanguage('ar')}>عربى</button>
                     </ul> */}
 
-                    <ul className='flex'>
+                    <div className='flex'>
                         {Menu.map(item => (
-                            <li className='mx-3 capitalize text-primary font-semibold cursor-pointer hover-underline-animation'>
+                            <div className='mx-3 capitalize text-primary font-semibold cursor-pointer hover-underline-animation'>
                                 <Link to={item.url}>
                                     {t(item.title)}
                                 </Link>
-                            </li>
+                            </div>
                         ))}
-                    </ul>
+                    </div>
 
                 </nav>
             </div>
             {/* {windowGlobal.innerWidth <= 1025 && */}
-                <div className='flex lg:hidden'>
-                    {/* <LangSwitcher /> */}
-                    <MobileMenu menus={Menu} />
-                </div>
+            <div className='flex lg:hidden'>
+                {/* <LangSwitcher /> */}
+                <MobileMenu menus={Menu} />
+            </div>
             {/* } */}
         </div>
     )

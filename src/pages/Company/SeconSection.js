@@ -12,7 +12,7 @@ return(
                     
                     <div class="grid grid-rows-2 gap-12 ">
                         <div>
-                        <div className=' text-white font-bold md:text-4xl text-xl lg:text-7xl ' >150+</div>
+                        <div className=' text-white font-bold md:text-4xl text-xl lg:text-7xl ' >80+</div>
                         <div><span className='text-white font-light lg:font-bold text-base'>Team Members</span></div>
                         </div>
                         <div>
@@ -22,7 +22,7 @@ return(
                         
                     </div>
                     <div>
-                    <div className=' text-white font-bold md:text-4xl text-xl lg:text-7xl mt-14'>1700+</div>
+                    <div className=' text-white font-bold md:text-4xl text-xl lg:text-7xl mt-14'>100+</div>
                     <div><span className='text-white font-light lg:font-bold text-base '>Happy Clients</span></div> 
                     </div>
                     

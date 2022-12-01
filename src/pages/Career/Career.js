@@ -1,5 +1,5 @@
 import React from 'react'
-import CareerImg from '../../Assets/images/career.png'
+import CareerImg from '../../Assets/images/Group 996.jpg'
 // import { BlueVector } from '../Home/Service'
 import BlueVector from '../../Assets/images/Ornament 11.png'
 import CareerComponent from './CareerComponent'

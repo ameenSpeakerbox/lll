@@ -1,4 +1,4 @@
-import { graphql, Link } from 'gatsby'
+import { graphql, Link, useStaticQuery } from 'gatsby'
 import React, { useEffect } from 'react'
 import Layout from '../Components/Layout/Layout'
 import MailSubscribeSection from '../Components/MailSubscribeSection/MailSubscribeSection'
@@ -15,24 +15,9 @@ import InputField from '../Components/InputField/InputField'
 const Service = ({ data }) => {
   console.log(data)
   // const Object = data.contentfulServices.allContentfulServices.edges[0].node
-  const options = {
-    renderMark: {
-      [MARKS.BOLD]: (text) => <b className="font-bold">{text}</b>,
-    },
-    renderNode: {
-      [INLINES.HYPERLINK]: (node, children) => {
-        const { uri } = node.data
-        return (
-          <a href={uri} className="underline">
-            {children}
-          </a>
-        )
-      },
-      [BLOCKS.LIST_ITEM]: (node, children) => {
-        return <li className='list-disc	'>{children}</li>
-      },
-    },
-  }
+
+
+
 
   return (
     <Layout>
@@ -64,6 +49,35 @@ const Service = ({ data }) => {
                   }
                 </div>
               </div>
+            </div>
+            <div className="grid md:grid-cols-2 gap-5 p-4 my-5">
+              {!!window.location.pathname.includes('project-cargo') && data.allContentfulProjectCargo.edges?.map(itm => {
+                const item = itm.node
+                return (
+                  <div class="flex flex-row 	rounded-2xl p-2" style={{ boxShadow: '0px 2.92353px 36.5441px rgb(10 80 159 / 25%)' }}>
+                    <div class="basis-1/2"><span >
+                      <img className='w-11/12 ' src={item?.image.file.url} />
+                    </span></div>
+                    <div class="basis-1/2">
+                      <div class="flex flex-col ">
+                        <div>
+                          <h5 className=' font-normal text-xs md:text-sm py-1 '>{item?.projectName}</h5>
+                        </div>
+                        <div>
+                          <h3 className='text-primary font-extrabold text-sm md:text-lg py-1 '>{item?.title}</h3>
+                        </div>
+                        <div>
+                          <h5 className='text-primary font-normal text-xs md:text-sm py-1 '>Location:   <b>{item?.location}</b></h5>
+                        </div>
+                        <div>
+                          <p className='text-left font-normal text-xs lg:text-sm'>Scope of work : <b>{item?.scopeOfWork}</b></p>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                )
+              })}
             </div>
           </div>
 
@@ -100,6 +114,33 @@ const Service = ({ data }) => {
 }
 
 export default Service
+export const options = {
+  renderMark: {
+    [MARKS.BOLD]: (text) => <b className="font-bold">{text}</b>,
+  },
+  renderNode: {
+    [INLINES.HYPERLINK]: (node, children) => {
+      const { uri } = node.data
+      return (
+        <a href={uri} className="underline">
+          {children}
+        </a>
+      )
+    },
+    [BLOCKS.LIST_ITEM]: (node, children) => {
+      return <li className='list-disc flex'>{children}</li>
+    },
+    [BLOCKS.HEADING_1]: (node, children) => {
+      return <h1 className='text-4xl font-bold py-3'>{children}</h1>
+    },
+    [BLOCKS.HEADING_2]: (node, children) => {
+      return <h1 className='text-2xl font-bold py-3'>{children}</h1>
+    },
+    [BLOCKS.HEADING_3]: (node, children) => {
+      return <h1 className='text-xl font-bold py-3 '>{children}</h1>
+    },
+  },
+}
 export const PageQuery = graphql`
 
   query($slug: String!){
@@ -135,4 +176,21 @@ export const PageQuery = graphql`
         }
       }
    
+
+        allContentfulProjectCargo {
+          edges {
+            node {
+              image {
+                file {
+                  url
+                }
+              }
+              projectName
+              scopeOfWork
+              title
+              location
+            }
+          }
+        }
+    
 }`

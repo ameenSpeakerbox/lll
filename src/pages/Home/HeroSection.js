@@ -78,11 +78,11 @@ const HeroSection = () => {
                                 <div className='flex items-center justify-around	 w-full'>
                                     <img src={SlideAray.find(itm => itm.id == currentSlide).icon} className={'w-8'} alt="" />
                                     {/* <p className='text-sm font-bold text-primary'>Order_qwezc10</p> */}
-                                    <ul className='flex'>
-                                        <li className='w-1 h-1 mx-1 rounded bg-primary' />
-                                        <li className='w-1 h-1 mx-1 rounded bg-primary' />
-                                        <li className='w-1 h-1 mx-1 rounded bg-primary' />
-                                    </ul>
+                                    <div className='flex'>
+                                        <div className='w-1 h-1 mx-1 rounded bg-primary' />
+                                        <div className='w-1 h-1 mx-1 rounded bg-primary' />
+                                        <div className='w-1 h-1 mx-1 rounded bg-primary' />
+                                    </div>
                                 </div>
 
                                 {/* <div className='my-2'>

@@ -11,7 +11,7 @@ import WhiteDotsVector from '../../Assets/images/white-dots.svg'
 import RedDotsVector from '../../Assets/images/red-dots.svg'
 import ServiceCard from '../../Components/Cards/ServiceCard'
 import MailSubscribeSection from '../../Components/MailSubscribeSection/MailSubscribeSection'
-import { Link } from 'gatsby'
+import { graphql, Link, useStaticQuery } from 'gatsby'
 
 
 const ServiceSection = () => {
@@ -20,6 +20,30 @@ const ServiceSection = () => {
         { image: ShipImg, icon: ShipIcon, title: 'Sea Freight', desc: 'We handle all types of sea freight shipmentsfrom FCL & LCL to break-bulk and RORO.We are one of the leading firms having direct consolidation to/from various destinations/origins around the globe.' },
         { image: TruckImg, icon: TruckIcon, title: 'Land Freight', desc: 'EFS is a licensed transport company with our own fleet of trailer heads in Saudi Arabia offering trucking services domestic & cross-country transportation of various shipments. We handle normal & heavy lift transport to and from national & international destination.' },
     ]
+    const data = useStaticQuery(graphql`
+    query{
+    allContentfulServices {
+    edges {
+      node {
+        slug
+        buttonText
+        title
+        primaryImage {
+            file {
+              url
+            }
+          }
+        
+        description{
+            description
+        }
+        
+        
+      }
+    }
+  }
+}`)
+
     return (
         <section className=' bg-primary py-20 overflow-hidden '>
             <div className='container h-auto xl:px-10 relative'>
@@ -27,7 +51,7 @@ const ServiceSection = () => {
                     <h2 className='text-white lg:text-2xl font-medium '>Our Services</h2>
                 </div>
                 <div>
-                    <img src={RedVector} className="md:w-40 w-32 lg:w-48 absolute -bottom-10 -left-10" alt="" />
+                    <img src={RedVector} className="md:w-40 w-32 lg:w-48 absolute bottom-72  md:bottom-60 lg:bottom-40 -left-10" alt="" />
                     <img src={WhiteVector} className="md:w-40 w-32 lg:w-48 absolute z-0 2xl:-right-10 -right-20 -top-24" alt="" />
                 </div>
                 <div className="grid lg:grid-cols-3 md:grid-cols-2 relative mt-10 xl:gap-10 lg:gap-7 gap-5">
@@ -40,6 +64,15 @@ const ServiceSection = () => {
                         )
                     }
                     )}
+                </div>
+                <div className='mt-24'>
+                    <h3 className='text-white lg:text-2xl font-medium '>More from Our Service</h3>
+                    <div className='flex flex-wrap '>
+                        {data.allContentfulServices.edges?.map(item => (
+                            <Link to={`/Service/${item.node?.slug}`} className='bg-white text-xs md:text-sm lg:text-base grow md:p-3 p-2 m-1 rounded-md text-primary'>{item.node.title}</Link>
+                        ))}
+
+                    </div>
                 </div>
 
 

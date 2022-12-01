@@ -2,6 +2,7 @@ import React from 'react'
 import FooterLinksSection from './FooterLinksSection'
 import Logo from '../../Assets/images/Logo.png'
 import yearText from '../../Assets/images/yearText.png'
+import { Link } from 'gatsby'
 
 
 const Footer = () => {
@@ -47,14 +48,14 @@ const Footer = () => {
 
       <div className='grid grid-cols-1 lg:grid-cols-3 gap-5 mt-10'>
         <div className='col-span-2 flex flex-col items-center justify-center text-primary text-sm font-medium'>
-          <div className='flex flex-col md:flex-row gap-2 md:justify-between md:w-96 w-full'>
-            <p className='md:mx-2 '>PRIVACY POLICY</p>
+          <div className='flex flex-col md:flex-row gap-2 md:justify-evenly mb-5 w-full'>
+            <Link to='/PrivacyPolicy' className='md:mx-2 '>PRIVACY POLICY</Link>
             <p className='md:mx-2'>BRAND GUIDELINES</p>
           </div>
-          <div className='flex flex-col md:flex-row gap-2 md:justify-evenly mt-5 w-full'>
+          <div className='flex flex-col md:flex-row gap-2 md:justify-evenly  w-full'>
             <p className='md:mx-2'>DISCLAIMER</p>
             <p className='md:mx-2'>TERMS OF USE</p>
-            <p className='md:mx-2'>STANDARD TRADING AGREEMENT</p>
+            <Link to='/standardTradingConditions' className='md:mx-2'>STANDARD TRADING AGREEMENT</Link>
           </div>
 
         </div>

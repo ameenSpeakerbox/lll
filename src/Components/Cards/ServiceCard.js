@@ -2,7 +2,7 @@ import React from 'react'
 
 const ServiceCard = ({ Image, Icon, Title, Content }) => {
     return (
-        <div className='w-full h-full flex flex-col bg-white items-center p-2 rounded-3xl relative h-auto' style={{ boxShadow: '0px 2.92353px 36.5441px rgb(10 80 159 / 25%)' }}>
+        <div className='w-full h-full flex flex-col bg-white items-center p-2 rounded-3xl relative h-full' style={{ boxShadow: '0px 2.92353px 36.5441px rgb(10 80 159 / 25%)' }}>
 
             {/* image */}
             <div>

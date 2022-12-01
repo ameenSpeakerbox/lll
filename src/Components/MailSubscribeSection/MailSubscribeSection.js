@@ -1,8 +1,23 @@
-import React from 'react'
+import React, { useRef, useState } from 'react'
 // import '../../Index.css'
+import emailjs from '@emailjs/browser';
+
 
 const MailSubscribeSection = () => {
-    
+    const ref = useRef()
+    const [mail, setmail] = useState('')
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs.sendForm('service_qpr7q39', 'template_9jwefvm', ref.current, 'OTMiGmfljPouqWMMa')
+            .then((result) => {
+                console.log(result.text);
+            }, (error) => {
+                console.log(error.text);
+            });
+    };
+
     return (
         <div className='py-10'>
             <div className=' border-b border-white' />
@@ -16,14 +31,14 @@ const MailSubscribeSection = () => {
                 </div>
 
 
-                <div className='flex flex-col md:items-end'>
-                    <input type="text" className='rounded-full md:w-10/12 h-10 p-5 text-xm lg:text-xl' placeholder='Enter your email here' />
-                    <button className='subscribe___btn w-40 py-2 px-10 rounded-2xl transition-all duration-500 ease-in hover:shadow-xl text-sm lg:text-lg text-white mt-5'>Subscribe</button>
-                </div>
+                <form ref={ref} className='flex flex-col md:items-end'>
+                    <input type="text" onChange={(e) => setmail(e.target.value)} value={mail} className='rounded-full md:w-10/12 h-10 p-5 text-xm lg:text-xl' placeholder='Enter your email here' />
+                    <button onClick={sendEmail} className='subscribe___btn w-40 py-2 px-10 rounded-2xl transition-all duration-500 ease-in hover:shadow-xl text-sm lg:text-lg text-white mt-5'>Subscribe</button>
+                </form>
             </div>
 
             <div className=' border-b border-white' />
-            
+
         </div>
     )
 }

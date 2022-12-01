@@ -1,5 +1,6 @@
 import React from 'react'
 import { themeImg } from '../../Components/ImageComponent/ImageComponent'
+import Icon from '../../Assets/Icons/Group 1032.png'
 
 const MissionAndVision = () => {
     const data = [
@@ -28,6 +29,14 @@ const MissionAndVision = () => {
                         </>
                     </div>
                 ))}
+
+                <div className='mb-10'>
+                    <a href='https://efslogistics-my.sharepoint.com/:b:/g/personal/nadir_kalappadan_efslogistics_net/EbO_mNQsnr9EtAs7QC14fIMB6wuBGYcX664wkO6NsOKVow?e=DtHvgi'
+                        download={true} target={'_blank'} className='subscribe___btn w-48 md:w-56 flex   items-center   py-2 px-5 rounded-2xl transition-all duration-500 ease-in hover:shadow-xl text-sm lg:text-lg text-white mt-5'>Download Brochure
+                        <img src={Icon} alt="" className='ml-2 ' />
+                    </a>
+
+                </div>
             </section>
         </>
     )

@@ -116,3 +116,121 @@
     font-size: xx-small;
   }
 }
+ol {
+  counter-reset: item
+}
+li {
+  display: block
+}
+li:before {
+  content: counters(item, ".") " ";
+  counter-increment: item
+}
+
+.c5 {
+  color: #07509d;
+  font-weight: 400;
+  text-decoration: none;
+  vertical-align: baseline;
+  font-family: "Lato";
+  font-style: normal
+}
+
+.c4 {
+  color: #000000;
+  font-weight: 400;
+  text-decoration: none;
+  vertical-align: baseline;
+  font-family: "Lato";
+  font-style: normal
+}
+
+.c9 {
+  padding-top: 20pt;
+  padding-bottom: 6pt;
+  line-height: 1.15;
+  page-break-after: avoid;
+  orphans: 2;
+  widows: 2;
+  text-align: left
+}
+
+.c1 {
+  padding-top: 0pt;
+  padding-bottom: 0pt;
+  line-height: 1.15;
+  orphans: 2;
+  widows: 2;
+  text-align: left;
+  height: 11pt
+}
+
+.c0 {
+  color: #000000;
+  font-weight: 400;
+  text-decoration: none;
+  vertical-align: baseline;
+  font-family: "Lato";
+  font-style: normal
+}
+
+.c3 {
+  color: #000000;
+  font-weight: 700;
+  text-decoration: none;
+  vertical-align: baseline;
+  font-family: "Lato";
+  font-style: normal
+}
+
+.c6 {
+  color: #07509d;
+  font-weight: 700;
+  text-decoration: none;
+  vertical-align: baseline;
+  font-family: "Lato";
+  font-style: normal
+}
+
+.c2 {
+  padding-top: 0pt;
+  padding-bottom: 0pt;
+  line-height: 1.15;
+  orphans: 2;
+  widows: 2;
+  text-align: left
+}
+
+.c8 {
+  background-color: #ffffff;
+  max-width: 451.4pt;
+  padding: 72pt 72pt 72pt 72pt
+}
+
+.c7 {
+  text-indent: 36pt
+}
+
+.title {
+  padding-top: 0pt;
+  color: #000000;
+  padding-bottom: 3pt;
+  font-family: "Lato";
+  line-height: 1.15;
+  page-break-after: avoid;
+  orphans: 2;
+  widows: 2;
+  text-align: left
+}
+
+.subtitle {
+  padding-top: 0pt;
+  color: #666666;
+  padding-bottom: 16pt;
+  font-family: "Lato";
+  line-height: 1.15;
+  page-break-after: avoid;
+  orphans: 2;
+  widows: 2;
+  text-align: left
+}

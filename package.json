@@ -15,10 +15,13 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
+    "@arco-design/web-react": "^2.42.0",
     "@contentful/rich-text-html-renderer": "^15.13.1",
+    "@emailjs/browser": "^3.10.0",
     "@headlessui/react": "^1.6.6",
     "@heroicons/react": "^1.0.6",
     "contentful": "^9.1.34",
+    "emailjs-com": "^3.2.0",
     "gatsby": "^4.15.1",
     "gatsby-cli": "^4.23.0",
     "gatsby-plugin-image": "^2.19.0",
