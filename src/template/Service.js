@@ -15,6 +15,11 @@ import InputField from '../Components/InputField/InputField'
 const Service = ({ data }) => {
   console.log(data)
   // const Object = data.contentfulServices.allContentfulServices.edges[0].node
+  let IsCurrentPathCargo;
+  
+  if (typeof window !== `undefined`) {
+    IsCurrentPathCargo = !!window.location.pathname.includes('project-cargo')
+  }
 
 
 
@@ -51,7 +56,7 @@ const Service = ({ data }) => {
               </div>
             </div>
             <div className="grid md:grid-cols-2 gap-5 p-4 my-5">
-              {!!window.location.pathname.includes('project-cargo') && data.allContentfulProjectCargo.edges?.map(itm => {
+              {IsCurrentPathCargo && data.allContentfulProjectCargo.edges?.map(itm => {
                 const item = itm.node
                 return (
                   <div class="flex flex-row 	rounded-2xl p-2" style={{ boxShadow: '0px 2.92353px 36.5441px rgb(10 80 159 / 25%)' }}>
