@@ -4,11 +4,9 @@ import { FloatingWhatsApp } from 'react-floating-whatsapp'
 
 const WhastappIcon = () => {
     return (
-        <div className='fixed bottom-1 right-1 p-7  rounded-full' >
-            <FloatingWhatsApp accountName={'EFS Logistics'} avatar={Icon}  />
-
-            
-        </div>
+        <>
+            <FloatingWhatsApp accountName={'EFS Logistics'} avatar={Icon} phoneNumber={'+966549121252'}  />
+        </>
     )
 }
 

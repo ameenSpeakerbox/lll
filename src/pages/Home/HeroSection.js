@@ -65,7 +65,7 @@ const HeroSection = () => {
                             </Slider>
                         </div>
 
-                        <img src={RightVector} className={' h-48 lg:h-60 absolute right-0 md:block opacity-50 2xl:hidden lg:mt-0	md:-mt-32 mt-2 -right-5 '} style={{ zIndex: -1 }} alt="" />
+                        <img src={RightVector} className={' h-48 lg:h-60 absolute right-0 md:block opacity-50 2xl:hidden lg:mt-0	md:-mt-32 mt-2  '} style={{ zIndex: -1 }} alt="" />
                     </div>
 
                     <div className='relative'>

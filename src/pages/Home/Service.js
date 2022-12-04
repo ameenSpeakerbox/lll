@@ -66,10 +66,10 @@ const ServiceSection = () => {
                     )}
                 </div>
                 <div className='mt-24'>
-                    <h3 className='text-white lg:text-2xl font-medium '>More from Our Service</h3>
+                    <h3 className='text-white lg:text-2xl font-medium '>More from Our Services</h3>
                     <div className='flex flex-wrap '>
                         {data.allContentfulServices.edges?.map(item => (
-                            <Link to={`/Service/${item.node?.slug}`} className='bg-white text-xs md:text-sm lg:text-base grow md:p-3 p-2 m-1 rounded-md text-primary'>{item.node.title}</Link>
+                            <Link to={`/Service/${item.node?.slug}`} className='bg-white text-xs md:text-sm lg:text-base grow md:p-3 p-2 m-1 rounded-md text-primary text-center'>{item.node.title}</Link>
                         ))}
 
                     </div>

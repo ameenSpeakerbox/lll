@@ -38,12 +38,6 @@ const Contact = () => {
         },
     ]
 
-    const Icons = [
-        { icon: FbIcon, url: '' },
-        { icon: InstagramIcon, url: '' },
-        { icon: YoutubeIcon, url: '' },
-        { icon: LinkedinIcon, url: '' },
-    ]
 
     const handleChange = (e) => {
         setformData(prev => ({ ...prev, [e.target.name]: e.target.value }))
@@ -101,9 +95,9 @@ const Contact = () => {
                         <div className="flex mt-2">
 
                             {Icons.map(item => (
-                                <div className='bg-secondary p-1 rounded  mr-2'>
+                                <a href={item.url} target={'_blank'} className='bg-secondary p-1 rounded  mr-2'>
                                     <img src={item.icon} className={'w-5'} alt="" />
-                                </div>
+                                </a>
                             ))}
                         </div>
                     </div>
@@ -121,3 +115,10 @@ const Contact = () => {
 }
 
 export default Contact
+
+export const Icons = [
+    { icon: FbIcon, url: 'https://www.facebook.com/efslogistics?mibextid=LQQJ4d' },
+    // { icon: InstagramIcon, url: '' },
+    { icon: YoutubeIcon, url: 'https://www.youtube.com/@efslogistics2687' },
+    { icon: LinkedinIcon, url: 'https://www.linkedin.com/company/efs-logistics-saudi-arabia/' },
+]
