@@ -17,6 +17,19 @@
     color-scheme: only light;
 }
 
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
 .text-primary {
   color: var(--primary);
 }
@@ -100,8 +113,11 @@
 
 .subscribe___btn {
   background: linear-gradient(90.79deg, #A00000 2.86%, #F40000 104.21%);
-
 }
+.subscribe___btn:disabled{
+  opacity: .5;
+}
+
 
 .custom-input{
   background: #F0F0F0;

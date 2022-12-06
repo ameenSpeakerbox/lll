@@ -11,12 +11,13 @@ import PlayBtnIcon from '../Assets/images/Group 789 (1).png'
 import YoutubeIcon from '../Assets/images/youtube-icon.png'
 import EnquiryComponent from '../Components/EnquiryComponent'
 import InputField from '../Components/InputField/InputField'
+import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 
 const Service = ({ data }) => {
   console.log(data)
   // const Object = data.contentfulServices.allContentfulServices.edges[0].node
   let IsCurrentPathCargo;
-  
+
   if (typeof window !== `undefined`) {
     IsCurrentPathCargo = !!window.location.pathname.includes('project-cargo')
   }
@@ -133,7 +134,7 @@ export const options = {
       )
     },
     [BLOCKS.LIST_ITEM]: (node, children) => {
-      return <li className='list-disc flex'>{children}</li>
+      return <li className='list-disc flex ml-3'>{children}</li>
     },
     [BLOCKS.HEADING_1]: (node, children) => {
       return <h1 className='text-4xl font-bold py-3'>{children}</h1>
@@ -143,6 +144,14 @@ export const options = {
     },
     [BLOCKS.HEADING_3]: (node, children) => {
       return <h1 className='text-xl font-bold py-3 '>{children}</h1>
+    },
+    [BLOCKS.EMBEDDED_ASSET]: (node, children) => {
+      console.log(node.data)
+      // getImage(node.data.target.sys.id)
+      // const imageData = richTextImages[node.data.target.sys.id];
+      // const image = getImage(imageData.image)
+
+      // return <GatsbyImage image={getImage(node.data.target.sys.id)} />
     },
   },
 }

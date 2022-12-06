@@ -8,10 +8,12 @@ import YoutubeIcon from '../../Assets/Icons/ant-design_youtube-outlined.svg'
 import LinkedinIcon from '../../Assets/Icons/akar-icons_linkedin-fill.svg'
 import InstagramIcon from '../../Assets/Icons/akar-icons_instagram-fill.svg'
 import emailjs from '@emailjs/browser';
+import Modal from '../../Components/Modal/Modal'
 
 
 const Contact = () => {
     const form = useRef();
+    const [ModalData, setModalData] = useState({ isopen: false, title: '', content: '', buttonName: '' })
     const [formData, setformData] = useState({
         first_name: '',
         last_name: '',
@@ -50,6 +52,7 @@ const Contact = () => {
         emailjs.sendForm('service_umdmyur', 'template_psu4q6e', form.current, '8x_6lWZzzmx-bEZbP')
             .then((result) => {
                 console.log(result.text);
+                setModalData(prev => ({ ...prev, isopen: true, title: 'Thank You! We’ll be in touch soon!', content: 'You will receive a response from our executive shortly. ', buttonName: 'OK' }))
             }, (error) => {
                 console.log(error.text);
             });
@@ -68,12 +71,12 @@ const Contact = () => {
                     <div className="md:col-span-2 col-span-3 ">
                         <form className="grid md:grid-cols-2 grid-cols-1 gap-7" ref={form}>
 
-                            <InputField width={'w-full'} label={'First Name'} name={'first_name'} onchange={handleChange} />
-                            <InputField width={'w-full'} label={'Last Name'} name={'last_name'} onchange={handleChange} />
-                            <InputField width={'w-full'} label={'Email'} name={'email'} onchange={handleChange} />
-                            <InputField width={'w-full'} label={'Phone'} name={'phone'} onchange={handleChange} />
+                            <InputField width={'w-full'} label={'First Name'} name={'first_name'} value={formData.first_name} onchange={handleChange} />
+                            <InputField width={'w-full'} label={'Last Name'} name={'last_name'} value={formData.last_name} onchange={handleChange} />
+                            <InputField width={'w-full'} label={'Email'} name={'email'} value={formData.email} onchange={handleChange} />
+                            <InputField width={'w-full'} label={'Phone'} name={'phone'} value={formData.phone} onchange={handleChange} />
 
-                            <button onClick={sendEmail} className='subscribe___btn py-2 w-48 px-10 rounded-2xl transition-all duration-500 ease-in hover:shadow-xl text-white mt-5'>
+                            <button onClick={sendEmail} disabled={!(formData.email || formData.phone)} title={!(formData.email || formData.phone) && 'Email or phone is required'} className='subscribe___btn py-2 w-48 px-10 rounded-2xl transition-all duration-500 ease-in hover:shadow-xl text-white mt-5'>
                                 submit
                             </button>
                         </form>
@@ -110,6 +113,10 @@ const Contact = () => {
                     <MailSubscribeSection />
                 </div>
             </div>
+
+            {ModalData.isopen &&
+                <Modal content={ModalData.content} buttonName={ModalData.buttonName} title={ModalData.title} isOpen={ModalData.isopen} onClose={() => setModalData(prev => ({ ...prev, isopen: false }))} />
+            }
         </>
     )
 }
