@@ -14,7 +14,8 @@ import InputField from '../Components/InputField/InputField'
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 
 const Service = ({ data }) => {
-  console.log(data)
+  const AssetsArray = data.allContentfulAsset.edges
+  console.log(AssetsArray)
   // const Object = data.contentfulServices.allContentfulServices.edges[0].node
   let IsCurrentPathCargo;
 
@@ -22,7 +23,44 @@ const Service = ({ data }) => {
     IsCurrentPathCargo = !!window.location.pathname.includes('project-cargo')
   }
 
-
+  const options = {
+    renderMark: {
+      [MARKS.BOLD]: (text) => <b className="font-bold">{text}</b>,
+    },
+    renderNode: {
+      [INLINES.HYPERLINK]: (node, children) => {
+        const { uri } = node.data
+        return (
+          <a href={uri} className="underline">
+            {children}
+          </a>
+        )
+      },
+      [BLOCKS.LIST_ITEM]: (node, children) => {
+        return <li className='list-disc flex ml-3'>{children}</li>
+      },
+      [BLOCKS.HEADING_1]: (node, children) => {
+        return <h1 className='text-4xl font-bold py-3'>{children}</h1>
+      },
+      [BLOCKS.HEADING_2]: (node, children) => {
+        return <h1 className='text-2xl font-bold py-3'>{children}</h1>
+      },
+      [BLOCKS.HEADING_3]: (node, children) => {
+        return <h1 className='text-xl font-bold py-3 '>{children}</h1>
+      },
+      [BLOCKS.EMBEDDED_ASSET]: (node, children) => {
+        // render the EMBEDDED_ASSET as you need
+        
+        const image = AssetsArray.find(itm => itm.node.contentful_id == node.data.target.sys.id).node.file.url
+  
+        return (
+          <div className="align-center">
+            <img src={image} />
+          </div>
+        );
+      },
+    },
+  }
 
 
   return (
@@ -120,41 +158,6 @@ const Service = ({ data }) => {
 }
 
 export default Service
-export const options = {
-  renderMark: {
-    [MARKS.BOLD]: (text) => <b className="font-bold">{text}</b>,
-  },
-  renderNode: {
-    [INLINES.HYPERLINK]: (node, children) => {
-      const { uri } = node.data
-      return (
-        <a href={uri} className="underline">
-          {children}
-        </a>
-      )
-    },
-    [BLOCKS.LIST_ITEM]: (node, children) => {
-      return <li className='list-disc flex ml-3'>{children}</li>
-    },
-    [BLOCKS.HEADING_1]: (node, children) => {
-      return <h1 className='text-4xl font-bold py-3'>{children}</h1>
-    },
-    [BLOCKS.HEADING_2]: (node, children) => {
-      return <h1 className='text-2xl font-bold py-3'>{children}</h1>
-    },
-    [BLOCKS.HEADING_3]: (node, children) => {
-      return <h1 className='text-xl font-bold py-3 '>{children}</h1>
-    },
-    [BLOCKS.EMBEDDED_ASSET]: (node, children) => {
-      console.log(node.data)
-      // getImage(node.data.target.sys.id)
-      // const imageData = richTextImages[node.data.target.sys.id];
-      // const image = getImage(imageData.image)
-
-      // return <GatsbyImage image={getImage(node.data.target.sys.id)} />
-    },
-  },
-}
 export const PageQuery = graphql`
 
   query($slug: String!){
@@ -207,4 +210,14 @@ export const PageQuery = graphql`
           }
         }
     
+        allContentfulAsset {
+          edges {
+            node {
+              file {
+                url
+              }
+              contentful_id
+            }
+          }
+        }
 }`

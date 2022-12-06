@@ -1,7 +1,6 @@
 import { graphql, useStaticQuery } from 'gatsby'
 import { renderRichText } from 'gatsby-source-contentful/rich-text'
 import React from 'react'
-import { options } from '../../template/Service'
 import List from './List'
 
 
