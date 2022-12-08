@@ -7,7 +7,7 @@ return(
 
                     <div>
                         <div  className='text-white font-bold md:text-4xl text-xl lg:text-7xl mt-14'>2500+</div>
-                        <div><span className='text-white font-light lg:font-bold text-base '>Projects Executed</span></div>
+                        <div><span className='text-white font-light lg:font-bold text-base '>Works Executed</span></div>
                     </div>
                     
                     <div class="grid grid-rows-2 gap-12 ">
