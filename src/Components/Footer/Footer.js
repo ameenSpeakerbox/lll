@@ -18,7 +18,6 @@ const Footer = () => {
   const quickStart = [
     { title: 'GET A QUOTE', url: '/get-a-qoute' },
     { title: 'TRACK SHIPMENT', url: '/Maintenance' },
-    { title: 'RAISE A COMPLAINT', url: '/Maintenance' },
     { title: 'CONTACT US', url: '/contact' },
     { title: 'REQUEST A CALL', url: '/Maintenance' },
   ]
