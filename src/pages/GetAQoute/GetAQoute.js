@@ -182,7 +182,7 @@ const GetAQoute = () => {
                             </div>
                             <div className="col-span-2 md:col-span-1">
                                 <button disabled={!(CommercialFormData.company_email || CommercialFormData.company_phone)} onClick={handleSubmit} title={!(CommercialFormData.company_email || CommercialFormData.company_phone) && 'Email or phone is required'} className='subscribe___btn py-2 w-48 px-10 rounded-2xl transition-all duration-500 ease-in hover:shadow-xl text-white mt-5'>
-                                    Subscribe
+                                    Submit
                                 </button>
                             </div>
                         </div>
