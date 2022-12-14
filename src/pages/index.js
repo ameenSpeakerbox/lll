@@ -7,19 +7,28 @@ import NewsSection from './Home/NewsSection'
 import ServiceSection from './Home/Service'
 import ThirdSection from './Home/ThirdSection'
 import '../styles/global.css'
+import { Head } from "gatsby"
+
+
 
 const index = () => {
   return (
+    <><Head>
+      <title>EFS Logistics | Your Trusted Logistic Partner in KSA</title>
+      <link rel="icon" type="image/png" href="/assets/icons/favicon.png" />
+
+    </Head>
+    
     <Layout>
 
-      <HeroSection />
-      <AboutSection />
-      <ThirdSection />
-      <NewsSection />
-      <ServiceSection />
+        <HeroSection />
+        <AboutSection />
+        <ThirdSection />
+        <NewsSection />
+        <ServiceSection />
 
-      <WhastappIcon />
-    </Layout>
+        <WhastappIcon />
+      </Layout></>
   )
 }
 
