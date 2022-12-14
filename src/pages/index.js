@@ -13,14 +13,14 @@ import { Head } from "gatsby"
 
 const index = () => {
   return (
-    <><Head>
+    <>
+    
+    <Layout>
+    <Head>
       <title>EFS Logistics | Your Trusted Logistic Partner in KSA</title>
       <link rel="icon" type="image/png" href="/assets/icons/favicon.png" />
 
     </Head>
-    
-    <Layout>
-
         <HeroSection />
         <AboutSection />
         <ThirdSection />
