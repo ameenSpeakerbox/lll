@@ -7,28 +7,23 @@ import NewsSection from './Home/NewsSection'
 import ServiceSection from './Home/Service'
 import ThirdSection from './Home/ThirdSection'
 import '../styles/global.css'
-import { Head } from "gatsby"
-
-
+import Head from 'react'
 
 const index = () => {
   return (
-    <>
-    
     <Layout>
-    <Head>
-      <title>EFS Logistics | Your Trusted Logistic Partner in KSA</title>
-      <link rel="icon" type="image/png" href="/assets/icons/favicon.png" />
+      <Head>
+        <Title>EFS Logistics | Your Best Logistics Partner in KSA</Title>
+      </Head>
 
-    </Head>
-        <HeroSection />
-        <AboutSection />
-        <ThirdSection />
-        <NewsSection />
-        <ServiceSection />
+      <HeroSection />
+      <AboutSection />
+      <ThirdSection />
+      <NewsSection />
+      <ServiceSection />
 
-        <WhastappIcon />
-      </Layout></>
+      <WhastappIcon />
+    </Layout>
   )
 }
 
