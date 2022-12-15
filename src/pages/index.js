@@ -7,14 +7,12 @@ import NewsSection from './Home/NewsSection'
 import ServiceSection from './Home/Service'
 import ThirdSection from './Home/ThirdSection'
 import '../styles/global.css'
-import Head from 'react'
 
-const index = () => {
+
+
+function index() {
   return (
     <Layout>
-      <Head>
-        <Title>EFS Logistics | Your Best Logistics Partner in KSA</Title>
-      </Head>
 
       <HeroSection />
       <AboutSection />
@@ -24,6 +22,13 @@ const index = () => {
 
       <WhastappIcon />
     </Layout>
+  )
+}
+
+
+export function Head() {
+  return (
+    <title>EFS Logistics | Best Logistics Partner in KSA</title>
   )
 }
 
