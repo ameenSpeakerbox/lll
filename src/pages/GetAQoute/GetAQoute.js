@@ -112,17 +112,15 @@ const GetAQoute = () => {
                             <div>
                                 <div className="grid md:grid-cols-1 grid-cols-1 gap-5">
                                     <h3 className='font-semibold'>Company Details</h3>
-                                    <InputField width={'w-full'} label={'Name'} name={'company_name'} value={CommercialFormData.company_name} onchange={handleCommercialFormChange} />
-                                    <InputField width={'w-full'} label={'Company '} name={'company'} value={CommercialFormData.company} onchange={handleCommercialFormChange} />
-                                    <InputField width={'w-full'} type={'email'} label={'Email'} name={'company_email'} value={CommercialFormData.company_email} onchange={handleCommercialFormChange} />
-                                    <InputField width={'w-full'} type={'number'} label={'Phone'} name={'company_phone'} value={CommercialFormData.company_phone} onchange={handleCommercialFormChange} />
+                                    <InputField width={'w-full'} label={'Name'} name={'company_name'} value={CommercialFormData.company_name} onchange={handleCommercialFormChange} required />
+                                    <InputField width={'w-full'} label={'Company '} name={'company'} value={CommercialFormData.company} onchange={handleCommercialFormChange} required />
+                                    <InputField width={'w-full'} type={'email'} label={'Email'} name={'company_email'} value={CommercialFormData.company_email} onchange={handleCommercialFormChange} required/>
+                                    <InputField width={'w-full'} type={'number'} label={'Phone'} name={'company_phone'} value={CommercialFormData.company_phone} onchange={handleCommercialFormChange} required />
                                 </div>
                                 <div className="grid md:grid-cols-1 grid-cols-1 gap-5 mt-16">
 
                                     <h3 className='font-semibold'>Type of Service</h3>
                                     <InputField width={'w-full'} label={'eg. Air Freight'} name={'type_of_service'} value={CommercialFormData.type_of_service} onchange={handleCommercialFormChange} />
-                                    <h3 className='font-semibold'>Type of Cargo</h3>
-                                    <InputField width={'w-full'} label={'eg. Relocation'} name={'type_of_cargo'} value={CommercialFormData.type_of_cargo} onchange={handleCommercialFormChange} />
                                 </div>
                             </div>
                         </div>
