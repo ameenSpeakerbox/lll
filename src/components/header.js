@@ -2,15 +2,12 @@ import React from "react";
 
 import Header from "../components/header/header";
 
-
 // append app to dom
-const header =() =>{
-    return (
-        <>
-        
+const header = () => {
+  return (
+    <>
       <Header />
- 
-      </>
-    )
-}
-export default header
+    </>
+  );
+};
+export default header;
