@@ -130,13 +130,14 @@ const Header = (props) => {
                     </Link>
                   </Nav.Link>
                 </Nav.Item>
-                <Nav.Item>
+
+                {/* <Nav.Item>
                   <Nav.Link>
                     <Link to="/blog" className="nav-link mr-2">
                       <>Blog</>
                     </Link>
                   </Nav.Link>
-                </Nav.Item>
+                </Nav.Item> */}
 
                 <Nav.Link>
                   <Link
