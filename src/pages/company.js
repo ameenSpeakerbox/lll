@@ -18,4 +18,11 @@ const company = () => {
   )
 }
 
+export function Head() {
+  return (
+    <title>About EFS Logistics | 25 Years of Excellence</title>
+  )
+}
+
+
 export default company
