@@ -12,4 +12,8 @@ const Career = () => {
     )
 }
 
+export function Head() {
+    return <title>Careers at EFS Logistics </title>;
+  }
+  
 export default Career
