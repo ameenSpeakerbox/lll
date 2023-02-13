@@ -227,7 +227,8 @@ const Service = ({ data }) => {
 };
 
 export function Head() {
-  const title = window.location.pathname
+  const isBrowser = () => typeof window !== "undefined"
+  const title = isBrowser() &&  window.location.pathname
     .split("/")
     .slice(2)
     .toLocaleString()
