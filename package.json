@@ -25,6 +25,7 @@
     "gatsby": "^4.15.1",
     "gatsby-cli": "^4.23.0",
     "gatsby-plugin-image": "^2.19.0",
+    "gatsby-plugin-sitemap": "^6.6.0",
     "gatsby-source-contentful": "^7.16.0",
     "html-react-parser": "^3.0.4",
     "i18next": "^21.8.5",
