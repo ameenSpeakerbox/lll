@@ -34,4 +34,8 @@ const SeaFreight = () => {
         />
     )
 }
+
+export function Head() {
+    return <title>Sea Freight | EFS Logistics KSA</title>;
+  }
 export default SeaFreight
