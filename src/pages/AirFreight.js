@@ -32,4 +32,8 @@ const AirFreight = () => {
         />
     )
 }
+
+export function Head() {
+    return <title>Air Freight | EFS Logistics KSA</title>;
+  }
 export default AirFreight
