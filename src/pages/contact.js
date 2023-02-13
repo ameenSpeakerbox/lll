@@ -9,5 +9,7 @@ const contact = () => {
         </Layout>
     )
 }
-
+export function Head() {
+    return <title>Contact Us | EFS Logistics KSA</title>;
+  }
 export default contact
