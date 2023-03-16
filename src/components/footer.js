@@ -36,6 +36,9 @@ const footer =() =>{
                                 <li className="nav-link">
                                     <Link  className="color-white" to="/caseStudies">case studies</Link>
                                     </li>
+                                <li className="nav-link">
+                                    <Link  className="color-white" to="/gatsbyShowcase">Gatsby Showcase</Link>
+                                    </li>
                                 
                                 
 

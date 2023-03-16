@@ -41,10 +41,8 @@ $grey: #b3aca2;
 
 /*line:26-35;navbar links -/header.js*/
 .nav-link {
-  color: white !important;
   text-transform: capitalize;
   font-weight: 500;
-  color: $grey !important;
 }
 .navbar {
   background-color: transparent;
@@ -57,9 +55,6 @@ $grey: #b3aca2;
   background-color: transparent !important;
 }
 
-header {
-  background-color: black;
-}
 
 .switch {
   position: relative;

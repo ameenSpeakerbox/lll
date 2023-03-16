@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import {
   Container,
@@ -12,6 +12,7 @@ import Link from "gatsby-link";
 import "../../styles/style.scss";
 import "../../styles/header.scss";
 import logo from "../../images/logo.png";
+import logoBlack from "../../images/speackerbox black logo.svg";
 import strategyIcon from "../../images/service.png";
 import brandDevpIcon from "../../images/service(1).png";
 import webIcon from "../../images/service(2).png";
@@ -25,6 +26,8 @@ import videoIcon from "../../images/service(8).png";
 
 const Header = (props) => {
   // const { Language, setLanguage } = useContext(LanguageContext)
+
+  const [headerBlack, setHeaderBlack] = useState(false);
 
   const dropDownItems = [
     {
@@ -62,8 +65,17 @@ const Header = (props) => {
     },
   ];
 
+  useEffect(() => {
+    if (typeof window !== undefined) {
+      console.log(window.location.pathname);
+      if (window.location.pathname === "/gatsbyShowcase")
+        return setHeaderBlack(true);
+    }
+  }, []);
+
+
   return (
-    <header>
+    <header style={{ backgroundColor: headerBlack ? "white" : "black" }}>
       <Container fluid>
         <Navbar expand="lg">
           <Navbar.Brand>
@@ -71,7 +83,7 @@ const Header = (props) => {
               <img
                 className="logo-icon"
                 style={{ height: "75px" }}
-                src={logo}
+                src={headerBlack ? logoBlack : logo}
                 alt=""
               ></img>
             </Link>
@@ -86,7 +98,11 @@ const Header = (props) => {
               <Nav className="">
                 <Nav.Item>
                   <Nav.Link>
-                    <Link to="/" className="nav-link">
+                    <Link
+                      to="/"
+                      className="nav-link"
+                      style={{ color: headerBlack ? "#45423D" : "#B3ACA2" }}
+                    >
                       <>home</>
                     </Link>
                   </Nav.Link>
@@ -95,7 +111,13 @@ const Header = (props) => {
                 <Nav.Item>
                   <Nav.Link>
                     <NavDropdown
-                      title={<>Services</>}
+                      title={
+                        <p
+                          style={{ color: headerBlack ? "#45423D" : "#B3ACA2" }}
+                        >
+                          Services
+                        </p>
+                      }
                       id="basic-nav-dropdown"
                       className="service-dropdown"
                     >
@@ -125,7 +147,11 @@ const Header = (props) => {
 
                 <Nav.Item>
                   <Nav.Link>
-                    <Link to="/caseStudies" className="nav-link mr-2">
+                    <Link
+                      to="/caseStudies"
+                      className="nav-link mr-2"
+                      style={{ color: headerBlack ? "#45423D" : "#B3ACA2" }}
+                    >
                       <>case studies</>
                     </Link>
                   </Nav.Link>
@@ -141,6 +167,7 @@ const Header = (props) => {
 
                 <Nav.Link>
                   <Link
+                    style={{ color: headerBlack ? "#45423D" : "#B3ACA2" }}
                     to="/BeAClient"
                     className="nav-link btn btn-outline-danger"
                   >
