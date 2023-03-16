@@ -1,0 +1,11 @@
+export { default as ausflug } from "./ausflug website.webp";
+export { default as ays } from "./ays website.webp";
+export { default as cargotrack } from "./cargotrack website.webp";
+export { default as efs } from "./efs website.webp";
+export { default as freezone } from "./freezone website.webp";
+export { default as grafixy } from "./grafixy website.webp";
+export { default as lineTouch } from "./line touch website.webp";
+export { default as pixls } from "./pixls website.webp";
+export { default as taasco } from "./taasco website.webp";
+export { default as tagsten } from "./tagsten website.webp";
+export { default as yuraco } from "./yuraco website.webp";
