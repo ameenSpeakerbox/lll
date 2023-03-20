@@ -152,7 +152,7 @@ const Services = (probs) => {
 
                     <Row className=" tools-body">
                         <Col xl={12} lg={12} md={12} sm={12} xs={12}>
-                            <p className="tools-heading"><>Tech Stack and Tools we</><span className="color-pink" style={{ fontWeight: '600' }}><>Love</></span></p>
+                            <p className="tools-heading"><>Tech Stack and Tools we</><span className="color-pink" style={{ fontWeight: '600' }}><>&nbsp;Love</></span></p>
                         </Col>
 
                         <Col xl={6} lg={6} md={6} sm={11} xs={11} className="tools-col">
@@ -189,7 +189,7 @@ const Services = (probs) => {
 
                                 <Col xl={9} lg={9} md={9} sm={9} xs={10}>
                                     <h2 className="figCaption-heading" style={{ color: '#B52E31' }}><>Angular</></h2>
-                                    <p className="figCaption-desc"><>Angular desc</></p>
+                                    <p className="figCaption-desc"><>Angular is a platform and framework for building single-page client applications using HTML and TypeScript. Angular is written in TypeScript.</></p>
                                 </Col>
                             </Row>
                         </Col>
@@ -202,7 +202,7 @@ const Services = (probs) => {
 
                                 <Col xl={9} lg={9} md={9} sm={9} xs={10}>
                                     <h2 className="figCaption-heading" style={{ color: '#385AF5' }}><>Prismic</></h2>
-                                    <p className="figCaption-desc"><>Prismic desc</></p>
+                                    <p className="figCaption-desc"><>Prismic is a CMS (content management system) that gives you an extremely user-friendly way of processing, managing and publishing online content.</></p>
                                 </Col>
                             </Row>
                         </Col>
@@ -215,7 +215,7 @@ const Services = (probs) => {
 
                                 <Col xl={9} lg={9} md={9} sm={9} xs={10}>
                                     <h2 className="figCaption-heading" style={{ color: '#04B3D2' }}><>React JS</></h2>
-                                    <p className="figCaption-desc"><>React desc</></p>
+                                    <p className="figCaption-desc"><>React is a declarative, efficient, and flexible JavaScript library for building user interfaces. It lets you compose complex UIs from small and isolated pieces of code.</></p>
                                 </Col>
                             </Row>
                         </Col>
@@ -228,7 +228,7 @@ const Services = (probs) => {
 
                                 <Col xl={9} lg={9} md={9} sm={9} xs={10}>
                                     <h2 className="figCaption-heading" style={{ color: '#4B839D' }}>Netlify</h2>
-                                    <p className="figCaption-desc"><>Netlify desc</></p>
+                                    <p className="figCaption-desc"><>A powerful serverless platform with an intuitive git-based workflow. Automated deployments, shareable previews, and much more.</></p>
                                 </Col>
                             </Row>
                         </Col>
@@ -253,7 +253,7 @@ const Services = (probs) => {
 
                         <Col xl={12} lg={12} md={12} sm={12} xs={12} >
                             <h2 className="heading"><>Gatsby JS Development</></h2>
-                            <h3 className="sub-head clr-white pt-3"><>What is</><span style={{ color: '#EE3958', fontWeight: '600' }}><>Gatsby JS?</></span></h3>
+                            <h3 className="sub-head clr-white pt-3"><>What is</><span style={{ color: '#EE3958', fontWeight: '600' }}><>&nbsp;Gatsby JS?</></span></h3>
                             <p className="desc clr-white"><>Gatsby JS Development desc</></p>
                             <Link to="/gatsby"><p className="learnMore-link clr-white unerline"><>Learn more about Gatsby JS Development</></p></Link>
                         </Col>
