@@ -9,3 +9,5 @@ export { default as pixls } from "./pixls website.webp";
 export { default as taasco } from "./taasco website.webp";
 export { default as tagsten } from "./tagsten website.webp";
 export { default as yuraco } from "./yuraco website.webp";
+export { default as spice_brew } from "./spice brew website.webp";
+export { default as ramasko } from "./ramasko website.webp";

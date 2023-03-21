@@ -15,7 +15,7 @@ import {
   pixls,
   taasco,
   tagsten,
-  yuraco,
+  yuraco,ramasko,spice_brew
 } from "../images/webistes";
 import { Link } from "gatsby";
 
@@ -24,7 +24,7 @@ const websiteData = [
     id: 1,
     title: "EFS Logistics",
     image: efs,
-    link: "",
+    link: "https://www.efslogistics.net",
   },
   {
     id: 2,
@@ -36,13 +36,13 @@ const websiteData = [
     id: 3,
     title: "Grafixy",
     image: grafixy,
-    link: "",
+    link: "https://grafixy.io/",
   },
   {
     id: 4,
     title: "AYS Jewels",
     image: ays,
-    link: "",
+    link: "https://aysjewels.in/",
   },
   {
     id: 5,
@@ -60,7 +60,7 @@ const websiteData = [
     id: 7,
     title: "Cargotrack",
     image: cargotrack,
-    link: "",
+    link: "https://cargotrack.co/",
   },
   {
     id: 8,
@@ -72,19 +72,31 @@ const websiteData = [
     id: 9,
     title: "Tagsten",
     image: tagsten,
-    link: "",
+    link: "https://tagstenindia.com/",
   },
   {
     id: 10,
     title: "Ausflug Holidays",
     image: ausflug,
-    link: "",
+    link: "https://ausflugholidays.com/",
   },
   {
     id: 11,
     title: "Line Touch",
     image: lineTouch,
     link: "",
+  },
+  {
+    id: 12,
+    title: "Space Brew",
+    image: spice_brew,
+    link: "https://spicebrew.netlify.app/",
+  },
+  {
+    id: 13,
+    title: "Ramasko",
+    image: ramasko,
+    link: "https://ramasko.com/",
   },
 ];
 const GatsbyShowcase = () => {
