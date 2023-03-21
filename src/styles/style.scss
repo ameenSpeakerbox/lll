@@ -6,11 +6,11 @@ body {
   width: 100%;
   height: 100vh;
   font-family: "Tajawal", sans-serif;
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none !important;  /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none !important; /* Firefox */
   overflow-x: hidden;
 }
-a{
+a {
   text-decoration: unset;
 }
 // html[dir=ltr].root{
@@ -33,7 +33,11 @@ a:hover {
 }
 
 .section {
-  background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgb(34, 34, 34) 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgb(34, 34, 34) 100%
+  );
   margin-top: -103px;
   height: auto;
   overflow: hidden;
@@ -81,9 +85,8 @@ a:hover {
   color: white;
   background-color: #ef484c;
 }
-.carousel-inner{
+.carousel-inner {
   border-radius: 0px 0 18px 18px;
-
 }
 
 .carousel-control-next-icon,
@@ -92,7 +95,7 @@ a:hover {
   width: 1rem !important;
   height: 1rem !important;
 }
-.carousel-indicators{
+.carousel-indicators {
   visibility: hidden !important;
 }
 .third-section {
@@ -122,38 +125,37 @@ a:hover {
 .text-center {
   text-align: center;
 }
-// font weights 
-  .text-900{
-    font-weight: 900;
-  }
-  .text-800{
-    font-weight: 800;
-  }
-  .text-700{
-    font-weight: 700;
-  }
-  .text-600{
-    font-weight: 600;
-  }
-  .text-500{
-    font-weight: 500;
-  }
-  .text-400{
-    font-weight: 400;
-  }
-  .text-300{
-    font-weight: 300;
-  }
-  .text-200{
-    font-weight: 200;
-  }
-  .text-100{
-    font-weight: 100;
-  }
+// font weights
+.text-900 {
+  font-weight: 900;
+}
+.text-800 {
+  font-weight: 800;
+}
+.text-700 {
+  font-weight: 700;
+}
+.text-600 {
+  font-weight: 600;
+}
+.text-500 {
+  font-weight: 500;
+}
+.text-400 {
+  font-weight: 400;
+}
+.text-300 {
+  font-weight: 300;
+}
+.text-200 {
+  font-weight: 200;
+}
+.text-100 {
+  font-weight: 100;
+}
 
-  // font-size
-    
-    
+// font-size
+
 .clr-red {
   color: #ef484c;
 }
@@ -166,7 +168,7 @@ a:hover {
   // height: 325px;
 }
 
-.card:hover{
+.card:hover {
   text-decoration: none;
   color: #000000;
 }
@@ -191,7 +193,12 @@ a:hover {
   background-color: black;
 }
 .box-web {
-  background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(42, 41, 42, 0.25) 100%), rgba(239, 72, 76, 0.35);
+  background: linear-gradient(
+      0deg,
+      rgb(0, 0, 0) 0%,
+      rgba(42, 41, 42, 0.25) 100%
+    ),
+    rgba(239, 72, 76, 0.35);
   border-radius: 20px;
 }
 .sec-two-cont {
@@ -485,7 +492,7 @@ a:hover {
 }
 @media only screen and (min-width: 586px) and (max-width: 768px) {
   // intro heading,content,button col
-  .intro-text-body{
+  .intro-text-body {
     width: 405px;
   }
 
@@ -562,7 +569,6 @@ a:hover {
   }
 
   //dropdown header style
- 
 
   //service slider mobile view
   // .serviceSlider{
@@ -603,7 +609,7 @@ a:hover {
 }
 @media only screen and (max-width: 586px) {
   // intro heading,content,button col
-  .intro-text-body{
+  .intro-text-body {
     max-width: 405px;
   }
   .index {
@@ -695,9 +701,9 @@ a:hover {
     max-width: 45% !important;
   }
   .services .card-head {
-    font-size: 1rem ;
+    font-size: 1rem;
   }
-  
+
   //dropdown header style
 
   //service slider mobile view
@@ -803,7 +809,11 @@ a:hover {
   text-decoration: none;
 }
 .dropdown .btn {
-  background: linear-gradient(134.47deg, #0a0a0a -26.79%, #4b4b4b 230.75%) !important;
+  background: linear-gradient(
+    134.47deg,
+    #0a0a0a -26.79%,
+    #4b4b4b 230.75%
+  ) !important;
   border: 0;
   border-radius: 4px;
 }
@@ -815,7 +825,11 @@ a:hover {
 
 // bea client form
 .form-body-beaclient {
-  background: linear-gradient(139.98deg, rgba(239, 72, 76, 0.9) -13.58%, rgba(238, 57, 88, 0.3) 117.51%);
+  background: linear-gradient(
+    139.98deg,
+    rgba(239, 72, 76, 0.9) -13.58%,
+    rgba(238, 57, 88, 0.3) 117.51%
+  );
   backdrop-filter: blur(4px);
   /* Note: backdrop-filter has minimal browser support */
 
@@ -825,7 +839,11 @@ a:hover {
 // form style
 .form-control {
   color: #ffffff !important;
-  background: linear-gradient(0deg, rgba(242, 242, 242, 0.4), rgba(242, 242, 242, 0.4));
+  background: linear-gradient(
+    0deg,
+    rgba(242, 242, 242, 0.4),
+    rgba(242, 242, 242, 0.4)
+  );
   border: 0;
   font-style: italic;
   font-family: "Inter", sans-serif;
@@ -833,7 +851,11 @@ a:hover {
 }
 .form-control:focus {
   color: #ffffff;
-  background: linear-gradient(0deg, rgba(242, 242, 242, 0.4), rgba(242, 242, 242, 0.4));
+  background: linear-gradient(
+    0deg,
+    rgba(242, 242, 242, 0.4),
+    rgba(242, 242, 242, 0.4)
+  );
   border-color: #80bdff;
   outline: 0;
   box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
@@ -851,18 +873,17 @@ a:hover {
   border-radius: 50px;
 }
 
-
-
 // custom carousel icon
 .carousel-control-next-icon {
-  background-image: url('../images/Icon\ Artwork.svg') !important;
-  background-color: #EE3958;
+  background-image: url("../images/Icon\ Artwork.svg") !important;
+  background-color: #ee3958;
 }
 .carousel-control-prev-icon {
-  background-image: url('../images/Left\ Icon\ Artwork.svg') !important;
+  background-image: url("../images/Left\ Icon\ Artwork.svg") !important;
 }
 
-.carousel-control-next, .carousel-control-prev {
+.carousel-control-next,
+.carousel-control-prev {
   position: absolute;
   top: 98%;
   transform: translateY(-100%);
@@ -872,34 +893,28 @@ a:hover {
   color: #fff;
   text-align: center;
   opacity: 1;
-  transition: opacity .15s ease;
+  transition: opacity 0.15s ease;
   height: 35px;
 }
 .carousel-control-next {
   left: 55px !important;
-  background: #EE3958;
+  background: #ee3958;
   border-radius: 8px;
   right: 10px;
-
 }
 .carousel-control-prev {
-  background: #FFFFFF;
+  background: #ffffff;
   opacity: 0.2;
   border-radius: 8px;
   left: 10px;
   right: 55px;
-
 }
 
-
-
-
-
-.LTR{
+.LTR {
   direction: ltr !important;
   text-align: left !important;
 }
-.RTL{
+.RTL {
   direction: rtl !important;
   text-align: right !important;
 }

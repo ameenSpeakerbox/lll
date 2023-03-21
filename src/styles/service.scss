@@ -1,175 +1,182 @@
-.service-bg{
-    background-image: linear-gradient(rgb(0, 0, 0) 0%, rgb(11, 11, 11) 50%, rgb(0, 0, 0) 100%);
-    height: auto;
-    
-    overflow: hidden;
+.service-bg {
+  background-image: linear-gradient(
+    rgb(0, 0, 0) 0%,
+    rgb(11, 11, 11) 50%,
+    rgb(0, 0, 0) 100%
+  );
+  height: auto;
+
+  overflow: hidden;
 }
-.intro-row{
-    padding: 50px 0;
+.intro-row {
+  padding: 50px 0;
 }
-.socialmedia .second-section{
-    background-color: white;
-    margin-top: 0;
+.socialmedia .second-section {
+  background-color: white;
+  margin-top: 0;
 }
-.socialmedia{
-    overflow: hidden;
+.socialmedia {
+  overflow: hidden;
 }
 
 @media only screen and (max-width: 600px) {
-    .intro-heading{
-        margin-top: 20px;
-        margin-left: 25px;
-        font-size: 35px;
-        width: 220px;
-    }    
-    .socialmedia .intro-img{
-        width: 290px !important;
-        height: 310px !important;
-        margin-top: 10px;
-        float: right;
-    }
-    .intro-row{
-        display: flex;
-        flex-direction: column-reverse;
-    }
-    .socialmedia .second-section{
-        display: flex !important;
-        flex-direction: column-reverse !important;
-    }
-        
-    .socialmedia .section-heading{
-        width: 90% !important;
-        margin-top: 100px;
-        margin-right: 50px !important;
-    }    
-    .socialmedia .section-text{
-        color: black;
-        margin: 25px;
-        margin-top: 20px;
-        line-height: 1.5;
-        font-size: 14px;
-        width: 90% !important;
-    }
+  .intro-heading {
+    margin-top: 20px;
+    margin-left: 25px;
+    font-size: 35px;
+    width: 220px;
+  }
+  .socialmedia .intro-img {
+    width: 290px !important;
+    height: 310px !important;
+    margin-top: 10px;
+    float: right;
+  }
+  .intro-row {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .socialmedia .second-section {
+    display: flex !important;
+    flex-direction: column-reverse !important;
+  }
+
+  .socialmedia .section-heading {
+    width: 90% !important;
+    margin-top: 100px;
+    margin-right: 50px !important;
+  }
+  .socialmedia .section-text {
+    color: black;
+    margin: 25px;
+    margin-top: 20px;
+    line-height: 1.5;
+    font-size: 14px;
+    width: 90% !important;
+  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) and (max-width: 768px) {
-    .intro-heading{
-        margin-top: 20px;
-        margin-left: 50px;
-        font-size: 35px;
-        width: 220px;
-    }    
-    .socialmedia .intro-img{
-        height: 520px !important;
-        margin-top: 10px;
-        float: right;
-    }
-    .intro-row{
-        display: flex !important;
-        flex-direction: column-reverse !important;
-    }
-    .socialmedia .second-section{
-        display: flex !important;
-        flex-direction: column-reverse !important;
-    }
-    
-    .socialmedia .section-heading{
-        width: 90% !important;
-        margin-top: 100px;
-        margin-right: 50px !important;
-    }    
-    .socialmedia .section-text{
-        color: black;
-        margin: 50px;
-        margin-top: 20px;
-        line-height: 1.5;
-        font-size: 15px;
-        width: 90% !important;
-    }
+  .intro-heading {
+    margin-top: 20px;
+    margin-left: 50px;
+    font-size: 35px;
+    width: 220px;
+  }
+  .socialmedia .intro-img {
+    height: 520px !important;
+    margin-top: 10px;
+    float: right;
+  }
+  .intro-row {
+    display: flex !important;
+    flex-direction: column-reverse !important;
+  }
+  .socialmedia .second-section {
+    display: flex !important;
+    flex-direction: column-reverse !important;
+  }
+
+  .socialmedia .section-heading {
+    width: 90% !important;
+    margin-top: 100px;
+    margin-right: 50px !important;
+  }
+  .socialmedia .section-text {
+    color: black;
+    margin: 50px;
+    margin-top: 20px;
+    line-height: 1.5;
+    font-size: 15px;
+    width: 90% !important;
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) and (max-width: 992px) {
-    .intro-heading{
-        margin-top: 150px;
-        margin-left: 50px;
-        font-size: 40px;
-        width: 246px;
-    }   
-     .socialmedia .intro-img{
-        height: 569px !important;
-        margin-top: 0px;
-        float: right;
-        width: 330px !important;
-    }
-    .socialmedia .section-heading{
-        width: 320px;
-        margin-top: 100px;
-    }    
-    .socialmedia .section-text{
-        color: black;
-        margin-left: 50px;
-        margin-top: 20px;
-        line-height: 1.5;
-        font-size: 16px;
-        width: 320px;
-    }
+  .intro-heading {
+    margin-top: 150px;
+    margin-left: 50px;
+    font-size: 40px;
+    width: 246px;
+  }
+  .socialmedia .intro-img {
+    height: 569px !important;
+    margin-top: 0px;
+    float: right;
+    width: 330px !important;
+  }
+  .socialmedia .section-heading {
+    width: 320px;
+    margin-top: 100px;
+  }
+  .socialmedia .section-text {
+    color: black;
+    margin-left: 50px;
+    margin-top: 20px;
+    line-height: 1.5;
+    font-size: 16px;
+    width: 320px;
+  }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-    .intro-heading{
-        margin-top: 150px;
-        margin-left: 50px;
-        font-size: 45px;
-        width: 284px;
-    }
-    .socialmedia .intro-img{
-        height: 580px !important;
-        margin-top: 0px;
-        float: right;
-    }
-    .socialmedia .section-heading{
-        width: 400px;
-        margin-top: 100px;
-    }    
-    .socialmedia .section-text{
-        color: black;
-        margin-left: 50px;
-        margin-top: 20px;
-        line-height: 1.5;
-        font-size: 17px;
-        width: 400px;
-    }
+  .intro-heading {
+    margin-top: 150px;
+    margin-left: 50px;
+    font-size: 45px;
+    width: 284px;
+  }
+  .socialmedia .intro-img {
+    height: 580px !important;
+    margin-top: 0px;
+    float: right;
+  }
+  .socialmedia .section-heading {
+    width: 400px;
+    margin-top: 100px;
+  }
+  .socialmedia .section-text {
+    color: black;
+    margin-left: 50px;
+    margin-top: 20px;
+    line-height: 1.5;
+    font-size: 17px;
+    width: 400px;
+  }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-    .intro-heading{
-        margin-top: 150px;
-        margin-left: 50px;
-        font-size: 50px;
-        width: 320px;
-    }
-    .socialmedia .intro-img{
-        width: 550px !important;
-        height: 600px !important;
-        margin-top: 0px;
-    }
-    .socialmedia .section-heading{
-        width: 400px;
-        margin-top: 100px;
-    }
-    .socialmedia .section-text{
-        color: black;
-        margin-left: 50px;
-        margin-top: 20px;
-        line-height: 1.5;
-        font-size: 18px;
-        width: 400px;
-    }.socialmedia .second-section{
-        margin-top: 50px;
-    }
-    .socialmedia .Col{max-width: 580px;}
+  .intro-heading {
+    margin-top: 150px;
+    margin-left: 50px;
+    font-size: 50px;
+    width: 320px;
+  }
+  .socialmedia .intro-img {
+    width: 550px !important;
+    height: 600px !important;
+    margin-top: 0px;
+  }
+  .socialmedia .section-heading {
+    width: 400px;
+    margin-top: 100px;
+  }
+  .socialmedia .section-text {
+    color: black;
+    margin-left: 50px;
+    margin-top: 20px;
+    line-height: 1.5;
+    font-size: 18px;
+    width: 400px;
+  }
+  .socialmedia .second-section {
+    margin-top: 50px;
+  }
+  .socialmedia .Col {
+    max-width: 580px;
+  }
 }

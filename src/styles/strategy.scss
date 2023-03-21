@@ -1,534 +1,532 @@
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 576px) {
-    .Strategy {
-        .wrapper {
-            overflow-y: hidden;
-            overflow-x: hidden;
-            .headDiv {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                .heading {
-                    // width: 189px !important;
-                    //font-family: Tajawal;
-                    font-style: normal;
-                    font-weight: 300;
-                    font-size: 16px;
-                    line-height: normal;
-                    text-align: center;
-                    letter-spacing: 0.15em;
-                    color: #ffffff;
-                    margin-top: 50px;
-                    margin-bottom: 12px;
-                }
-            }
-
-            .sections {
-                display: flex;
-                justify-content: center;
-                
-                .imageSec {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    justify-content: center;
-                    .vectorImage {
-                        width: 280px;
-                    }
-                }
-                .contentSec {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    justify-content: center;
-                    .subHeading {
-                        font-style: normal;
-                        font-weight: bold;
-                        font-size: 22px;
-                        line-height: normal;
-                        letter-spacing: -0.01em;
-                        color: #ffffff;
-                        text-align: center !important;
-                        max-width: 320px;
-                    }
-                    .content1 {
-                        max-width: 320px;
-                        font-style: normal;
-                        font-weight: normal;
-                        line-height: 120%;
-                        letter-spacing: -0.01em;
-                        color: #ffffff;
-                        text-align: left;
-                    }
-                }
-            }
-            .contents {
-                display: flex !important;
-                flex-direction: column !important;
-                align-items: center !important;
-                .content2 {
-                    //font-family: Tajawal;
-                    max-width: 320px;
-                        font-style: normal;
-                        font-weight: normal;
-                        line-height: 120%;
-                        letter-spacing: -0.01em;
-                        color: #ffffff;
-                        text-align: left;
-                }
-                .subHeading2 {
-                    // width: 160px;
-                    //font-family: Tajawal;
-                    font-style: normal;
-                    font-weight: bold;
-                    font-size: 20px;
-                    line-height: 100%;
-                    letter-spacing: -0.01em;
-                    color: #ffffff;
-                    margin-top: 10px;
-                    text-align: center !important;
-
-                    
-                }
-                .content3, .content4 {
-                    //font-family: Tajawal;
-                    max-width: 320px;
-                        font-style: normal;
-                        font-weight: normal;
-                        line-height: 120%;
-                        letter-spacing: -0.01em;
-                        color: #ffffff;
-                        text-align: left;
-                }
-                
-            }
+  .Strategy {
+    .wrapper {
+      overflow-y: hidden;
+      overflow-x: hidden;
+      .headDiv {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .heading {
+          // width: 189px !important;
+          //font-family: Tajawal;
+          font-style: normal;
+          font-weight: 300;
+          font-size: 16px;
+          line-height: normal;
+          text-align: center;
+          letter-spacing: 0.15em;
+          color: #ffffff;
+          margin-top: 50px;
+          margin-bottom: 12px;
         }
+      }
+
+      .sections {
+        display: flex;
+        justify-content: center;
+
+        .imageSec {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          .vectorImage {
+            width: 280px;
+          }
+        }
+        .contentSec {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          .subHeading {
+            font-style: normal;
+            font-weight: bold;
+            font-size: 22px;
+            line-height: normal;
+            letter-spacing: -0.01em;
+            color: #ffffff;
+            text-align: center !important;
+            max-width: 320px;
+          }
+          .content1 {
+            max-width: 320px;
+            font-style: normal;
+            font-weight: normal;
+            line-height: 120%;
+            letter-spacing: -0.01em;
+            color: #ffffff;
+            text-align: left;
+          }
+        }
+      }
+      .contents {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        .content2 {
+          //font-family: Tajawal;
+          max-width: 320px;
+          font-style: normal;
+          font-weight: normal;
+          line-height: 120%;
+          letter-spacing: -0.01em;
+          color: #ffffff;
+          text-align: left;
+        }
+        .subHeading2 {
+          // width: 160px;
+          //font-family: Tajawal;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 20px;
+          line-height: 100%;
+          letter-spacing: -0.01em;
+          color: #ffffff;
+          margin-top: 10px;
+          text-align: center !important;
+        }
+        .content3,
+        .content4 {
+          //font-family: Tajawal;
+          max-width: 320px;
+          font-style: normal;
+          font-weight: normal;
+          line-height: 120%;
+          letter-spacing: -0.01em;
+          color: #ffffff;
+          text-align: left;
+        }
+      }
     }
+  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 576px) {
-    .Strategy {
-        .wrapper {
-            overflow-y: hidden;
-            overflow-x: hidden;
-            .headDiv {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                .heading {
-                    //font-family: Tajawal;
-                    font-style: normal;
-                    font-weight: 300;
-                    font-size: 16px;
-                    line-height: 100%;
-                    text-align: center;
-                    letter-spacing: 0.15em;
-                    color: #ffffff;
-                    margin-top: 110px;
-                    margin-bottom: 40px;
-                }
-            }
-
-            .sections {
-                .imageSec {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    justify-content: center;
-                    .vectorImage {
-                        width: 280px;
-                    }
-                }
-                .contentSec {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: flex-start;
-                    justify-content: center;
-                    .subHeading {
-                        width: 224px;
-                        //font-family: Tajawal;
-                        font-style: normal;
-                        font-weight: bold;
-                        font-size: 20px;
-                        line-height: 100%;
-                        letter-spacing: -0.01em;
-                        color: #ffffff;
-                    }
-                    .content1 {
-                        width: 230px;
-                        //font-family: Tajawal;
-                        font-style: normal;
-                        font-weight: normal;
-                        // font-size: 10px;
-                        line-height: 120%;
-                        letter-spacing: -0.01em;
-                        color: #ffffff;
-                    }
-                }
-            }
-            .content2 {
-                //font-family: Tajawal;
-                font-style: normal;
-                font-weight: normal;
-                // font-size: 11px;
-                line-height: 120%;
-                letter-spacing: -0.01em;
-                color: #ffffff;
-                margin-top: 37px;
-            }
-            .subHeading2 {
-                width: 640px;
-                //font-family: Tajawal;
-                font-style: normal;
-                font-weight: bold;
-                font-size: 18px;
-                line-height: 100%;
-                letter-spacing: -0.01em;
-                color: #ffffff;
-                margin-top: 35px !important;
-            }
-            .content3 {
-                //font-family: Tajawal;
-                font-style: normal;
-                font-weight: normal;
-                // font-size: 11px;
-                line-height: 120%;
-                letter-spacing: -0.01em;
-                color: #ffffff;
-                margin-top: 0px !important;
-            }
-            .content4 {
-                //font-family: Tajawal;
-                font-style: normal;
-                font-weight: normal;
-                // font-size: 11px;
-                line-height: 120%;
-                letter-spacing: -0.01em;
-                color: #ffffff;
-                margin-top: 240px;
-            }
+  .Strategy {
+    .wrapper {
+      overflow-y: hidden;
+      overflow-x: hidden;
+      .headDiv {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .heading {
+          //font-family: Tajawal;
+          font-style: normal;
+          font-weight: 300;
+          font-size: 16px;
+          line-height: 100%;
+          text-align: center;
+          letter-spacing: 0.15em;
+          color: #ffffff;
+          margin-top: 110px;
+          margin-bottom: 40px;
         }
+      }
+
+      .sections {
+        .imageSec {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          .vectorImage {
+            width: 280px;
+          }
+        }
+        .contentSec {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: center;
+          .subHeading {
+            width: 224px;
+            //font-family: Tajawal;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 20px;
+            line-height: 100%;
+            letter-spacing: -0.01em;
+            color: #ffffff;
+          }
+          .content1 {
+            width: 230px;
+            //font-family: Tajawal;
+            font-style: normal;
+            font-weight: normal;
+            // font-size: 10px;
+            line-height: 120%;
+            letter-spacing: -0.01em;
+            color: #ffffff;
+          }
+        }
+      }
+      .content2 {
+        //font-family: Tajawal;
+        font-style: normal;
+        font-weight: normal;
+        // font-size: 11px;
+        line-height: 120%;
+        letter-spacing: -0.01em;
+        color: #ffffff;
+        margin-top: 37px;
+      }
+      .subHeading2 {
+        width: 640px;
+        //font-family: Tajawal;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 100%;
+        letter-spacing: -0.01em;
+        color: #ffffff;
+        margin-top: 35px !important;
+      }
+      .content3 {
+        //font-family: Tajawal;
+        font-style: normal;
+        font-weight: normal;
+        // font-size: 11px;
+        line-height: 120%;
+        letter-spacing: -0.01em;
+        color: #ffffff;
+        margin-top: 0px !important;
+      }
+      .content4 {
+        //font-family: Tajawal;
+        font-style: normal;
+        font-weight: normal;
+        // font-size: 11px;
+        line-height: 120%;
+        letter-spacing: -0.01em;
+        color: #ffffff;
+        margin-top: 240px;
+      }
     }
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-    .Strategy {
-        .wrapper {
-            overflow-y: hidden;
-            overflow-x: hidden;
-            .headDiv {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                .heading {
-                    //font-family: Tajawal;
-                    font-style: normal;
-                    font-weight: 300;
-                    font-size: 20px;
-                    line-height: 100%;
-                    text-align: center;
-                    letter-spacing: 0.15em;
-                    color: #ffffff;
-                    margin-top: 110px;
-                    margin-bottom: 40px;
-                }
-            }
-
-            .sections {
-                .imageSec {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    justify-content: center;
-                    .vectorImage {
-                        width: 360px;
-                    }
-                }
-                .contentSec {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: flex-start;
-                    justify-content: center;
-                    .subHeading {
-                        width: 329px;
-                        //font-family: Tajawal;
-                        font-style: normal;
-                        font-weight: bold;
-                        font-size: 27px;
-                        line-height: 100%;
-                        letter-spacing: -0.01em;
-                        color: #ffffff;
-                    }
-                    .content1 {
-                        width: 345px;
-                        //font-family: Tajawal;
-                        font-style: normal;
-                        font-weight: normal;
-                        // font-size: 15px;
-                        line-height: 120%;
-                        letter-spacing: -0.01em;
-                        color: #ffffff;
-                    }
-                }
-            }
-            .content2 {
-                //font-family: Tajawal;
-                font-style: normal;
-                font-weight: normal;
-                // font-size: 15px;
-                line-height: 120%;
-                letter-spacing: -0.01em;
-                color: #ffffff;
-                margin-top: 37px;
-            }
-            .subHeading2 {
-                width: 640px;
-                //font-family: Tajawal;
-                font-style: normal;
-                font-weight: bold;
-                font-size: 27px;
-                line-height: 100%;
-                letter-spacing: -0.01em;
-                color: #ffffff;
-                margin-top: 45px;
-            }
-            .content3 {
-                //font-family: Tajawal;
-                font-style: normal;
-                font-weight: normal;
-                // font-size: 15px;
-                line-height: 120%;
-                letter-spacing: -0.01em;
-                color: #ffffff;
-                margin-top: 0px !important;
-            }
-            .content4 {
-                //font-family: Tajawal;
-                font-style: normal;
-                font-weight: normal;
-                // font-size: 15px;
-                line-height: 120%;
-                letter-spacing: -0.01em;
-                color: #ffffff;
-                margin-top: 300px;
-            }
+  .Strategy {
+    .wrapper {
+      overflow-y: hidden;
+      overflow-x: hidden;
+      .headDiv {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .heading {
+          //font-family: Tajawal;
+          font-style: normal;
+          font-weight: 300;
+          font-size: 20px;
+          line-height: 100%;
+          text-align: center;
+          letter-spacing: 0.15em;
+          color: #ffffff;
+          margin-top: 110px;
+          margin-bottom: 40px;
         }
+      }
+
+      .sections {
+        .imageSec {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          .vectorImage {
+            width: 360px;
+          }
+        }
+        .contentSec {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: center;
+          .subHeading {
+            width: 329px;
+            //font-family: Tajawal;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 27px;
+            line-height: 100%;
+            letter-spacing: -0.01em;
+            color: #ffffff;
+          }
+          .content1 {
+            width: 345px;
+            //font-family: Tajawal;
+            font-style: normal;
+            font-weight: normal;
+            // font-size: 15px;
+            line-height: 120%;
+            letter-spacing: -0.01em;
+            color: #ffffff;
+          }
+        }
+      }
+      .content2 {
+        //font-family: Tajawal;
+        font-style: normal;
+        font-weight: normal;
+        // font-size: 15px;
+        line-height: 120%;
+        letter-spacing: -0.01em;
+        color: #ffffff;
+        margin-top: 37px;
+      }
+      .subHeading2 {
+        width: 640px;
+        //font-family: Tajawal;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 27px;
+        line-height: 100%;
+        letter-spacing: -0.01em;
+        color: #ffffff;
+        margin-top: 45px;
+      }
+      .content3 {
+        //font-family: Tajawal;
+        font-style: normal;
+        font-weight: normal;
+        // font-size: 15px;
+        line-height: 120%;
+        letter-spacing: -0.01em;
+        color: #ffffff;
+        margin-top: 0px !important;
+      }
+      .content4 {
+        //font-family: Tajawal;
+        font-style: normal;
+        font-weight: normal;
+        // font-size: 15px;
+        line-height: 120%;
+        letter-spacing: -0.01em;
+        color: #ffffff;
+        margin-top: 300px;
+      }
     }
+  }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-    .Strategy {
-        .wrapper {
-            overflow-y: hidden;
-            overflow-x: hidden;
-            .headDiv {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                .heading {
-                    //font-family: Tajawal;
-                    font-style: normal;
-                    font-weight: 300;
-                    font-size: 28px;
-                    line-height: 100%;
-                    text-align: center;
-                    letter-spacing: 0.15em;
-                    color: #ffffff;
-                    margin-top: 110px;
-                    margin-bottom: 40px;
-                }
-            }
-
-            .sections {
-                .imageSec {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    justify-content: center;
-                    .vectorImage {
-                        width: 438px;
-                    }
-                }
-                .contentSec {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: flex-start;
-                    justify-content: center;
-                    .subHeading {
-                        width: 435px;
-                        //font-family: Tajawal;
-                        font-style: normal;
-                        font-weight: bold;
-                        font-size: 36px;
-                        line-height: 100%;
-                        letter-spacing: -0.01em;
-                        color: #ffffff;
-                    }
-                    .content1 {
-                        width: 458px;
-                        //font-family: Tajawal;
-                        font-style: normal;
-                        font-weight: normal;
-                        // font-size: 20px;
-                        line-height: 120%;
-                        letter-spacing: -0.01em;
-                        color: #ffffff;
-                    }
-                }
-            }
-            .content2 {
-                //font-family: Tajawal;
-                font-style: normal;
-                font-weight: normal;
-                // font-size: 20px;
-                line-height: 120%;
-                letter-spacing: -0.01em;
-                color: #ffffff;
-                margin-top: 37px;
-            }
-            .subHeading2 {
-                width: 640px;
-                //font-family: Tajawal;
-                font-style: normal;
-                font-weight: bold;
-                font-size: 36px;
-                line-height: 100%;
-                letter-spacing: -0.01em;
-                color: #ffffff;
-                margin-top: 45px;
-            }
-            .content3 {
-                //font-family: Tajawal;
-                font-style: normal;
-                font-weight: normal;
-                // font-size: 20px;
-                line-height: 120%;
-                letter-spacing: -0.01em;
-                color: #ffffff;
-                margin-top: 0px !important;
-            }
-            .content4 {
-                //font-family: Tajawal;
-                font-style: normal;
-                font-weight: normal;
-                // font-size: 20px;
-                line-height: 120%;
-                letter-spacing: -0.01em;
-                color: #ffffff;
-                margin-top: 300px;
-            }
+  .Strategy {
+    .wrapper {
+      overflow-y: hidden;
+      overflow-x: hidden;
+      .headDiv {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .heading {
+          //font-family: Tajawal;
+          font-style: normal;
+          font-weight: 300;
+          font-size: 28px;
+          line-height: 100%;
+          text-align: center;
+          letter-spacing: 0.15em;
+          color: #ffffff;
+          margin-top: 110px;
+          margin-bottom: 40px;
         }
+      }
+
+      .sections {
+        .imageSec {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          .vectorImage {
+            width: 438px;
+          }
+        }
+        .contentSec {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: center;
+          .subHeading {
+            width: 435px;
+            //font-family: Tajawal;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 36px;
+            line-height: 100%;
+            letter-spacing: -0.01em;
+            color: #ffffff;
+          }
+          .content1 {
+            width: 458px;
+            //font-family: Tajawal;
+            font-style: normal;
+            font-weight: normal;
+            // font-size: 20px;
+            line-height: 120%;
+            letter-spacing: -0.01em;
+            color: #ffffff;
+          }
+        }
+      }
+      .content2 {
+        //font-family: Tajawal;
+        font-style: normal;
+        font-weight: normal;
+        // font-size: 20px;
+        line-height: 120%;
+        letter-spacing: -0.01em;
+        color: #ffffff;
+        margin-top: 37px;
+      }
+      .subHeading2 {
+        width: 640px;
+        //font-family: Tajawal;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 100%;
+        letter-spacing: -0.01em;
+        color: #ffffff;
+        margin-top: 45px;
+      }
+      .content3 {
+        //font-family: Tajawal;
+        font-style: normal;
+        font-weight: normal;
+        // font-size: 20px;
+        line-height: 120%;
+        letter-spacing: -0.01em;
+        color: #ffffff;
+        margin-top: 0px !important;
+      }
+      .content4 {
+        //font-family: Tajawal;
+        font-style: normal;
+        font-weight: normal;
+        // font-size: 20px;
+        line-height: 120%;
+        letter-spacing: -0.01em;
+        color: #ffffff;
+        margin-top: 300px;
+      }
     }
+  }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-    .Strategy {
-        .wrapper {
-            overflow-y: hidden;
-            overflow-x: hidden;
-            .headDiv {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                .heading {
-                    //font-family: Tajawal;
-                    font-style: normal;
-                    font-weight: 300;
-                    font-size: 30px;
-                    line-height: 100%;
-                    text-align: center;
-                    letter-spacing: 0.15em;
-                    color: #ffffff;
-                    margin-top: 110px;
-                    margin-bottom: 40px;
-                }
-            }
-
-            .sections {
-                .imageSec {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    justify-content: center;
-                    .vectorImage {
-                        width: 564px;
-                    }
-                }
-
-                .contentSec {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: flex-start;
-                    justify-content: center;
-                    .subHeading {
-                        width: 483px;
-                        //font-family: Tajawal;
-                        font-style: normal;
-                        font-weight: bold;
-                        font-size: 40px;
-                        line-height: 100%;
-                        letter-spacing: -0.01em;
-                        color: #ffffff;
-                    }
-                    .content1 {
-                        width: 500px;
-                        //font-family: Tajawal;
-                        font-style: normal;
-                        font-weight: normal;
-                        // font-size: 23px;
-                        line-height: 120%;
-                        letter-spacing: -0.01em;
-                        color: #ffffff;
-                    }
-                }
-            }
-            .contents {
-                .content2 {
-                    //font-family: Tajawal;
-                    font-style: normal;
-                    font-weight: normal;
-                    // font-size: 25px;
-                    line-height: 120%;
-                    letter-spacing: -0.01em;
-                    color: #ffffff;
-                    margin-top: 37px;
-                }
-                .subHeading2 {
-                    width: 640px;
-                    //font-family: Tajawal;
-                    font-style: normal;
-                    font-weight: bold;
-                    font-size: 40px;
-                    line-height: 100%;
-                    letter-spacing: -0.01em;
-                    color: #ffffff;
-                    margin-top: 45px;
-                }
-                .content3 {
-                    //font-family: Tajawal;
-                    font-style: normal;
-                    font-weight: normal;
-                    // font-size: 25px;
-                    line-height: 120%;
-                    letter-spacing: -0.01em;
-                    color: #ffffff;
-                    margin-top: 0px !important;
-                }
-                .content4 {
-                    //font-family: Tajawal;
-                    font-style: normal;
-                    font-weight: normal;
-                    // font-size: 25px;
-                    line-height: 120%;
-                    letter-spacing: -0.01em;
-                    color: #ffffff;
-                    margin-top: 300px;
-                }
-            }
+  .Strategy {
+    .wrapper {
+      overflow-y: hidden;
+      overflow-x: hidden;
+      .headDiv {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .heading {
+          //font-family: Tajawal;
+          font-style: normal;
+          font-weight: 300;
+          font-size: 30px;
+          line-height: 100%;
+          text-align: center;
+          letter-spacing: 0.15em;
+          color: #ffffff;
+          margin-top: 110px;
+          margin-bottom: 40px;
         }
+      }
+
+      .sections {
+        .imageSec {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          .vectorImage {
+            width: 564px;
+          }
+        }
+
+        .contentSec {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: center;
+          .subHeading {
+            width: 483px;
+            //font-family: Tajawal;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 40px;
+            line-height: 100%;
+            letter-spacing: -0.01em;
+            color: #ffffff;
+          }
+          .content1 {
+            width: 500px;
+            //font-family: Tajawal;
+            font-style: normal;
+            font-weight: normal;
+            // font-size: 23px;
+            line-height: 120%;
+            letter-spacing: -0.01em;
+            color: #ffffff;
+          }
+        }
+      }
+      .contents {
+        .content2 {
+          //font-family: Tajawal;
+          font-style: normal;
+          font-weight: normal;
+          // font-size: 25px;
+          line-height: 120%;
+          letter-spacing: -0.01em;
+          color: #ffffff;
+          margin-top: 37px;
+        }
+        .subHeading2 {
+          width: 640px;
+          //font-family: Tajawal;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 40px;
+          line-height: 100%;
+          letter-spacing: -0.01em;
+          color: #ffffff;
+          margin-top: 45px;
+        }
+        .content3 {
+          //font-family: Tajawal;
+          font-style: normal;
+          font-weight: normal;
+          // font-size: 25px;
+          line-height: 120%;
+          letter-spacing: -0.01em;
+          color: #ffffff;
+          margin-top: 0px !important;
+        }
+        .content4 {
+          //font-family: Tajawal;
+          font-style: normal;
+          font-weight: normal;
+          // font-size: 25px;
+          line-height: 120%;
+          letter-spacing: -0.01em;
+          color: #ffffff;
+          margin-top: 300px;
+        }
+      }
     }
+  }
 }

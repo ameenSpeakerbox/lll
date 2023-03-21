@@ -1,662 +1,662 @@
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 576px) {
-    .our-leadership {
-        .images {
-            border-radius: 0.4rem;
-        }
+  .our-leadership {
+    .images {
+      border-radius: 0.4rem;
+    }
+    .title {
+      font-size: 1.5rem;
+    }
+    .desc {
+      font-size: 0.8rem;
+    }
+    .leaders {
+      .name {
+        font-size: 0.9rem;
+        line-height: 15px;
+        margin-top: 5px;
+        /* or 32px */
+
+        text-align: center;
+        letter-spacing: -0.03em;
+      }
+      .pos {
+        font-size: 0.7rem;
+        line-height: 130%;
+        /* or 26px */
+
+        text-align: center;
+        letter-spacing: -0.02em;
+      }
+    }
+  }
+
+  .testimonial {
+    .vector-1 {
+      width: 40px !important;
+    }
+    .vector-2 {
+      width: 80px !important;
+    }
+    .col-md-6 {
+      flex: 0 0 75% !important;
+      max-width: 75% !important;
+    }
+    .testimonial-body {
+      .figure {
+        width: 45px !important;
+      }
+
+      .feedback {
+        font-size: 1rem !important;
+        line-height: 110%;
+        /* or 48px */
+
+        letter-spacing: -0.03em;
+      }
+      .name {
+        font-size: 0.75rem !important;
+        margin: 0;
+        line-height: 120%;
+        /* or 36px */
+
+        letter-spacing: -0.03em;
+      }
+      .pos {
+        font-size: 0.6rem !important;
+        line-height: 120%;
+        /* or 36px */
+
+        letter-spacing: -0.03em;
+      }
+    }
+  }
+
+  .testimonial {
+    .vector-1 {
+      width: 60px;
+    }
+    .vector-2 {
+      width: 120px;
+    }
+    .testimonial-body {
+      .figure {
+        width: 55px;
+      }
+
+      .feedback {
+        font-size: 1.1rem;
+        line-height: 110%;
+        /* or 48px */
+
+        letter-spacing: -0.03em;
+      }
+      .name {
+        font-size: 0.8rem;
+        margin: 0;
+        line-height: 120%;
+        /* or 36px */
+
+        letter-spacing: -0.03em;
+      }
+      .pos {
+        font-size: 0.7rem;
+        line-height: 120%;
+        /* or 36px */
+
+        letter-spacing: -0.03em;
+      }
+    }
+
+    .wrapper {
+      margin-top: 2rem !important;
+      height: 141px;
+      background: #fff4d4;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0;
+      .col1 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 0 1.5rem;
         .title {
-            font-size: 1.5rem;
+          font-size: 1rem;
+          line-height: 110%;
+          /* or 48px */
+
+          letter-spacing: -0.03em;
         }
         .desc {
-            font-size: 0.8rem;
-        }
-        .leaders {
-            .name {
-                font-size: 0.9rem;
-                line-height: 15px;
-                margin-top: 5px;
-                /* or 32px */
+          line-height: 130%;
+          /* or 22px */
 
-                text-align: center;
-                letter-spacing: -0.03em;
-            }
-            .pos {
-                font-size: 0.7rem;
-                line-height: 130%;
-                /* or 26px */
-
-                text-align: center;
-                letter-spacing: -0.02em;
-            }
+          letter-spacing: -0.02em;
+          font-size: 0.65rem;
         }
+      }
+      .col2 {
+        display: flex;
+        align-self: first baseline;
+        flex-direction: column;
+        .btn {
+          width: 85px;
+          height: 25px;
+          font-size: 0.65rem;
+          font-weight: 600;
+          background: #0e6fff;
+          border-radius: 7px;
+          color: white;
+          position: absolute;
+          top: 2.5rem;
+          letter-spacing: -0.03em;
+          line-height: 1;
+        }
+        .vector {
+          width: 120px;
+        }
+      }
     }
-
-    .testimonial {
-        .vector-1 {
-            width: 40px !important;
-        }
-        .vector-2 {
-            width: 80px !important;
-        }
-        .col-md-6 {
-            flex: 0 0 75% !important;
-            max-width: 75% !important;
-        }
-        .testimonial-body {
-            .figure {
-                width: 45px !important;
-            }
-
-            .feedback {
-                font-size: 1rem !important;
-                line-height: 110%;
-                /* or 48px */
-
-                letter-spacing: -0.03em;
-            }
-            .name {
-                font-size: 0.75rem !important;
-                margin: 0;
-                line-height: 120%;
-                /* or 36px */
-
-                letter-spacing: -0.03em;
-            }
-            .pos {
-                font-size: 0.6rem !important;
-                line-height: 120%;
-                /* or 36px */
-
-                letter-spacing: -0.03em;
-            }
-        }
-    }
-
-    .testimonial {
-        .vector-1 {
-            width: 60px;
-        }
-        .vector-2 {
-            width: 120px;
-        }
-        .testimonial-body {
-            .figure {
-                width: 55px;
-            }
-
-            .feedback {
-                font-size: 1.1rem;
-                line-height: 110%;
-                /* or 48px */
-
-                letter-spacing: -0.03em;
-            }
-            .name {
-                font-size: 0.8rem;
-                margin: 0;
-                line-height: 120%;
-                /* or 36px */
-
-                letter-spacing: -0.03em;
-            }
-            .pos {
-                font-size: 0.7rem;
-                line-height: 120%;
-                /* or 36px */
-
-                letter-spacing: -0.03em;
-            }
-        }
-
-        .wrapper {
-            margin-top: 2rem !important;
-            height: 141px;
-            background: #fff4d4;
-            border-radius: 12px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 0;
-            .col1 {
-                width: 100%;
-                display: flex;
-                flex-direction: column;
-                margin: 0 1.5rem;
-                .title {
-                    font-size: 1rem;
-                    line-height: 110%;
-                    /* or 48px */
-
-                    letter-spacing: -0.03em;
-                }
-                .desc {
-                    line-height: 130%;
-                    /* or 22px */
-
-                    letter-spacing: -0.02em;
-                    font-size: 0.65rem;
-                }
-            }
-            .col2 {
-                display: flex;
-                align-self: first baseline;
-                flex-direction: column;
-                .btn {
-                    width: 85px;
-                    height: 25px;
-                    font-size: 0.65rem;
-                    font-weight: 600;
-                    background: #0e6fff;
-                    border-radius: 7px;
-                    color: white;
-                    position: absolute;
-                    top: 2.5rem;
-                    letter-spacing: -0.03em;
-                    line-height: 1;
-                }
-                .vector {
-                    width: 120px;
-                }
-            }
-        }
-    }
+  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 576px) and (max-width: 768px) {
-    .our-leadership {
-        .images {
-            border-radius: 0.4rem;
-        }
+  .our-leadership {
+    .images {
+      border-radius: 0.4rem;
+    }
+    .title {
+      font-size: 1.75rem;
+    }
+    .desc {
+      font-size: 0.9rem;
+    }
+    .leaders {
+      .name {
+        font-size: 0.95rem;
+        line-height: 0;
+        margin-top: 15px;
+        /* or 32px */
+
+        text-align: center;
+        letter-spacing: -0.03em;
+      }
+      .pos {
+        font-size: 0.7rem;
+        line-height: 130%;
+        /* or 26px */
+
+        text-align: center;
+        letter-spacing: -0.02em;
+      }
+    }
+  }
+
+  .testimonial {
+    .vector-1 {
+      width: 60px;
+    }
+    .vector-2 {
+      width: 120px;
+    }
+    .testimonial-body {
+      .figure {
+        width: 55px;
+      }
+
+      .feedback {
+        font-size: 1.1rem;
+        line-height: 110%;
+        /* or 48px */
+
+        letter-spacing: -0.03em;
+      }
+      .name {
+        font-size: 0.8rem;
+        margin: 0;
+        line-height: 120%;
+        /* or 36px */
+
+        letter-spacing: -0.03em;
+      }
+      .pos {
+        font-size: 0.7rem;
+        line-height: 120%;
+        /* or 36px */
+
+        letter-spacing: -0.03em;
+      }
+    }
+
+    .wrapper {
+      margin-top: 2.5rem !important;
+      height: 181px;
+      background: #fff4d4;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0;
+      .col1 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 0 2rem;
         .title {
-            font-size: 1.75rem;
+          font-size: 1.2rem;
+          line-height: 110%;
+          /* or 48px */
+
+          letter-spacing: -0.03em;
         }
         .desc {
-            font-size: 0.9rem;
-        }
-        .leaders {
-            .name {
-                font-size: 0.95rem;
-                line-height: 0;
-                margin-top: 15px;
-                /* or 32px */
+          line-height: 130%;
+          /* or 22px */
 
-                text-align: center;
-                letter-spacing: -0.03em;
-            }
-            .pos {
-                font-size: 0.7rem;
-                line-height: 130%;
-                /* or 26px */
-
-                text-align: center;
-                letter-spacing: -0.02em;
-            }
+          letter-spacing: -0.02em;
+          font-size: 0.75rem;
         }
+      }
+      .col2 {
+        display: flex;
+        align-self: first baseline;
+        flex-direction: column;
+        .btn {
+          width: 125px;
+          height: 30px;
+          font-size: 0.8rem;
+          font-weight: 600;
+
+          /* Primary */
+
+          background: #0e6fff;
+          border-radius: 7px;
+          color: white;
+          position: absolute;
+          top: 4.5rem;
+          letter-spacing: -0.03em;
+        }
+        .vector {
+          width: 180px;
+        }
+      }
     }
-
-    .testimonial {
-        .vector-1 {
-            width: 60px;
-        }
-        .vector-2 {
-            width: 120px;
-        }
-        .testimonial-body {
-            .figure {
-                width: 55px;
-            }
-
-            .feedback {
-                font-size: 1.1rem;
-                line-height: 110%;
-                /* or 48px */
-
-                letter-spacing: -0.03em;
-            }
-            .name {
-                font-size: 0.8rem;
-                margin: 0;
-                line-height: 120%;
-                /* or 36px */
-
-                letter-spacing: -0.03em;
-            }
-            .pos {
-                font-size: 0.7rem;
-                line-height: 120%;
-                /* or 36px */
-
-                letter-spacing: -0.03em;
-            }
-        }
-
-        .wrapper {
-            margin-top: 2.5rem !important;
-            height: 181px;
-            background: #fff4d4;
-            border-radius: 12px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 0;
-            .col1 {
-                width: 100%;
-                display: flex;
-                flex-direction: column;
-                margin: 0 2rem;
-                .title {
-                    font-size: 1.2rem;
-                    line-height: 110%;
-                    /* or 48px */
-
-                    letter-spacing: -0.03em;
-                }
-                .desc {
-                    line-height: 130%;
-                    /* or 22px */
-
-                    letter-spacing: -0.02em;
-                    font-size: 0.75rem;
-                }
-            }
-            .col2 {
-                display: flex;
-                align-self: first baseline;
-                flex-direction: column;
-                .btn {
-                    width: 125px;
-                    height: 30px;
-                    font-size: 0.8rem;
-                    font-weight: 600;
-
-                    /* Primary */
-
-                    background: #0e6fff;
-                    border-radius: 7px;
-                    color: white;
-                    position: absolute;
-                    top: 4.5rem;
-                    letter-spacing: -0.03em;
-                }
-                .vector {
-                    width: 180px;
-                }
-            }
-        }
-    }
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) and (max-width: 992px) {
-    .our-leadership {
-        .images {
-            border-radius: 0.4rem;
-        }
+  .our-leadership {
+    .images {
+      border-radius: 0.4rem;
+    }
+    .title {
+      font-size: 2rem;
+    }
+    .desc {
+      font-size: 0.75rem;
+    }
+    .leaders {
+      .name {
+        font-size: 1rem;
+        line-height: 15px;
+        margin-top: 5px;
+        /* or 32px */
+
+        text-align: center;
+        letter-spacing: -0.03em;
+      }
+      .pos {
+        font-size: 0.7rem;
+        line-height: 130%;
+        /* or 26px */
+
+        text-align: center;
+        letter-spacing: -0.02em;
+      }
+    }
+  }
+
+  .testimonial {
+    .vector-1 {
+      width: 65px;
+    }
+    .vector-2 {
+      width: 130px;
+    }
+    .testimonial-body {
+      .figure {
+        width: 60px;
+      }
+
+      .feedback {
+        font-size: 1.2rem;
+        line-height: 110%;
+        /* or 48px */
+
+        letter-spacing: -0.03em;
+      }
+      .name {
+        font-size: 0.9rem;
+        margin: 0;
+        line-height: 120%;
+        /* or 36px */
+
+        letter-spacing: -0.03em;
+      }
+      .pos {
+        font-size: 0.75rem;
+        line-height: 120%;
+        /* or 36px */
+
+        letter-spacing: -0.03em;
+      }
+    }
+
+    .wrapper {
+      margin-top: 3rem;
+      height: 181px;
+      background: #fff4d4;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0;
+      .col1 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 0 2.5rem;
         .title {
-            font-size: 2rem;
+          font-size: 1.2rem;
+          line-height: 110%;
+          /* or 48px */
+
+          letter-spacing: -0.03em;
         }
         .desc {
-            font-size: 0.75rem;
-        }
-        .leaders {
-            .name {
-                font-size: 1rem;
-                line-height: 15px;
-                margin-top: 5px;
-                /* or 32px */
+          line-height: 130%;
+          /* or 22px */
 
-                text-align: center;
-                letter-spacing: -0.03em;
-            }
-            .pos {
-                font-size: 0.7rem;
-                line-height: 130%;
-                /* or 26px */
-
-                text-align: center;
-                letter-spacing: -0.02em;
-            }
+          letter-spacing: -0.02em;
+          font-size: 0.75rem;
         }
+      }
+      .col2 {
+        display: flex;
+        align-self: first baseline;
+        flex-direction: column;
+        .btn {
+          width: 125px;
+          height: 30px;
+          font-size: 0.8rem;
+          font-weight: 600;
+
+          /* Primary */
+
+          background: #0e6fff;
+          border-radius: 7px;
+          color: white;
+          position: absolute;
+          top: 4.5rem;
+          letter-spacing: -0.03em;
+        }
+        .vector {
+          width: 180px;
+        }
+      }
     }
-
-    .testimonial {
-        .vector-1 {
-            width: 65px;
-        }
-        .vector-2 {
-            width: 130px;
-        }
-        .testimonial-body {
-            .figure {
-                width: 60px;
-            }
-
-            .feedback {
-                font-size: 1.2rem;
-                line-height: 110%;
-                /* or 48px */
-
-                letter-spacing: -0.03em;
-            }
-            .name {
-                font-size: 0.9rem;
-                margin: 0;
-                line-height: 120%;
-                /* or 36px */
-
-                letter-spacing: -0.03em;
-            }
-            .pos {
-                font-size: 0.75rem;
-                line-height: 120%;
-                /* or 36px */
-
-                letter-spacing: -0.03em;
-            }
-        }
-
-        .wrapper {
-            margin-top: 3rem;
-            height: 181px;
-            background: #fff4d4;
-            border-radius: 12px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 0;
-            .col1 {
-                width: 100%;
-                display: flex;
-                flex-direction: column;
-                margin: 0 2.5rem;
-                .title {
-                    font-size: 1.2rem;
-                    line-height: 110%;
-                    /* or 48px */
-
-                    letter-spacing: -0.03em;
-                }
-                .desc {
-                    line-height: 130%;
-                    /* or 22px */
-
-                    letter-spacing: -0.02em;
-                    font-size: 0.75rem;
-                }
-            }
-            .col2 {
-                display: flex;
-                align-self: first baseline;
-                flex-direction: column;
-                .btn {
-                    width: 125px;
-                    height: 30px;
-                    font-size: 0.8rem;
-                    font-weight: 600;
-
-                    /* Primary */
-
-                    background: #0e6fff;
-                    border-radius: 7px;
-                    color: white;
-                    position: absolute;
-                    top: 4.5rem;
-                    letter-spacing: -0.03em;
-                }
-                .vector {
-                    width: 180px;
-                }
-            }
-        }
-    }
+  }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
-    .our-leadership {
-        .images {
-            border-radius: 0.5rem;
-        }
+  .our-leadership {
+    .images {
+      border-radius: 0.5rem;
+    }
+    .title {
+      font-size: 2.3rem;
+    }
+    .desc {
+      font-size: 0.9rem;
+    }
+    .leaders {
+      .name {
+        font-size: 1.2rem;
+        line-height: 0;
+        margin-top: 15px;
+        /* or 32px */
+
+        text-align: center;
+        letter-spacing: -0.03em;
+      }
+      .pos {
+        font-size: 0.8rem;
+        line-height: 130%;
+        /* or 26px */
+
+        text-align: center;
+        letter-spacing: -0.02em;
+      }
+    }
+  }
+
+  .testimonial {
+    .vector-1 {
+      width: 70px;
+    }
+    .vector-2 {
+      width: 140px;
+    }
+    .testimonial-body {
+      .figure {
+        width: 70px;
+      }
+
+      .feedback {
+        font-size: 1.4rem;
+        line-height: 110%;
+        /* or 48px */
+
+        letter-spacing: -0.03em;
+      }
+      .name {
+        font-size: 0.95rem;
+        margin: 0;
+        line-height: 120%;
+        /* or 36px */
+
+        letter-spacing: -0.03em;
+      }
+      .pos {
+        font-size: 0.8rem;
+        line-height: 120%;
+        /* or 36px */
+
+        letter-spacing: -0.03em;
+      }
+    }
+
+    .wrapper {
+      margin-top: 4rem;
+      height: 251px;
+      background: #fff4d4;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0;
+      .col1 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 0 4.5rem;
         .title {
-            font-size: 2.3rem;
+          font-size: 1.5rem;
+          line-height: 110%;
+          /* or 48px */
+
+          letter-spacing: -0.03em;
         }
         .desc {
-            font-size: 0.9rem;
-        }
-        .leaders {
-            .name {
-                font-size: 1.2rem;
-                line-height: 0;
-                margin-top: 15px;
-                /* or 32px */
+          line-height: 130%;
+          /* or 22px */
 
-                text-align: center;
-                letter-spacing: -0.03em;
-            }
-            .pos {
-                font-size: 0.8rem;
-                line-height: 130%;
-                /* or 26px */
-
-                text-align: center;
-                letter-spacing: -0.02em;
-            }
+          letter-spacing: -0.02em;
+          font-size: 0.9rem;
         }
+      }
+      .col2 {
+        display: flex;
+        align-self: first baseline;
+        flex-direction: column;
+        .btn {
+          width: 155px;
+          height: 42px;
+          font-size: 0.9rem;
+          font-weight: 600;
+
+          /* Primary */
+
+          background: #0e6fff;
+          border-radius: 7px;
+          color: white;
+          position: absolute;
+          top: 6rem;
+          letter-spacing: -0.03em;
+        }
+        .vector {
+          width: 240px;
+        }
+      }
     }
-
-    .testimonial {
-        .vector-1 {
-            width: 70px;
-        }
-        .vector-2 {
-            width: 140px;
-        }
-        .testimonial-body {
-            .figure {
-                width: 70px;
-            }
-
-            .feedback {
-                font-size: 1.4rem;
-                line-height: 110%;
-                /* or 48px */
-
-                letter-spacing: -0.03em;
-            }
-            .name {
-                font-size: 0.95rem;
-                margin: 0;
-                line-height: 120%;
-                /* or 36px */
-
-                letter-spacing: -0.03em;
-            }
-            .pos {
-                font-size: 0.8rem;
-                line-height: 120%;
-                /* or 36px */
-
-                letter-spacing: -0.03em;
-            }
-        }
-
-        .wrapper {
-            margin-top: 4rem;
-            height: 251px;
-            background: #fff4d4;
-            border-radius: 12px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 0;
-            .col1 {
-                width: 100%;
-                display: flex;
-                flex-direction: column;
-                margin: 0 4.5rem;
-                .title {
-                    font-size: 1.5rem;
-                    line-height: 110%;
-                    /* or 48px */
-
-                    letter-spacing: -0.03em;
-                }
-                .desc {
-                    line-height: 130%;
-                    /* or 22px */
-
-                    letter-spacing: -0.02em;
-                    font-size: 0.9rem;
-                }
-            }
-            .col2 {
-                display: flex;
-                align-self: first baseline;
-                flex-direction: column;
-                .btn {
-                    width: 155px;
-                    height: 42px;
-                    font-size: 0.9rem;
-                    font-weight: 600;
-
-                    /* Primary */
-
-                    background: #0e6fff;
-                    border-radius: 7px;
-                    color: white;
-                    position: absolute;
-                    top: 6rem;
-                    letter-spacing: -0.03em;
-                }
-                .vector {
-                    width: 240px;
-                }
-            }
-        }
-    }
+  }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-    .our-leadership {
-        .images {
-            border-radius: 0.5rem;
-        }
+  .our-leadership {
+    .images {
+      border-radius: 0.5rem;
+    }
+    .title {
+      font-size: 2.5rem;
+    }
+    .desc {
+      font-size: 1.1rem;
+    }
+    .leaders {
+      .name {
+        font-size: 1.4rem;
+        line-height: 0;
+        margin-top: 15px;
+
+        text-align: center;
+        letter-spacing: -0.03em;
+      }
+      .pos {
+        font-size: 1rem;
+        line-height: 130%;
+        /* or 26px */
+
+        text-align: center;
+        letter-spacing: -0.02em;
+      }
+    }
+  }
+
+  .testimonial {
+    .vector-1 {
+      width: 75px;
+    }
+    .vector-2 {
+      width: 150px;
+    }
+    .testimonial-body {
+      .figure {
+        width: 75px;
+      }
+
+      .feedback {
+        font-size: 1.5rem;
+        line-height: 110%;
+        /* or 48px */
+
+        letter-spacing: -0.03em;
+      }
+      .name {
+        font-size: 1rem;
+        margin: 0;
+        line-height: 120%;
+        /* or 36px */
+
+        letter-spacing: -0.03em;
+      }
+      .pos {
+        font-size: 0.85rem;
+        line-height: 120%;
+        /* or 36px */
+
+        letter-spacing: -0.03em;
+      }
+    }
+
+    .wrapper {
+      margin-top: 5rem;
+      height: 271px;
+      background: #fff4d4;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0;
+      .col1 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 0 5rem;
         .title {
-            font-size: 2.5rem;
+          font-size: 1.6rem;
+          line-height: 110%;
+          /* or 48px */
+
+          letter-spacing: -0.03em;
         }
         .desc {
-            font-size: 1.1rem;
-        }
-        .leaders {
-            .name {
-                font-size: 1.4rem;
-                line-height: 0;
-                margin-top: 15px;
+          line-height: 130%;
+          /* or 22px */
 
-                text-align: center;
-                letter-spacing: -0.03em;
-            }
-            .pos {
-                font-size: 1rem;
-                line-height: 130%;
-                /* or 26px */
-
-                text-align: center;
-                letter-spacing: -0.02em;
-            }
+          letter-spacing: -0.02em;
+          font-size: 1rem;
         }
+      }
+      .col2 {
+        display: flex;
+        align-self: first baseline;
+        flex-direction: column;
+        .btn {
+          width: 155px;
+          height: 42px;
+          font-size: 1rem;
+          font-weight: 600;
+
+          /* Primary */
+
+          background: #0e6fff;
+          border-radius: 7px;
+          color: white;
+          position: absolute;
+          top: 6rem;
+          letter-spacing: -0.03em;
+        }
+        .vector {
+          width: 250px;
+        }
+      }
     }
-
-    .testimonial {
-        .vector-1 {
-            width: 75px;
-        }
-        .vector-2 {
-            width: 150px;
-        }
-        .testimonial-body {
-            .figure {
-                width: 75px;
-            }
-
-            .feedback {
-                font-size: 1.5rem;
-                line-height: 110%;
-                /* or 48px */
-
-                letter-spacing: -0.03em;
-            }
-            .name {
-                font-size: 1rem;
-                margin: 0;
-                line-height: 120%;
-                /* or 36px */
-
-                letter-spacing: -0.03em;
-            }
-            .pos {
-                font-size: 0.85rem;
-                line-height: 120%;
-                /* or 36px */
-
-                letter-spacing: -0.03em;
-            }
-        }
-
-        .wrapper {
-            margin-top: 5rem;
-            height: 271px;
-            background: #fff4d4;
-            border-radius: 12px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 0;
-            .col1 {
-                width: 100%;
-                display: flex;
-                flex-direction: column;
-                margin: 0 5rem;
-                .title {
-                    font-size: 1.6rem;
-                    line-height: 110%;
-                    /* or 48px */
-
-                    letter-spacing: -0.03em;
-                }
-                .desc {
-                    line-height: 130%;
-                    /* or 22px */
-
-                    letter-spacing: -0.02em;
-                    font-size: 1rem;
-                }
-            }
-            .col2 {
-                display: flex;
-                align-self: first baseline;
-                flex-direction: column;
-                .btn {
-                    width: 155px;
-                    height: 42px;
-                    font-size: 1rem;
-                    font-weight: 600;
-
-                    /* Primary */
-
-                    background: #0e6fff;
-                    border-radius: 7px;
-                    color: white;
-                    position: absolute;
-                    top: 6rem;
-                    letter-spacing: -0.03em;
-                }
-                .vector {
-                    width: 250px;
-                }
-            }
-        }
-    }
+  }
 }

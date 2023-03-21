@@ -1,190 +1,183 @@
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px)  {
-    .gatsby .first-section .desc{
-        font-size: x-large;
-        font-weight: 300;
-        width: 300px;
-        text-align: center;
-        line-height: 35px;
-    }
-    .gatsby  .sec-section .content{
-
-        font-size: 15px;
-        line-height: 17px;
-
-    }.gatsby .third-section .icon{
-        height: 23px;
-        margin: 10px auto !important;
-    }
+@media only screen and (max-width: 600px) {
+  .gatsby .first-section .desc {
+    font-size: x-large;
+    font-weight: 300;
+    width: 300px;
+    text-align: center;
+    line-height: 35px;
+  }
+  .gatsby .sec-section .content {
+    font-size: 15px;
+    line-height: 17px;
+  }
+  .gatsby .third-section .icon {
+    height: 23px;
+    margin: 10px auto !important;
+  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) and (max-width: 768px) {
-    .gatsby .first-section .desc{
-        font-size: xx-large;
-        font-weight: 300;
-        width: 435px;
-        text-align: center;
-        line-height: 35px;
-    }
-    .gatsby  .sec-section .content{
-
-        font-size: 16px;
-        line-height: 18px;
-
-    }.gatsby .third-section .icon{
-        height: 28px;
-        margin: 10px auto !important;
-    }
+  .gatsby .first-section .desc {
+    font-size: xx-large;
+    font-weight: 300;
+    width: 435px;
+    text-align: center;
+    line-height: 35px;
+  }
+  .gatsby .sec-section .content {
+    font-size: 16px;
+    line-height: 18px;
+  }
+  .gatsby .third-section .icon {
+    height: 28px;
+    margin: 10px auto !important;
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) and (max-width: 992px) {
-    .gatsby .first-section .desc{
-        font-size: xx-large;
-        font-weight: 300;
-        width: 435px;
-        text-align: center;
-        line-height: 35px;
-    }
-    .gatsby  .sec-section .content{
-
-        font-size: 17px;
-        line-height: 18px;
-
-    }.gatsby .third-section .icon{
-        height: 30px;
-        margin: 10px auto !important;
-
-    }
+  .gatsby .first-section .desc {
+    font-size: xx-large;
+    font-weight: 300;
+    width: 435px;
+    text-align: center;
+    line-height: 35px;
+  }
+  .gatsby .sec-section .content {
+    font-size: 17px;
+    line-height: 18px;
+  }
+  .gatsby .third-section .icon {
+    height: 30px;
+    margin: 10px auto !important;
+  }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
-    .gatsby .first-section .desc{
-        font-size: xx-large;
-        font-weight: 300;
-        width: 435px;
-        text-align: center;
-        line-height: 35px;
-    }
-    .gatsby  .sec-section .content{
-
-        font-size: 17px;
-        line-height: 18px;
-
-    }.gatsby .third-section .icon{
-        height: 33px;
-        margin-bottom: 10px !important;
-
-    }
+  .gatsby .first-section .desc {
+    font-size: xx-large;
+    font-weight: 300;
+    width: 435px;
+    text-align: center;
+    line-height: 35px;
+  }
+  .gatsby .sec-section .content {
+    font-size: 17px;
+    line-height: 18px;
+  }
+  .gatsby .third-section .icon {
+    height: 33px;
+    margin-bottom: 10px !important;
+  }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-    .gatsby .first-section .desc{
-        font-size: xx-large;
-        font-weight: 300;
-        width: 435px;
-        text-align: center;
-        line-height: 35px;
-    }
-    .gatsby  .sec-section .content{
-
-        font-size: 18px;
-        line-height: 20px;
-
-    }
-    .gatsby .third-section .icon{
-        height: 35px;
-        margin-bottom: 10px !important;
-    }
+  .gatsby .first-section .desc {
+    font-size: xx-large;
+    font-weight: 300;
+    width: 435px;
+    text-align: center;
+    line-height: 35px;
+  }
+  .gatsby .sec-section .content {
+    font-size: 18px;
+    line-height: 20px;
+  }
+  .gatsby .third-section .icon {
+    height: 35px;
+    margin-bottom: 10px !important;
+  }
 }
 
-// 2nd section 
-.gatsby  .sec-section{
-    background: white;
+// 2nd section
+.gatsby .sec-section {
+  background: white;
 }
-.gatsby  .sec-section .content{
-    margin: 0;
-    color: black;
+.gatsby .sec-section .content {
+  margin: 0;
+  color: black;
 }
 
-.gatsby  .features .icon{
-    height: 22px;
-    width: 22px;
-    margin: auto 5px auto 0;
+.gatsby .features .icon {
+  height: 22px;
+  width: 22px;
+  margin: auto 5px auto 0;
 }
-.gatsby .features .title{
-    letter-spacing: -0.03em;
+.gatsby .features .title {
+  letter-spacing: -0.03em;
 }
 
 // 3rd section
 
-.gatsby .third-section{
-    background-color: black;
-    padding: 25px 0;
+.gatsby .third-section {
+  background-color: black;
+  padding: 25px 0;
 }
-.gatsby .third-section .desc{
-    text-align: center;
-    font-weight: 400;
-    font-size: large;
+.gatsby .third-section .desc {
+  text-align: center;
+  font-weight: 400;
+  font-size: large;
 }
-.gatsby .third-section .head{
-    font-weight: 400;
-    letter-spacing: -0.03em;
-    text-align: center;
-    
+.gatsby .third-section .head {
+  font-weight: 400;
+  letter-spacing: -0.03em;
+  text-align: center;
 }
-.gatsby .third-section .data-source{
-    text-align: center;
-    font-weight: 300;
-    letter-spacing: 0.1em;
-}
-
-.gatsby .third-section .icon{
-    display: block;
-    margin: auto;
-}
-.gatsby .sec-section .pink-btn{
-    border-radius: 20px;
-    padding:10px 25px;
-    border: 0;
-    margin: auto;
-    display: block;
-    width: fit-content;
-    border: 2px solid #ED226A;
-    font-weight: 700;
-
-}
-.gatsby .sec-section .pink-btn:hover{
-    background: linear-gradient(91.14deg, #ED226A -73.97%, #EF5046 156.47%, rgba(255, 255, 255, 0) 156.47%);
-    border-radius: 20px;
-    padding:10px 25px;
-    border: 0;
-    margin: auto;
-    display: block;
-    border: 2px solid #ED226A;
-    color: white;
-    font-weight: 700;
-    transition:.2s ease-in-out;
+.gatsby .third-section .data-source {
+  text-align: center;
+  font-weight: 300;
+  letter-spacing: 0.1em;
 }
 
-.gatsby .fourth-section{
-    background: white;
+.gatsby .third-section .icon {
+  display: block;
+  margin: auto;
 }
-.gatsby .fourth-section .title{
-    font-weight: 700;
-    letter-spacing: -0.03em;
+.gatsby .sec-section .pink-btn {
+  border-radius: 20px;
+  padding: 10px 25px;
+  border: 0;
+  margin: auto;
+  display: block;
+  width: fit-content;
+  border: 2px solid #ed226a;
+  font-weight: 700;
 }
-.gatsby .fourth-section .head{
-    font-weight: 500;
-}
-.gatsby .fourth-section .icon{
-    height: 30px;
-    
-}
-.gatsby .fourth-section .icon-col{
-    max-width: 50px
+.gatsby .sec-section .pink-btn:hover {
+  background: linear-gradient(
+    91.14deg,
+    #ed226a -73.97%,
+    #ef5046 156.47%,
+    rgba(255, 255, 255, 0) 156.47%
+  );
+  border-radius: 20px;
+  padding: 10px 25px;
+  border: 0;
+  margin: auto;
+  display: block;
+  border: 2px solid #ed226a;
+  color: white;
+  font-weight: 700;
+  transition: 0.2s ease-in-out;
 }
 
+.gatsby .fourth-section {
+  background: white;
+}
+.gatsby .fourth-section .title {
+  font-weight: 700;
+  letter-spacing: -0.03em;
+}
+.gatsby .fourth-section .head {
+  font-weight: 500;
+}
+.gatsby .fourth-section .icon {
+  height: 30px;
+}
+.gatsby .fourth-section .icon-col {
+  max-width: 50px;
+}

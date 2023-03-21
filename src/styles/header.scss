@@ -55,7 +55,6 @@ $grey: #b3aca2;
   background-color: transparent !important;
 }
 
-
 .switch {
   position: relative;
   display: inline-block;
@@ -162,7 +161,6 @@ $grey: #b3aca2;
   color: white !important;
 }
 
-
 .dropdown-item {
   padding: 0.25rem 0.5rem;
   color: white !important;
@@ -192,23 +190,19 @@ $grey: #b3aca2;
     backdrop-filter: blur(25px) !important;
     border-radius: 15px !important;
     transition: all 0.8s;
-    
   }
 }
-::-webkit-scrollbar-track
-{
+::-webkit-scrollbar-track {
   // box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-	// background-color: #f5f5f500;
+  // background-color: #f5f5f500;
 }
 
-::-webkit-scrollbar
-{
-	width: 3px;
-	// background-color: ;
+::-webkit-scrollbar {
+  width: 3px;
+  // background-color: ;
 }
 
-::-webkit-scrollbar-thumb
-{
-	background-color: #6b6b6b;
-	// border: 2px solid #ff4444a4;
+::-webkit-scrollbar-thumb {
+  background-color: #6b6b6b;
+  // border: 2px solid #ff4444a4;
 }
